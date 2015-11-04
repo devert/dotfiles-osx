@@ -1,0 +1,11 @@
+[user]
+	name = Dennis Evert
+	email = devert@olson.com
+[color]
+	ui = true
+[core]
+	autoctrl = input
+[merge]
+	ff = false
+[push]
+	default = matching
