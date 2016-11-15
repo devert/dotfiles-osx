@@ -10,9 +10,12 @@ alias -- -="cd -"
 alias db="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/_Projects"
+alias p="cd ~/Projects"
 alias g="git"
 alias win="cd /Volumes/C"
+
+# https://hub.github.com/
+alias git=hub
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

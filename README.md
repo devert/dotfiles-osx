@@ -19,6 +19,13 @@ git remote add origin git@github.com:devert/dotfiles-osx.git
 git pull
 ```
 
+## Install Homebrew Packages
+
+```sh
+cd ~/.dotfiles
+bash brew.sh
+```
+
 ## Make symbolic links to files
 
 ```sh
@@ -26,11 +33,5 @@ cd ~/
 sudo ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
 sudo ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 sudo ln -s ~/.dotfiles/.gitignore ~/.gitignore_global
-```
-
-## Install Homebrew Packages
-
-```sh
-cd ~/.dotfiles
-bash brew.sh
+sudo ln -s ~/.dotfiles/config.fish ~/.config/fish
 ```

@@ -1,6 +1,6 @@
 [user]
 	name = Dennis Evert
-	email = devert@olson.com
+	email = dennisevert@gmail.com
 [color]
 	ui = true
 [core]
@@ -9,7 +9,7 @@
 [merge]
 	ff = false
 [push]
-	default = matching
+	default = current
 [alias]
 	# add
 	a = add													# add
@@ -76,9 +76,15 @@
 
 	# tag
 	t = tag -n											# show tags with <n> lines of each tag message
+
+  # https://adamcod.es/2014/12/10/git-pull-correct-workflow.html
+  update-from = "!f() { git fetch $1 --prune; git merge --ff-only $1/$2 || git rebase --preserve-merges $1/$2; }; f"
+
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
 	trustExitCode = true
+[commit]
+	template = /Users/34457/.stCommitMsg

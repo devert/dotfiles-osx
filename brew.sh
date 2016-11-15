@@ -19,6 +19,7 @@ echo "Installing Homebrew Packages"
 
 brew install git
 brew install git-flow
+brew install fish
 
 echo "Installing Homebrew Cask and Applications"
 
