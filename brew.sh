@@ -34,7 +34,7 @@ fi;
 reload
 
 # Install Other Homebrew Packages
-echo "Installing Homebrew Packages"
+echo "Installing Other Homebrew Packages"
 
 brew install git
 brew install git-flow
@@ -43,13 +43,15 @@ brew install fish
 brew install python
 brew install tmux
 
-echo "Installing Homebrew Cask"
-
-brew tap caskroom/cask
-
 echo "Install Applications with Homebrew Cask"
 
+brew tap caskroom/cask
 brew cask install alfred
 brew cask install atom
 brew cask install iterm2
 brew cask install kdiff3
+
+echo "Install Binary Font files with Homebrew Cask"
+
+brew tap caskroom/fonts
+brew cask install font-
