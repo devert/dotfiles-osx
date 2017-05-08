@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
 
 # Install command-line tools using Homebrew.
 
@@ -14,13 +14,42 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade --all
 
-# Install packages with Homebrew
+# Install Homebrew Bash
+echo "Installing Homebrew Bash"
+
+brew install bash
+brew install bash-git-prompt
+brew tap homebrew/versions
+brew install bash-completion2
+
+echo "Change User Shell To Homebrew Installed Bash"
+
+# Switch to using brew-installed bash as default shell
+if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
+  echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
+  chsh -s /usr/local/bin/bash;
+fi;
+
+# Reload bash
+reload
+
+# Install Other Homebrew Packages
 echo "Installing Homebrew Packages"
 
 brew install git
 brew install git-flow
+brew install hub
 brew install fish
+brew install python
+brew install tmux
 
-echo "Installing Homebrew Cask and Applications"
+echo "Installing Homebrew Cask"
 
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
+
+echo "Install Applications with Homebrew Cask"
+
+brew cask install alfred
+brew cask install atom
+brew cask install iterm2
+brew cask install kdiff3

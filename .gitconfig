@@ -1,11 +1,8 @@
-[user]
-	name = Dennis Evert
-	email = dennisevert@gmail.com
 [color]
 	ui = true
 [core]
 	autoctrl = input
-	excludesfile = /Users/34457/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [merge]
 	ff = false
 [push]
@@ -82,9 +79,10 @@
 
 [difftool "sourcetree"]
 	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
 	trustExitCode = true
-[commit]
-	template = /Users/34457/.stCommitMsg
+[user]
+	name = Dennis Evert
+	email = dennis.evert@ave81.com
