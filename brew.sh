@@ -50,6 +50,7 @@ brew cask install alfred
 brew cask install atom
 brew cask install iterm2
 brew cask install kdiff3
+brew cask install sourcetree
 
 echo "Install Binary Font files with Homebrew Cask"
 
