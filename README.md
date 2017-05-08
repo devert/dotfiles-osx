@@ -35,3 +35,7 @@ sudo ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 sudo ln -s ~/.dotfiles/.gitignore ~/.gitignore_global
 sudo ln -s ~/.dotfiles/config.fish ~/.config/fish
 ```
+
+## Heavily influenced by the following .dotfiles projects
+
+* [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
