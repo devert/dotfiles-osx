@@ -19,5 +19,6 @@ nvm install node
 nvm alias default node
 
 # Install some global modules
+npm install -g eslint
 npm install -g npm-check-updates
 npm install -g alfred-atom

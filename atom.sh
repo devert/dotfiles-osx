@@ -3,6 +3,7 @@
 # Install Atom editor themes and packages
 
 # Packages
+apm install advanced-open-file
 apm install editorconfig
 apm install emmet
 apm install file-icons
