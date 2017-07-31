@@ -2,7 +2,7 @@
 	ui = true
 [core]
 	autoctrl = input
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/dennisevert/.gitignore_global
 [merge]
 	ff = false
 [push]
@@ -40,6 +40,9 @@
 
 	# pull
 	pl = pull												# pull
+
+	# prune
+	po = remote prune origin				# prune origin
 
 	# pull request
 	pr = !hub pull-request					# pull request
@@ -79,10 +82,12 @@
 
 [difftool "sourcetree"]
 	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
-	path =
+	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
 	trustExitCode = true
 [user]
 	name = Dennis Evert
 	email = dennis.evert@ave81.com
+[commit]
+	template = /Users/dennisevert/.stCommitMsg

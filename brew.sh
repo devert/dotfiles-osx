@@ -42,6 +42,8 @@ brew install hub
 brew install fish
 brew install python
 brew install tmux
+brew install yarn
+brew install thefuck
 
 echo "Install Applications with Homebrew Cask"
 
@@ -51,8 +53,10 @@ brew cask install atom
 brew cask install iterm2
 brew cask install kdiff3
 brew cask install sourcetree
+brew cask install firefox
+brew cask install virtualbox
 
 echo "Install Binary Font files with Homebrew Cask"
 
 brew tap caskroom/fonts
-brew cask install font-
+brew cask install font-menlo-for-powerline

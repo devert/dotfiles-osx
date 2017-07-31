@@ -19,7 +19,7 @@ git remote add origin git@github.com:devert/dotfiles-osx.git
 git pull
 ```
 
-## Install Homebrew Packages
+## Install Homebrew Packages and Casks
 
 ```sh
 cd ~/.dotfiles
@@ -31,9 +31,18 @@ bash brew.sh
 ```sh
 cd ~/
 sudo ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
+sudo ln -s ~/.dotfiles/.bashrc ~/.bashrc
 sudo ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 sudo ln -s ~/.dotfiles/.gitignore ~/.gitignore_global
-sudo ln -s ~/.dotfiles/config.fish ~/.config/fish
+```
+
+## Run additional install scripts
+
+```sh
+bash node.sh
+bash python.sh
+bash atom.sh
+bash fish.sh
 ```
 
 ## Heavily influenced by the following .dotfiles projects

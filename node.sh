@@ -18,7 +18,20 @@ nvm install node
 # Set latest node as the default
 nvm alias default node
 
+# Copying whatever version of node you have active via nvm into the /usr/local/ directory
+# and setting the permissions so that all users can access them.
+# https://www.digitalocean.com/community/tutorials/how-to-install-node-js-with-nvm-node-version-manager-on-a-vps
+n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local
+
 # Install some global modules
+npm install -g alfred-atom
+npm install -g avn avn-nvm
 npm install -g eslint
 npm install -g npm-check-updates
-npm install -g alfred-atom
+npm install -g gulp-cli
+
+# Setup AVN
+avn setup
+
+# Reload bash
+reload

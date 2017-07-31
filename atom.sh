@@ -16,6 +16,7 @@ apm install linter-flow
 apm install linter-stylelint
 apm install project-manager
 apm install set-syntax
+apm install Sublime-Style-Column-Selection
 apm install platformio-ide-terminal
 atom install clipboard-plus
 

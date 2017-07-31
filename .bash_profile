@@ -1,5 +1,7 @@
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
+# Add `~/bin` and ''~/sbin' to the `$PATH`
+export PATH="$HOME/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path - Can be used to extend `$PATH`.
@@ -9,7 +11,7 @@ export PATH="$HOME/bin:$PATH";
 # * ~/.functions - Useful bash functions
 # * ~/.extra can be used for other settings you don’t want to commit.
 for file in ~/.dotfiles/.{path,exports,bash_prompt,aliases,functions,extra}; do
-    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+  [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
 
@@ -51,4 +53,5 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+# https://github.com/nvbn/thefuck
+eval "$(thefuck --alias)"
