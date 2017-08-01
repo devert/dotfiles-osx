@@ -2,23 +2,35 @@
 
 # Install Atom editor themes and packages
 
-# Packages
+# IDE Improvement Packages
 apm install advanced-open-file
+apm install atom-ide-ui
 apm install editorconfig
 apm install emmet
 apm install file-icons
-apm install language-ejs
-apm install language-docker
 apm install language-dots
 apm install linter
-apm install linter-eslint
-apm install linter-flow
-apm install linter-stylelint
 apm install project-manager
 apm install set-syntax
 apm install Sublime-Style-Column-Selection
 apm install platformio-ide-terminal
-atom install clipboard-plus
+apm install clipboard-plus
+
+# Docker Dev Packages
+apm install language-docker
+
+# JavaScript Dev Packages
+apm install language-ejs
+apm install linter-eslint
+apm install linter-flow
+
+# CSS Dev Packages
+apm install linter-stylelint
+
+# Python Dev Packages
+apm install python-autopep8
+apm install autocomplete-python
+apm install linter-flake8
 
 # Themes
 apm install atom-monokai
