@@ -12,7 +12,7 @@ Thumbs.db
 
 # Python files
 *.pyc
-*.venv
+.venv
 
 # Compiled C++ files
 *.out
