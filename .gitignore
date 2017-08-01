@@ -10,8 +10,9 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 
-# Compiled Python files
+# Python files
 *.pyc
+*.venv
 
 # Compiled C++ files
 *.out

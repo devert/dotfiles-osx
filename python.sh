@@ -9,3 +9,4 @@ pip install autopep8
 pip install pep8
 pip install virtualenv
 pip install virtualenvwrapper
+pip install virtualfish
