@@ -28,9 +28,10 @@ apm install linter-flow
 apm install linter-stylelint
 
 # Python Dev Packages
-apm install python-autopep8
 apm install autocomplete-python
+apm install python-autopep8
 apm install linter-flake8
+apm install script
 
 # Themes
 apm install atom-monokai
