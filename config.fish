@@ -1,8 +1,5 @@
 # Fish greeting
 echo "Now using fish $FISH_VERSION"
-function fish_greeting
-  fortune -a
-end
 
 # Location of brew installed bash-git-prompt for fish
 set __GIT_PROMPT_DIR /usr/local/share

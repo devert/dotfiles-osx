@@ -44,7 +44,6 @@ brew install python
 brew install tmux
 brew install yarn
 brew install thefuck
-brew install fortune
 
 echo "Install Applications with Homebrew Cask"
 

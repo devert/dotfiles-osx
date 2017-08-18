@@ -1,5 +1,4 @@
 echo "Now using bash $BASH_VERSION"
-fortune -a
 
 if [ -f /usr/local/share/gitprompt.sh ]; then
   GIT_PROMPT_THEME=Default
