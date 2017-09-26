@@ -15,6 +15,8 @@ alias db="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
+alias lp="cd ~/Projects/Leadpages" #TODO Add via external fish config that is ignored
+alias g="git"
 
 # https://hub.github.com/
 alias git=hub

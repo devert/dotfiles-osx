@@ -14,6 +14,9 @@
 	au = add -u 										# add all deleted files
 	ap = add --patch								# stage commits chunk by chunk
 
+	# aliases
+	la = "!git config --get-regexp '^alias\\.' | cut -c 7- | sed 's/ / = /'" # output all aliases
+
 	# branch
 	b = branch -v										# branch (verbose)
 
@@ -55,9 +58,10 @@
 	rs = rebase --skip							# skip rebase
 
 	# remote
-	r = remote -v										# show remotes (verbose)
+	rv = remote -v										# show remotes (verbose)
 
 	# reset
+	rhh = reset --hard HEAD
 	unstage = reset HEAD						# remove files from index (tracking)
 	uncommit = reset --soft HEAD^		# go back before last commit, with files in uncommitted state
 	filelog = log -u								# show changes to a file
@@ -83,7 +87,7 @@
 
 [difftool "sourcetree"]
 	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
-	path =
+	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
 	trustExitCode = true

@@ -34,6 +34,7 @@ sudo ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
 sudo ln -s ~/.dotfiles/.bashrc ~/.bashrc
 sudo ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 sudo ln -s ~/.dotfiles/.gitignore ~/.gitignore_global
+sudo ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ```
 
 ## Run additional install scripts
