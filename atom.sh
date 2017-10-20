@@ -6,6 +6,7 @@
 apm install advanced-open-file
 apm install atom-ide-ui
 apm install editorconfig
+apm install double-tag
 apm install emmet
 apm install file-icons
 apm install language-dots
