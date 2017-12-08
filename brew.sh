@@ -48,6 +48,7 @@ brew install thefuck
 echo "Install Applications with Homebrew Cask"
 
 brew tap caskroom/cask
+brew install brew-cask-completion
 brew cask install alfred
 brew cask install atom
 brew cask install iterm2
