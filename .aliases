@@ -10,7 +10,11 @@ alias -- -="cd -"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
+
+# Shorten commonly typed
 alias g="git"
+alias y="yarn"
+alias up="itermocil"
 
 # https://hub.github.com/
 alias git=hub

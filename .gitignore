@@ -21,6 +21,7 @@ Thumbs.db
 venv
 node_modules
 .sass-cache
+iTermocil.yml
 
 # ~/.dotfiles project specific ignores
 .extra
