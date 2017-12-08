@@ -25,3 +25,4 @@ iTermocil.yml
 
 # ~/.dotfiles project specific ignores
 .extra
+extra_config.fish
