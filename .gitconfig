@@ -19,6 +19,8 @@
 
 	# branch
 	b = branch -v										# branch (verbose)
+	bd = branch -d									# branch delete
+	bdf = branch -D									# branch force delete
 
 	# commit
 	c = commit -m 									# commit with message
@@ -81,8 +83,8 @@
 	# tag
 	t = tag -n											# show tags with <n> lines of each tag message
 
-  # https://adamcod.es/2014/12/10/git-pull-correct-workflow.html
-  update-from = "!f() { git fetch $1 --prune; git merge --ff-only $1/$2 || git rebase --preserve-merges $1/$2; }; f"
+    # https://adamcod.es/2014/12/10/git-pull-correct-workflow.html
+    update-from = "!f() { git fetch $1 --prune; git merge --ff-only $1/$2 || git rebase --preserve-merges $1/$2; }; f"
 	uf = update-from
 
 [difftool "sourcetree"]

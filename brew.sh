@@ -51,11 +51,14 @@ brew tap caskroom/cask
 brew install brew-cask-completion
 brew cask install alfred
 brew cask install atom
+brew cask install dash
 brew cask install iterm2
+brew cask install insomnia
 brew cask install kdiff3
 brew cask install sourcetree
 brew cask install firefox
 brew cask install virtualbox
+brew cask install visual-studio-code
 
 echo "Install Binary Font files with Homebrew Cask"
 

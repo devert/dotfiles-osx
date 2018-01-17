@@ -35,6 +35,7 @@ sudo ln -s ~/.dotfiles/.bashrc ~/.bashrc
 sudo ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 sudo ln -s ~/.dotfiles/.gitignore ~/.gitignore_global
 sudo ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
+sudo ln -s ~/.dotfiles/nvm_default_packages ~/.nvm/default-packages
 ```
 
 ## Run additional install scripts
