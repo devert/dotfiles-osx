@@ -36,6 +36,11 @@
 	dc = diff --cached							# diff staged changes
 	last = diff HEAD^								# diff last committed change
 
+	# update-index
+	ignore = !git update-index --assume-unchanged 
+	unignore = !git update-index --no-assume-unchanged
+	ignored = !git ls-files -v | grep ^[a-z]
+
 	# log
 	l = log --graph --date=short
 	changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
