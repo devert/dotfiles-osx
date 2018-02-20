@@ -40,6 +40,7 @@ brew install git
 brew install git-flow
 brew install hub
 brew install fish
+brew install jq
 brew install python
 brew install tmux
 brew install yarn
