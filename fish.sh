@@ -17,3 +17,4 @@ omf install thefuck
 omf install brew
 omf install nvm
 omf install virtualfish
+omf install z

@@ -56,3 +56,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # https://github.com/nvbn/thefuck
 eval "$(thefuck --alias)"
+
+# https://github.com/rupa/z
+. /usr/local/etc/profile.d/z.sh

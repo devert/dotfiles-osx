@@ -45,6 +45,7 @@ brew install python
 brew install tmux
 brew install yarn
 brew install thefuck
+brew install z
 
 echo "Install Applications with Homebrew Cask"
 
