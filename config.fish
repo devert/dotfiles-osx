@@ -14,6 +14,7 @@ alias .....="cd ../../../.."
 alias db="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
+alias df="cd ~/.dotfiles"
 alias p="cd ~/Projects"
 
 # Shorten commonly typed
