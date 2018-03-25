@@ -50,3 +50,4 @@ bash fish.sh
 ## Heavily influenced by the following .dotfiles projects
 
 * [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
+* [Springload](https://github.com/springload/dotfiles)
