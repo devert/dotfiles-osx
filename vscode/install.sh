@@ -65,7 +65,9 @@ if [[ $? -eq 0 ]];then
             cp $HOME/Library/Application\ Support/Code/User/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.backup.json
             echo "Your previous keybindings have been saved to: $HOME/Library/Application Support/Code/User/keybindings.backup.json"
         fi
+        rm -v $HOME/Library/Application\ Support/Code/User/settings.json
         sudo ln -s $HOME/.dotfiles/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+        rm -v $HOME/Library/Application\ Support/Code/User/keybindings.json
         sudo ln -s $HOME/.dotfiles/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
 
         echo "New user config and keybindings have been written. Please restart VSCode."
