@@ -114,7 +114,7 @@
   // Workbench
   // ---------------------------------------------------------------------------
 
-  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.colorTheme": "Monokai Classic",
   "workbench.iconTheme": "file-icons",
   "workbench.startupEditor": "none",
   "workbench.quickOpen.closeOnFocusLost": false
