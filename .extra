@@ -1,0 +1,30 @@
+# Git credentials
+# Not in the repository, to prevent people from accidentally committing under my name
+# Also allows for this info to be different on different machines
+GIT_AUTHOR_NAME="Dennis Evert"
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --global user.name "$GIT_AUTHOR_NAME"
+GIT_AUTHOR_EMAIL="dennis.evert@ave81.com"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+
+# Directory Shortcuts
+alias db="cd ~/Dropbox"
+alias lp="cd ~/Projects/Leadpages"
+alias bldr="cd ~/Projects/Leadpages/fe-builder"
+alias main="cd ~/Projects/Leadpages/lead-pages"
+alias leads="cd ~/Projects/Leadpages/leads"
+alias lazr="cd ~/Projects/Leadpages/zapier-lazr"
+
+# CLI Shortcuts
+alias zap="zapier"
+
+
+# Updates PATH for the Google Cloud SDK.
+if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'; fi
+
+# Enables shell command completion for gcloud.
+if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc' ]; then source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'; fi
+
+# virtualenvwrapper
+if [ -f '/usr/local/bin/virtualenvwrapper.sh' ]; then source '/usr/local/bin/virtualenvwrapper.sh'; fi

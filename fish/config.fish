@@ -44,6 +44,6 @@ end
 set -xg THEFUCK_OVERRIDDEN_ALIASES 'git'
 
 # Extra machine specific configuration
-if test -e ~/.dotfiles/extra_config.fish
-    source ~/.dotfiles/extra_config.fish
+if test -e ~/.dotfiles/fish/extra_config.fish
+    source ~/.dotfiles/fish/extra_config.fish
 end
