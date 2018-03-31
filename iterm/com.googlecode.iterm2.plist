@@ -999,9 +999,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1920 1177 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2946 882 918 512 2560 360 1920 1080 </string>
+	<string>386 623 796 473 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2560 585 1918 832 2560 360 1920 1057 </string>
+	<string>3155 577 730 625 2560 360 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>3082 549 730 602 2560 360 1920 1080 </string>
 	<key>New Bookmarks</key>
@@ -2589,7 +2589,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-03-26T21:36:19Z</date>
+	<date>2018-03-31T18:39:20Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
