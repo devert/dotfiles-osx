@@ -2,12 +2,6 @@
 
 Setup, software installation and dotfiles for OSX.
 
-## Install [Homebrew](http://brew.sh/)
-
-```sh
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
 ## Checkout dotfiles project
 
 ```sh
@@ -19,31 +13,29 @@ git remote add origin git@github.com:devert/dotfiles-osx.git
 git pull
 ```
 
+## Install [Homebrew](http://brew.sh/)
+
+```sh
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
 ## Install Homebrew Packages and Casks
 
 ```sh
 cd ~/.dotfiles
-bash brew.sh
-```
-
-## Make symbolic links to files
-
-```sh
-cd ~/
-sudo ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
-sudo ln -s ~/.dotfiles/.bashrc ~/.bashrc
-sudo ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-sudo ln -s ~/.dotfiles/.gitignore ~/.gitignore_global
-sudo ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
-sudo ln -s ~/.dotfiles/nvm_default_packages ~/.nvm/default-packages
+./brew/install.sh
 ```
 
 ## Run additional install scripts
 
 ```sh
-bash node.sh
-bash python.sh
-bash fish.sh
+./bash/install.sh
+./fish/install.sh
+./git/install.sh
+./node/install.sh
+./python/install.sh
+./tmux/install.sh
+./vscode/install.sh
 ```
 
 ## Heavily influenced by the following .dotfiles projects

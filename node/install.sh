@@ -12,6 +12,9 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | b
 # Reload bash
 reload
 
+# Global modules to install with every version of node managed through nvm
+sudo ln -s ~/.dotfiles/node/nvm_default_packages ~/.nvm/default-packages
+
 # Install latest version of Node
 nvm install node
 
@@ -22,12 +25,6 @@ nvm alias default node
 # and setting the permissions so that all users can access them.
 # https://www.digitalocean.com/community/tutorials/how-to-install-node-js-with-nvm-node-version-manager-on-a-vps
 n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,share} /usr/local
-
-# Install some global modules
-npm install -g alfred-atom
-npm install -g eslint
-npm install -g npm-check-updates
-npm install -g gulp-cli
 
 # Reload bash
 reload
