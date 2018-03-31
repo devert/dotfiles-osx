@@ -5,13 +5,13 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH="/usr/local/opt/go/libexec/bin:$PATH"
 
 # Load the shell dotfiles, and then some:
-# * ~/.path - Can be used to extend `$PATH`.
-# * ~/.bash_prompt - Customizations for Bash prompt
-# * ~/.exports - Environment variables and exports
-# * ~/.aliases - Useful shortcut commands
-# * ~/.functions - Useful bash functions
-# * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.dotfiles/.{path,exports,bash_prompt,aliases,functions,extra}; do
+# * .path - Can be used to extend `$PATH`.
+# * .bash_prompt - Customizations for Bash prompt
+# * .exports - Environment variables and exports
+# * .aliases - Useful shortcut commands
+# * .functions - Useful bash functions
+# * .extra can be used for other settings you don’t want to commit.
+for file in ~/.dotfiles/bash/.{path,exports,bash_prompt,aliases,functions,extra}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
