@@ -4,7 +4,7 @@ echo "Now using fish $FISH_VERSION"
 # Location of brew installed bash-git-prompt for fish
 set __GIT_PROMPT_DIR /usr/local/share
 
-# Easier navigation: .., ..., ...., ....., ~ and -
+# Easier navigation: .., ..., ...., .....
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -14,7 +14,13 @@ alias .....="cd ../../../.."
 alias db="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
+alias df="cd ~/.dotfiles"
 alias p="cd ~/Projects"
+
+# Shorten commonly typed
+alias g="git"
+alias y="yarn"
+alias up="itermocil"
 
 # https://hub.github.com/
 alias git=hub
@@ -36,3 +42,8 @@ end
 
 # Comma-separated overridden aliases for TheFuck
 set -xg THEFUCK_OVERRIDDEN_ALIASES 'git'
+
+# Extra machine specific configuration
+if test -e ~/.dotfiles/extra_config.fish
+    source ~/.dotfiles/extra_config.fish
+end

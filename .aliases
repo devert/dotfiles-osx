@@ -7,11 +7,15 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias db="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
+alias df="cd ~/.dotfiles"
 alias p="cd ~/Projects"
+
+# Shorten commonly typed
 alias g="git"
+alias y="yarn"
+alias up="itermocil"
 
 # https://hub.github.com/
 alias git=hub

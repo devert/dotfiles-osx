@@ -7,7 +7,7 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Install NVM for Node Version Management
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
 
 # Reload bash
 reload
@@ -25,13 +25,9 @@ n=$(which node);n=${n%/bin/node}; chmod -R 755 $n/bin/*; sudo cp -r $n/{bin,lib,
 
 # Install some global modules
 npm install -g alfred-atom
-npm install -g avn avn-nvm
 npm install -g eslint
 npm install -g npm-check-updates
 npm install -g gulp-cli
-
-# Setup AVN
-avn setup
 
 # Reload bash
 reload

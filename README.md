@@ -34,6 +34,8 @@ sudo ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
 sudo ln -s ~/.dotfiles/.bashrc ~/.bashrc
 sudo ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 sudo ln -s ~/.dotfiles/.gitignore ~/.gitignore_global
+sudo ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
+sudo ln -s ~/.dotfiles/nvm_default_packages ~/.nvm/default-packages
 ```
 
 ## Run additional install scripts
@@ -48,3 +50,4 @@ bash fish.sh
 ## Heavily influenced by the following .dotfiles projects
 
 * [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
+* [Springload](https://github.com/springload/dotfiles)

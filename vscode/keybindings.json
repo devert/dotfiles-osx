@@ -1,0 +1,14 @@
+[
+  {
+    "key": "alt+up",
+    "command": "workbench.action.increaseViewSize"
+  },
+  {
+    "key": "alt+down",
+    "command": "workbench.action.decreaseViewSize"
+  },
+  {
+    "key": "ctrl+",
+    "command": "git.fetch"
+  }
+]

@@ -1,0 +1,121 @@
+{
+  // Atom Keymap Extension
+  // ---------------------------------------------------------------------------
+
+  "atomKeymap.promptV3Features": true,
+
+  // Color Highlight Extension
+  // ---------------------------------------------------------------------------
+
+  "color-highlight.markerType": "dot-after",
+  "color-highlight.markRuler": false,
+
+  // Editor
+  // ---------------------------------------------------------------------------
+
+  "editor.colorDecorators": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.fontSize": 14,
+  "editor.minimap.enabled": false,
+  "editor.snippetSuggestions": "top",
+  "editor.tabSize": 2,
+  "editor.fontFamily": "Operator Mono, Consolas, 'Courier New', monospace",
+
+  "[javascript]": {
+    "editor.rulers": [100]
+  },
+  "[javascriptreact]": {
+    "editor.rulers": [100]
+  },
+
+  // Emmet
+  // ---------------------------------------------------------------------------
+
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "postcss": "css",
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "postcss": "css"
+  },
+
+  // ESLint
+  // ---------------------------------------------------------------------------
+
+  "eslint.autoFixOnSave": true,
+  "eslint.packageManager": "yarn",
+
+  // Extensions
+  // ---------------------------------------------------------------------------
+
+  "extensions.showRecommendationsOnlyOnDemand": true,
+
+  // Files
+  // ---------------------------------------------------------------------------
+
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "files.autoSave": "onFocusChange",
+
+  // JavaScript
+  // ---------------------------------------------------------------------------
+
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+
+  // New File
+  // ---------------------------------------------------------------------------
+
+  "newFile.defaultFileExtension": "",
+  "newFile.relativeTo": "project",
+  "newFile.showPathRelativeTo": "project",
+  "newFile.expandBraces": true,
+
+  // Prettier
+  // ---------------------------------------------------------------------------
+
+  "prettier.eslintIntegration": true,
+  "prettier.stylelintIntegration": true,
+
+  // Python Extension
+  // ---------------------------------------------------------------------------
+
+  "python.disablePromptForFeatures": ["pylint"],
+
+  // Search
+  // ---------------------------------------------------------------------------
+
+  "search.location": "panel",
+
+  // Stylelint Extension
+  // ---------------------------------------------------------------------------
+
+  // Override default CSS validation in favor of Stylelint extension
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
+  // Terminal
+  // ---------------------------------------------------------------------------
+
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.2,
+
+  // Window
+  // ---------------------------------------------------------------------------
+
+  "window.zoomLevel": 1,
+
+  // Workbench
+  // ---------------------------------------------------------------------------
+
+  "workbench.colorTheme": "Monokai Classic",
+  "workbench.iconTheme": "file-icons",
+  "workbench.startupEditor": "none",
+  "workbench.quickOpen.closeOnFocusLost": false
+}

@@ -2,6 +2,7 @@
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="/usr/local/opt/go/libexec/bin:$PATH"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path - Can be used to extend `$PATH`.
@@ -55,3 +56,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # https://github.com/nvbn/thefuck
 eval "$(thefuck --alias)"
+
+# https://github.com/rupa/z
+. /usr/local/etc/profile.d/z.sh

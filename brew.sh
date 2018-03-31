@@ -40,21 +40,27 @@ brew install git
 brew install git-flow
 brew install hub
 brew install fish
+brew install jq
 brew install python
 brew install tmux
 brew install yarn
 brew install thefuck
+brew install z
 
 echo "Install Applications with Homebrew Cask"
 
 brew tap caskroom/cask
+brew install brew-cask-completion
 brew cask install alfred
 brew cask install atom
+brew cask install dash
 brew cask install iterm2
+brew cask install insomnia
 brew cask install kdiff3
 brew cask install sourcetree
 brew cask install firefox
 brew cask install virtualbox
+brew cask install visual-studio-code
 
 echo "Install Binary Font files with Homebrew Cask"
 
