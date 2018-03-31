@@ -43,7 +43,6 @@ sudo ln -s ~/.dotfiles/nvm_default_packages ~/.nvm/default-packages
 ```sh
 bash node.sh
 bash python.sh
-bash atom.sh
 bash fish.sh
 ```
 
