@@ -41,6 +41,7 @@ brew install git-flow
 brew install hub
 brew install fish
 brew install jq
+brew install neovim
 brew install python
 brew install tmux
 brew install yarn

@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-echo 'Hello world'
+mkdir ~/.config/nvim
+
+sudo ln -s ~/.dotfiles/neovim/init.vim ~/.config/nvim/init.vim
