@@ -33,6 +33,7 @@ if [[ $? -eq 0 ]];then
         code --install-extension esbenp.prettier-vscode
         code --install-extension file-icons.file-icons
         code --install-extension formulahendry.auto-rename-tag
+        code --install-extension jpoissonnier.vscode-styled-components
         code --install-extension kisstkondoros.vscode-codemetrics
         code --install-extension monokai.theme-monokai-pro-vscode
         code --install-extension ms-python.python
