@@ -28,7 +28,7 @@ if [[ $? -eq 0 ]];then
         code --install-extension cpylua.language-postcss
         code --install-extension cssho.vscode-svgviewer
         code --install-extension dbaeumer.vscode-eslint
-        code --install-extension dkundel.vscode-new-file
+        code --install-extension dunstontc.viml
         code --install-extension eamodio.gitlens
         code --install-extension esbenp.prettier-vscode
         code --install-extension file-icons.file-icons
@@ -40,6 +40,7 @@ if [[ $? -eq 0 ]];then
         code --install-extension ms-vscode.atom-keybindings
         code --install-extension msjsdiag.debugger-for-chrome
         code --install-extension naumovs.color-highlight
+        code --install-extension patbenatar.advanced-new-file
         code --install-extension pnp.polacode
         code --install-extension pranaygp.vscode-css-peek
         code --install-extension shinnn.stylelint
@@ -48,6 +49,7 @@ if [[ $? -eq 0 ]];then
         code --install-extension vstirbu.vscode-mermaid-preview
         code --install-extension wix.vscode-import-cost
         code --install-extension wwm.better-align
+        code --install-extension xabikos.ReactSnippets
         code --install-extension yzhang.markdown-all-in-one
 
         echo "Extensions for VSCode have been installed. Please restart VSCode."
