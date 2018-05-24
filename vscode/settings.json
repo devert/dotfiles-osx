@@ -15,7 +15,6 @@
 
   "editor.colorDecorators": false,
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.formatOnPaste": true,
   "editor.renderWhitespace": "boundary",
   "editor.fontSize": 14,
   "editor.minimap.enabled": false,
@@ -45,7 +44,7 @@
   // ESLint
   // ---------------------------------------------------------------------------
 
-  "eslint.autoFixOnSave": true,
+  "eslint.autoFixOnSave": false,
   "eslint.packageManager": "yarn",
 
   // Extensions

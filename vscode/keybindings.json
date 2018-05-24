@@ -6,9 +6,5 @@
   {
     "key": "alt+down",
     "command": "workbench.action.decreaseViewSize"
-  },
-  {
-    "key": "ctrl+",
-    "command": "git.fetch"
   }
 ]
