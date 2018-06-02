@@ -5,7 +5,8 @@
   "atomKeymap.promptV3Features": true,
   
   // Code Spell Checker
-  
+  // ---------------------------------------------------------------------------
+
   "cSpell.userWords": [
     "Keymap",
     "Menlo",
@@ -109,9 +110,12 @@
   "gitlens.currentLine.enabled": false,
   "gitlens.statusBar.enabled": false,
   "gitlens.resultsExplorer.location": "scm",
+  "gitlens.historyExplorer.enabled": true,
   "gitlens.historyExplorer.location": "scm",
   "gitlens.keymap": "none",
-  
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
   // JavaScript
   // ---------------------------------------------------------------------------
 
@@ -164,11 +168,4 @@
   "workbench.statusBar.visible": true,
   "workbench.activityBar.visible": false,
   "workbench.editor.tabCloseButton": "off",
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
-  "gitlens.historyExplorer.enabled": true,
-  "[shellscript]": {
-    
-  },
 }
