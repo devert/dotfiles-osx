@@ -16,10 +16,10 @@ if [[ $? -eq 0 ]];then
         
         code --install-extension DavidAnson.vscode-markdownlint
         code --install-extension EditorConfig.EditorConfig
+        code --install-extension Orta.vscode-jest
         code --install-extension PeterJausovec.vscode-docker
         code --install-extension TeddyDD.fish
         code --install-extension Zignd.html-css-class-completion
-        code --install-extension alefragnani.Bookmarks
         code --install-extension alefragnani.project-manager
         code --install-extension alexdima.copy-relative-path
         code --install-extension andys8.jest-snippets
@@ -29,13 +29,15 @@ if [[ $? -eq 0 ]];then
         code --install-extension cpylua.language-postcss
         code --install-extension cssho.vscode-svgviewer
         code --install-extension dbaeumer.vscode-eslint
+        code --install-extension donjayamanne.githistory
+        code --install-extension dsznajder.es7-react-js-snippets
         code --install-extension dunstontc.viml
         code --install-extension eamodio.gitlens
         code --install-extension esbenp.prettier-vscode
         code --install-extension file-icons.file-icons
+        code --install-extension formulahendry.auto-close-tag
         code --install-extension formulahendry.auto-rename-tag
         code --install-extension jpoissonnier.vscode-styled-components
-        code --install-extension kisstkondoros.vscode-codemetrics
         code --install-extension monokai.theme-monokai-pro-vscode
         code --install-extension ms-python.python
         code --install-extension ms-vscode.atom-keybindings
@@ -45,12 +47,11 @@ if [[ $? -eq 0 ]];then
         code --install-extension pnp.polacode
         code --install-extension pranaygp.vscode-css-peek
         code --install-extension shinnn.stylelint
+        code --install-extension streetsidesoftware.code-spell-checker
         code --install-extension techer.open-in-browser
         code --install-extension vilicvane.es-quotes
         code --install-extension vstirbu.vscode-mermaid-preview
-        code --install-extension wix.vscode-import-cost
         code --install-extension wwm.better-align
-        code --install-extension xabikos.ReactSnippets
         code --install-extension yzhang.markdown-all-in-one
 
         echo "Extensions for VSCode have been installed. Please restart VSCode."
