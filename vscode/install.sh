@@ -13,6 +13,7 @@ if [[ $? -eq 0 ]];then
     read -r -p "Do you want to install VSCode extensions? [y|N] " configresponse
     if [[ $configresponse =~ ^(y|yes|Y) ]];then
         echo "Installing extensions please wait..."
+        
         code --install-extension DavidAnson.vscode-markdownlint
         code --install-extension EditorConfig.EditorConfig
         code --install-extension PeterJausovec.vscode-docker
