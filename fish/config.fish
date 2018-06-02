@@ -20,6 +20,8 @@ alias p="cd ~/Projects"
 # Shorten commonly typed
 alias g="git"
 alias y="yarn"
+alias d="docker"
+alias dco="docker-compose"
 alias up="itermocil"
 
 # https://hub.github.com/
@@ -28,7 +30,7 @@ alias git=hub
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec fish"
 
-# Load Virtualfish - http://virtualfish.readthedocs.io/en/latest/install.html#installing
+# Load Virtualfish - http://virtualfish.readthedocs.io/en/latest/install.h``tml#installing
 eval (python -m virtualfish compat_aliases auto_activation global_requirements)
 
 # Change prompt for Virtualfish

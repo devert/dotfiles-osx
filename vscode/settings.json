@@ -1,8 +1,52 @@
 {
   // Atom Keymap Extension
   // ---------------------------------------------------------------------------
-
+  
   "atomKeymap.promptV3Features": true,
+  
+  // Code Spell Checker
+  
+  "cSpell.userWords": [
+    "Keymap",
+    "Menlo",
+    "Monokai",
+    "Neovim",
+    "gitlens",
+    "monospace",
+    "postcss",
+    "pylint",
+    "stylelint"
+  ],
+  
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "c",
+    "cpp",
+    "csharp",
+    "css",
+    "go",
+    "handlebars",
+    "html",
+    "jade",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "latex",
+    "less",
+    "markdown",
+    "php",
+    "plaintext",
+    "pub",
+    "python",
+    "restructuredtext",
+    "rust",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "yml"
+  ],
 
   // Color Highlight Extension
   // ---------------------------------------------------------------------------
@@ -16,11 +60,14 @@
   "editor.colorDecorators": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "boundary",
+  "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
+  "editor.fontWeight": "400",
+  "editor.letterSpacing": 0.3,
+  "editor.lineHeight": 22,
   "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
-  "editor.fontFamily": "Operator Mono, Consolas, 'Courier New', monospace",
 
   "[javascript]": {
     "editor.rulers": [100]
@@ -43,35 +90,32 @@
 
   // ESLint
   // ---------------------------------------------------------------------------
-
+  
   "eslint.autoFixOnSave": false,
-  "eslint.packageManager": "yarn",
-
-  // Extensions
-  // ---------------------------------------------------------------------------
-
-  "extensions.showRecommendationsOnlyOnDemand": true,
-
+  
   // Files
   // ---------------------------------------------------------------------------
-
+  
   "files.associations": {
-    "*.css": "postcss"
+    "*.css": "postcss",
+    ".*": "shellscript"
   },
   "files.autoSave": "onFocusChange",
-
+  
+  // GitLens
+  // ---------------------------------------------------------------------------
+  
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.statusBar.enabled": false,
+  "gitlens.resultsExplorer.location": "scm",
+  "gitlens.historyExplorer.location": "scm",
+  "gitlens.keymap": "none",
+  
   // JavaScript
   // ---------------------------------------------------------------------------
 
   "javascript.implicitProjectConfig.experimentalDecorators": true,
-
-  // New File
-  // ---------------------------------------------------------------------------
-
-  "newFile.defaultFileExtension": "",
-  "newFile.relativeTo": "project",
-  "newFile.showPathRelativeTo": "project",
-  "newFile.expandBraces": true,
 
   // Prettier
   // ---------------------------------------------------------------------------
@@ -87,7 +131,7 @@
   // Search
   // ---------------------------------------------------------------------------
 
-  "search.location": "panel",
+  "search.location": "sidebar",
 
   // Stylelint Extension
   // ---------------------------------------------------------------------------
@@ -116,5 +160,15 @@
   "workbench.colorTheme": "Monokai Classic",
   "workbench.iconTheme": "file-icons",
   "workbench.startupEditor": "none",
-  "workbench.quickOpen.closeOnFocusLost": false
+  "workbench.quickOpen.closeOnFocusLost": false,
+  "workbench.statusBar.visible": true,
+  "workbench.activityBar.visible": false,
+  "workbench.editor.tabCloseButton": "off",
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.historyExplorer.enabled": true,
+  "[shellscript]": {
+    
+  },
 }

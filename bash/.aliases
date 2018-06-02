@@ -15,6 +15,8 @@ alias p="cd ~/Projects"
 # Shorten commonly typed
 alias g="git"
 alias y="yarn"
+alias d="docker"
+alias dco="docker-compose"
 alias up="itermocil"
 
 # https://hub.github.com/
