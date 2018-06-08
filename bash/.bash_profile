@@ -1,9 +1,3 @@
-# Add `~/bin` and ''~/sbin' to the `$PATH`
-export PATH="$HOME/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-export PATH="/usr/local/opt/go/libexec/bin:$PATH"
-
 # Load the shell dotfiles, and then some:
 # * .path - Can be used to extend `$PATH`.
 # * .bash_prompt - Customizations for Bash prompt

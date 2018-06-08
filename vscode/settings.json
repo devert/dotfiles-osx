@@ -129,8 +129,8 @@
 
   // Python Extension
   // ---------------------------------------------------------------------------
-
-  "python.disablePromptForFeatures": ["pylint"],
+  
+  "python.pythonPath": "/usr/local/bin/python",
 
   // Search
   // ---------------------------------------------------------------------------

@@ -42,7 +42,8 @@ brew install hub
 brew install fish
 brew install jq
 brew install neovim
-brew install python
+brew install python     # python 3
+brew install python@2   # python 2
 brew install tmux
 brew install yarn
 brew install thefuck
