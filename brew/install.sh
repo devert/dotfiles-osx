@@ -38,6 +38,7 @@ echo "Installing Other Homebrew Packages"
 
 brew install git
 brew install git-flow
+brew install git-extras
 brew install hub
 brew install fish
 brew install jq
