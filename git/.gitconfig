@@ -10,7 +10,7 @@
   default = current
 [alias]
   # add
-  a = add                         # add
+  a = add                         # addq
   aa = add --all                  # add all files
   au = add -u                     # add all deleted files
   ap = add --patch                # stage commits chunk by chunk
@@ -22,6 +22,7 @@
   b = branch -v                   # branch (verbose)
   bd = branch -d                  # branch delete
   bdf = branch -D                 # branch force delete
+  dmb = delete-merged-branches    # shortcut for git-extras delete-merged-branches (https://github.com/tj/git-extras/blob/master/Commands.md#git-delete-merged-branches)
 
   # commit
   c = commit -m                   # commit with message
@@ -99,11 +100,11 @@
   set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
   su = set-upstream
 [difftool "sourcetree"]
-  cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
-  path = 
+	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
+	path = 
 [mergetool "sourcetree"]
-  cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
-  trustExitCode = true
+	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	trustExitCode = true
 [user]
   name = Dennis Evert
   email = dennis.evert@ave81.com
