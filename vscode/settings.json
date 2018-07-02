@@ -10,17 +10,18 @@
   "cSpell.userWords": [
     "Guid",
     "Keymap",
-    "Leadpages",
     "Menlo",
     "Monokai",
     "Neovim",
     "gitlens",
     "lifecycle",
     "monospace",
+    "oauth",
     "postcss",
     "pylint",
     "repo",
-    "stylelint"
+    "stylelint",
+    "subdomain"
   ],
   
   "cSpell.enabledLanguageIds": [
@@ -172,4 +173,9 @@
   "workbench.statusBar.visible": true,
   "workbench.activityBar.visible": false,
   "workbench.editor.tabCloseButton": "off",
+
+  // Zen Mode
+  // ---------------------------------------------------------------------------
+
+  "zenMode.centerLayout": false,
 }
