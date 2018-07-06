@@ -1006,9 +1006,9 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>386 555 796 473 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>595 289 730 602 0 0 1920 1177 </string>
+	<string>960 4 955 1173 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>3082 549 730 602 2560 360 1920 1080 </string>
+	<string>2081 -625 730 602 1814 -900 1440 900 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2603,6 +2603,8 @@
 	<string>~/.dotfiles/iterm</string>
 	<key>Print In Black And White</key>
 	<true/>
+	<key>PromptOnQuit</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
@@ -2612,7 +2614,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-06-16T21:17:58Z</date>
+	<date>2018-07-06T20:18:16Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
