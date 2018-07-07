@@ -80,6 +80,7 @@
   "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
+  "editor.selectionHighlight": false,
   // "editor.rulers": [80],
   // "[javascript]": {
   //   "editor.rulers": [80]
@@ -195,6 +196,13 @@
   "workbench.statusBar.feedback.visible": false,
   "workbench.activityBar.visible": false,
   "workbench.editor.tabCloseButton": "off",
+  
+  // Make info, error and warning decorations in overview ruler transparent
+  "workbench.colorCustomizations": {
+    "editorOverviewRuler.errorForeground": "#0000",
+    "editorOverviewRuler.infoForeground": "#0000",
+    "editorOverviewRuler.warningForeground": "#0000",
+  },
 
   // Zen Mode
   // ---------------------------------------------------------------------------
