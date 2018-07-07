@@ -82,23 +82,23 @@
   "editor.tabSize": 2,
   // "editor.rulers": [80],
   // "[javascript]": {
-    //   "editor.rulers": [80]
-    // },
-    // "[javascriptreact]": {
-      //   "editor.rulers": [80]
-      // },
+  //   "editor.rulers": [80]
+  // },
+  // "[javascriptreact]": {
+  //   "editor.rulers": [80]
+  // },
       
-      // Emmet
-      // ---------------------------------------------------------------------------
-      
-      "emmet.triggerExpansionOnTab": true,
-      "emmet.includeLanguages": {
-        "postcss": "css",
-        "javascript": "javascriptreact"
-      },
-      "emmet.syntaxProfiles": {
-        "postcss": "css"
-      },
+  // Emmet
+  // ---------------------------------------------------------------------------
+  
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "postcss": "css",
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "postcss": "css"
+  },
 
   // ESLint
   // ---------------------------------------------------------------------------
