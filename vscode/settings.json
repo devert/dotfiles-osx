@@ -23,7 +23,6 @@
     "stylelint",
     "subdomain"
   ],
-  
   "cSpell.enabledLanguageIds": [
     "asciidoc",
     "c",
@@ -53,17 +52,24 @@
     "typescriptreact",
     "yml"
   ],
-
+  "cSpell.showStatus": false,
+  
   // Color Highlight Extension
   // ---------------------------------------------------------------------------
-
-  "color-highlight.markerType": "dot-after",
+  
+  "color-highlight.markerType": "dot-before",
   "color-highlight.markRuler": false,
+  
+  // CSS Class Completion
+  // ---------------------------------------------------------------------------
+  
+  "html-css-class-completion.enableEmmetSupport": true,
 
   // Editor
   // ---------------------------------------------------------------------------
-
+  
   "editor.colorDecorators": false,
+  "editor.cursorBlinking": "phase",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "boundary",
   "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
@@ -74,25 +80,25 @@
   "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
-
-  "[javascript]": {
-    "editor.rulers": [100]
-  },
-  "[javascriptreact]": {
-    "editor.rulers": [100]
-  },
-
-  // Emmet
-  // ---------------------------------------------------------------------------
-
-  "emmet.triggerExpansionOnTab": true,
-  "emmet.includeLanguages": {
-    "postcss": "css",
-    "javascript": "javascriptreact"
-  },
-  "emmet.syntaxProfiles": {
-    "postcss": "css"
-  },
+  // "editor.rulers": [80],
+  // "[javascript]": {
+    //   "editor.rulers": [80]
+    // },
+    // "[javascriptreact]": {
+      //   "editor.rulers": [80]
+      // },
+      
+      // Emmet
+      // ---------------------------------------------------------------------------
+      
+      "emmet.triggerExpansionOnTab": true,
+      "emmet.includeLanguages": {
+        "postcss": "css",
+        "javascript": "javascriptreact"
+      },
+      "emmet.syntaxProfiles": {
+        "postcss": "css"
+      },
 
   // ESLint
   // ---------------------------------------------------------------------------
@@ -121,6 +127,13 @@
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
+  
+  // HTML
+  // ---------------------------------------------------------------------------
+  
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true,
+
   // JavaScript
   // ---------------------------------------------------------------------------
 
@@ -128,15 +141,20 @@
 
   // Prettier
   // ---------------------------------------------------------------------------
-
+  
   "prettier.eslintIntegration": true,
   "prettier.stylelintIntegration": true,
-
+  
   // Python Extension
   // ---------------------------------------------------------------------------
   
   "python.pythonPath": "/usr/local/bin/python",
-
+  
+  // SCM
+  // ---------------------------------------------------------------------------
+  
+  "scm.diffDecorations": "gutter",
+  
   // Search
   // ---------------------------------------------------------------------------
 
@@ -162,15 +180,19 @@
   // ---------------------------------------------------------------------------
 
   "window.zoomLevel": 1,
+  "window.newWindowDimensions": "inherit",
+  "window.restoreWindows": "none",
 
   // Workbench
   // ---------------------------------------------------------------------------
 
+  "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.colorTheme": "Monokai Classic",
   "workbench.iconTheme": "file-icons",
   "workbench.startupEditor": "none",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.statusBar.visible": true,
+  "workbench.statusBar.feedback.visible": false,
   "workbench.activityBar.visible": false,
   "workbench.editor.tabCloseButton": "off",
 
