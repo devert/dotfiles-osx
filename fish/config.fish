@@ -23,6 +23,7 @@ alias y="yarn"
 alias d="docker"
 alias dco="docker-compose"
 alias up="itermocil"
+alias vim="nvim"
 alias v="vim"
 
 # https://hub.github.com/
