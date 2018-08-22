@@ -8,20 +8,25 @@
   // ---------------------------------------------------------------------------
 
   "cSpell.userWords": [
+    "Flyout",
     "Guid",
     "Keymap",
     "Menlo",
     "Monokai",
     "Neovim",
+    "Unfocus",
+    "clickshield",
     "gitlens",
     "lifecycle",
     "monospace",
     "oauth",
+    "performant",
     "postcss",
     "pylint",
     "repo",
     "stylelint",
-    "subdomain"
+    "subdomain",
+    "unmount"
   ],
   "cSpell.enabledLanguageIds": [
     "asciidoc",
@@ -81,13 +86,16 @@
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
   "editor.selectionHighlight": false,
-  // "editor.rulers": [80],
-  // "[javascript]": {
-  //   "editor.rulers": [80]
-  // },
-  // "[javascriptreact]": {
-  //   "editor.rulers": [80]
-  // },
+  "editor.formatOnSave": false,
+  "[javascript]": {
+    "editor.formatOnSave": false,
+  },
+  "[json]": {
+    "editor.formatOnSave": false,
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": false,
+  },
       
   // Emmet
   // ---------------------------------------------------------------------------
@@ -139,12 +147,6 @@
   // ---------------------------------------------------------------------------
 
   "javascript.implicitProjectConfig.experimentalDecorators": true,
-
-  // Prettier
-  // ---------------------------------------------------------------------------
-  
-  "prettier.eslintIntegration": true,
-  "prettier.stylelintIntegration": true,
   
   // Python Extension
   // ---------------------------------------------------------------------------
@@ -169,6 +171,11 @@
   "less.validate": false,
   "scss.validate": false,
 
+  // Typescript
+  // ---------------------------------------------------------------------------
+
+  "typescript.validate.enable": false,
+
   // Terminal
   // ---------------------------------------------------------------------------
 
@@ -188,7 +195,7 @@
   // ---------------------------------------------------------------------------
 
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.colorTheme": "Monokai Classic",
+  "workbench.colorTheme": "Monokai Pro",
   "workbench.iconTheme": "file-icons",
   "workbench.startupEditor": "none",
   "workbench.quickOpen.closeOnFocusLost": false,
