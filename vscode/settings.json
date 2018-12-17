@@ -113,6 +113,11 @@
   // ---------------------------------------------------------------------------
   
   "eslint.autoFixOnSave": false,
+
+  // Exports Autocomplete
+  // ---------------------------------------------------------------------------
+  
+  "vscode-exports-autocomplete.addSpacingAroundCurlyBraces": true,
   
   // Files
   // ---------------------------------------------------------------------------
@@ -136,7 +141,18 @@
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.fileHistory.location": "scm",
+  "gitlens.views.lineHistory.enabled": true,
+  "gitlens.views.lineHistory.location": "scm",
+  "gitlens.views.compare.location": "scm",
+  "gitlens.views.search.location": "scm",
+
+  // Open In Browser
+  // ---------------------------------------------------------------------------
   
+  "open-in-browser.default": "Google Chrome",
+
   // HTML
   // ---------------------------------------------------------------------------
   
