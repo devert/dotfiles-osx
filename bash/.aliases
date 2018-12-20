@@ -13,16 +13,21 @@ alias df="cd ~/.dotfiles"
 alias p="cd ~/Projects"
 
 # Shorten commonly typed
-alias g="git"
-alias y="yarn"
 alias d="docker"
-alias dco="docker-compose"
+alias dc="docker-compose"
+alias dcu="docker-compose up"
+alias dce="docker-compose exec"
+alias g="git"
 alias up="itermocil"
 alias vim="nvim"
 alias v="vim"
+alias y="yarn"
 
 # https://hub.github.com/
 alias git=hub
+
+# Web serve current directory at a specified port
+alias serve="python -m SimpleHTTPServer"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

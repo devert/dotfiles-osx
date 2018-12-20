@@ -176,8 +176,10 @@
   
   // Search
   // ---------------------------------------------------------------------------
-
+  
   "search.location": "sidebar",
+  "search.useIgnoreFiles": true,
+  "search.useGlobalIgnoreFiles": true,
 
   // Stylelint Extension
   // ---------------------------------------------------------------------------

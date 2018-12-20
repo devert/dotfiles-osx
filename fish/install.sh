@@ -12,8 +12,8 @@ sudo ln -s /usr/local/share/gitprompt.fish ~/.config/fish/functions/fish_prompt.
 sudo ln -s ~/.dotfiles/fish/config.fish ~/.config/fish/config.fish
 
 # Install Oh My Fish Packages
+omf install bass
 omf install hub
-omf install thefuck
 omf install brew
 omf install nvm
 omf install virtualfish

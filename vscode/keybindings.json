@@ -6,5 +6,40 @@
   {
     "key": "alt+down",
     "command": "workbench.action.decreaseViewSize"
-  }
+  },
+  { 
+    "key": "ctrl+tab", 
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus", 
+  },
+  { 
+    "key": "cmd+]", 
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus", 
+  },
+  { 
+    "key": "ctrl+shift+tab", 
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus", 
+  },
+  { 
+    "key": "cmd+[", 
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus", 
+  },
+  { 
+    "key": "cmd+w", 
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus",
+  },
+  { 
+    "key": "cmd+d", 
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus",
+  },
+  { 
+    "key": "cmd+t", 
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus",
+  },
 ]

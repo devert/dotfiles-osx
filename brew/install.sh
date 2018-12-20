@@ -48,7 +48,6 @@ brew install python     # python 3
 brew install python@2   # python 2
 brew install tmux
 brew install yarn
-brew install thefuck
 brew install z
 
 echo "Install Applications with Homebrew Cask"

@@ -18,19 +18,24 @@ alias df="cd ~/.dotfiles"
 alias p="cd ~/Projects"
 
 # Shorten commonly typed
-alias g="git"
-alias y="yarn"
 alias d="docker"
-alias dco="docker-compose"
+alias dc="docker-compose"
+alias dcu="docker-compose up"
+alias dce="docker-compose exec"
+alias g="git"
 alias up="itermocil"
 alias vim="nvim"
 alias v="vim"
+alias y="yarn"
 
 # https://hub.github.com/
 alias git=hub
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec fish"
+
+# Web serve current directory at a specified port
+alias serve="python -m SimpleHTTPServer"
 
 # Load Virtualfish - http://virtualfish.readthedocs.io/en/latest/install.h``tml#installing
 eval (python -m virtualfish compat_aliases auto_activation global_requirements)
@@ -43,9 +48,6 @@ function fish_prompt
   end
   _old_fish_prompt
 end
-
-# Comma-separated overridden aliases for TheFuck
-set -xg THEFUCK_OVERRIDDEN_ALIASES 'git'
 
 # Extra machine specific configuration
 if test -e ~/.dotfiles/fish/extra_config.fish

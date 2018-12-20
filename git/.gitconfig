@@ -22,7 +22,10 @@
   b = branch -v                   # branch (verbose)
   bd = branch -d                  # branch delete
   bdf = branch -D                 # branch force delete
-  dmb = delete-merged-branches    # shortcut for git-extras delete-merged-branches (https://github.com/tj/git-extras/blob/master/Commands.md#git-delete-merged-branches)
+  # shortcut for git-extras delete-merged-branches (https://github.com/tj/git-extras/blob/master/Commands.md#git-delete-merged-branches)
+  dmb = delete-merged-branches    
+  # shortcut to delete squashed and merged branches (https://github.com/not-an-aardvark/git-delete-squashed)
+  dsb = "!f() { git-delete-squashed; }; f"
 
   # commit
   c = commit -m                   # commit with message
