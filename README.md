@@ -18,6 +18,9 @@ brew install git
 
 ## Checkout dotfiles project
 
+[Generate SSH Key](https://help.github.com/articles/connecting-to-github-with-ssh/) and add it to GitHub [profile](https://github.com/settings/keys). Then pull the repo using the following steps.
+
+
 ```sh
 cd ~/
 mkdir .dotfiles
