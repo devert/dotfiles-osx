@@ -19,8 +19,7 @@ echo "Installing Homebrew Bash"
 
 brew install bash
 brew install bash-git-prompt
-brew tap homebrew/versions
-brew install bash-completion2
+brew install bash-completion@2
 
 echo "Change User Shell To Homebrew Installed Bash"
 
