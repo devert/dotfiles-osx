@@ -2,6 +2,20 @@
 
 Setup, software installation and dotfiles for OSX.
 
+## Install Command Line Tools (CLT) for Xcode
+
+```sh
+xcode-select --install
+```
+[developer.apple.com/downloads](https://developer.apple.com/downloads) or [Xcode 3](https://itunes.apple.com/us/app/xcode/id497799835)
+
+## Install [Homebrew](http://brew.sh/) and Git
+
+```sh
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install git
+```
+
 ## Checkout dotfiles project
 
 ```sh
@@ -11,12 +25,6 @@ cd .dotfiles
 git init
 git remote add origin git@github.com:devert/dotfiles-osx.git
 git pull
-```
-
-## Install [Homebrew](http://brew.sh/)
-
-```sh
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 ## Install Homebrew Packages and Casks
