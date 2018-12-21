@@ -27,7 +27,7 @@ mkdir .dotfiles
 cd .dotfiles
 git init
 git remote add origin git@github.com:devert/dotfiles-osx.git
-git pull
+git pull origin master
 ```
 
 ## Install Homebrew Packages and Casks
