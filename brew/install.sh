@@ -55,9 +55,12 @@ brew tap caskroom/cask
 brew install brew-cask-completion
 brew cask install 1password
 brew cask install alfred
+brew cask install appcleaner
 brew cask install charles
 brew cask install chromium
 brew cask install docker
+brew cask install dropbox
+brew cask install evernote
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install insomnia
