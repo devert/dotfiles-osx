@@ -53,15 +53,26 @@ echo "Install Applications with Homebrew Cask"
 
 brew tap caskroom/cask
 brew install brew-cask-completion
+brew cask install 1password
 brew cask install alfred
-brew cask install dash
+brew cask install appcleaner
+brew cask install charles
+brew cask install chromium
+brew cask install docker
+brew cask install dropbox
+brew cask install evernote
+brew cask install google-chrome
 brew cask install iterm2
 brew cask install insomnia
 brew cask install kdiff3
+brew cask install scroll-reverser
+brew cask install sketch
+brew cask install slack
 brew cask install sourcetree
 brew cask install firefox
 brew cask install virtualbox
 brew cask install visual-studio-code
+brew cask install vlc
 
 echo "Install Binary Font files with Homebrew Cask"
 
