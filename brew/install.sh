@@ -35,6 +35,7 @@ reload
 # Install Other Homebrew Packages
 echo "Installing Other Homebrew Packages"
 
+brew install gdrive
 brew install git
 brew install git-flow
 brew install git-extras
