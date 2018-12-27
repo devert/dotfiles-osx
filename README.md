@@ -7,6 +7,7 @@ Setup, software installation and dotfiles for OSX.
 ```sh
 xcode-select --install
 ```
+
 [developer.apple.com/downloads](https://developer.apple.com/downloads) or [Xcode 3](https://itunes.apple.com/us/app/xcode/id497799835)
 
 ## Install [Homebrew](http://brew.sh/) and Git
@@ -20,7 +21,6 @@ brew install git
 
 [Generate SSH Key](https://help.github.com/articles/connecting-to-github-with-ssh/) and add it to GitHub [profile](https://github.com/settings/keys). Then pull the repo using the following steps.
 
-
 ```sh
 cd ~/
 mkdir .dotfiles
@@ -30,21 +30,28 @@ git remote add origin git@github.com:devert/dotfiles-osx.git
 git pull origin master
 ```
 
+## Configure sensible macOS defaults
+
+When setting up a new Mac, you may want to set some sensible macOS defaults:
+
+```sh
+./.macos
+```
+
 ## Install Homebrew Packages and Casks
 
 ```sh
-cd ~/.dotfiles
 ./brew/install.sh
 ```
 
 ## Run additional install scripts
 
 ```sh
-./bash/install.sh
-./fish/install.sh
 ./git/install.sh
-./node/install.sh
+./bash/install.sh
 ./python/install.sh
+./node/install.sh
+./fish/install.sh
 ./tmux/install.sh
 ./vscode/install.sh
 ```
