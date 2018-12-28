@@ -14,8 +14,6 @@ if [[ $? -eq 0 ]];then
     if [[ $configresponse =~ ^(y|yes|Y) ]];then
         echo "Installing extensions please wait..."
         
-        code --install-extension TeddyDD.fish
-        code --install-extension Zignd.html-css-class-completion
         code --install-extension alefragnani.project-manager
         code --install-extension alexdima.copy-relative-path
         code --install-extension andys8.jest-snippets
@@ -53,6 +51,7 @@ if [[ $? -eq 0 ]];then
         code --install-extension pnp.polacode
         code --install-extension pranaygp.vscode-css-peek
         code --install-extension shinnn.stylelint
+        code --install-extension skyapps.fish-vscode
         code --install-extension streetsidesoftware.code-spell-checker
         code --install-extension techer.open-in-browser
         code --install-extension vilicvane.es-quotes
@@ -60,6 +59,7 @@ if [[ $? -eq 0 ]];then
         code --install-extension wix.vscode-import-cost
         code --install-extension wwm.better-align
         code --install-extension yzhang.markdown-all-in-one
+        code --install-extension Zignd.html-css-class-completion
 
         echo "Extensions for VSCode have been installed. Please restart VSCode."
     else
