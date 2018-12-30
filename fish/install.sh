@@ -19,9 +19,6 @@ omf install nvm
 omf install virtualfish
 omf install z
 
-# Download .extra_config.fish Gist
-curl "https://gist.githubusercontent.com/devert/b1540bf055d30aa4d93f00b9c8383802/raw" > ~/.dotfiles/fish/.extra_config.fish
-
 # Remove default fish greeting
 set fish_greeting
 

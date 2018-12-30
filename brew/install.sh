@@ -35,17 +35,20 @@ reload
 # Install Other Homebrew Packages
 echo "Installing Other Homebrew Packages"
 
+brew install fish
 brew install gdrive
 brew install git
 brew install git-flow
 brew install git-extras
 brew install httpie
 brew install hub
-brew install fish
+brew install TomAnthony/brews/itermocil
 brew install jq
 brew install neovim
 brew install python     # python 3
 brew install python@2   # python 2
+brew install pipenv
+brew install TomAnthony/brews/queue
 brew install tmux
 brew install yarn
 brew install z

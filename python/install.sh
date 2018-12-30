@@ -10,3 +10,7 @@ pip install pep8
 pip install virtualenv
 pip install virtualenvwrapper
 pip install virtualfish
+
+# Symlink a global requirements.txt file that is applied to 
+# every existing and new virtualenv. 
+sudo ln -s ~/.dotfiles/python/global_requirements.txt ~/.virtualenv/global_requirements.txt
