@@ -167,7 +167,7 @@
   
   "html.format.indentHandlebars": true,
   "html.format.indentInnerHtml": true,
-
+  
   // JavaScript
   // ---------------------------------------------------------------------------
   
@@ -212,6 +212,34 @@
   "terminal.integrated.shell.osx": "/usr/local/bin/fish",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.2,
+
+  // Vim
+  // ---------------------------------------------------------------------------
+  "vim.easymotion": true,
+  "vim.easymotionMarkerFontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+  "vim.easymotionMarkerFontSize": "14",
+  "vim.easymotionMarkerFontWeight": "bold",
+  "vim.easymotionMarkerHeight": 22,
+  "vim.easymotionMarkerYOffset": 0,
+  "vim.surround": true,
+  "vim.enableNeovim": true,
+  "vim.neovimPath": "/usr/local/bin/nvim",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    },
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+],  
 
   // Window
   // ---------------------------------------------------------------------------

@@ -53,6 +53,7 @@ if [[ $? -eq 0 ]];then
         code --install-extension streetsidesoftware.code-spell-checker
         code --install-extension techer.open-in-browser
         code --install-extension vilicvane.es-quotes
+        code --install-extension vscodevim.vim
         code --install-extension vstirbu.vscode-mermaid-preview
         code --install-extension wix.vscode-import-cost
         code --install-extension wwm.better-align
