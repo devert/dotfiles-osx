@@ -10,6 +10,7 @@
   "cSpell.userWords": [
     "Flyout",
     "Guid",
+    "Hacky",
     "Keymap",
     "Menlo",
     "Monokai",
@@ -96,6 +97,13 @@
   "[jsonc]": {
     "editor.formatOnSave": false,
   },
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "editor.wordBasedSuggestions": false,
+  "editor.suggestOnTriggerCharacters": false,
       
   // Emmet
   // ---------------------------------------------------------------------------
@@ -108,11 +116,12 @@
   "emmet.syntaxProfiles": {
     "postcss": "css"
   },
-
+  
   // ESLint
   // ---------------------------------------------------------------------------
   
   "eslint.autoFixOnSave": false,
+  "eslint.packageManager": "yarn",
 
   // Exports Autocomplete
   // ---------------------------------------------------------------------------
@@ -161,8 +170,10 @@
 
   // JavaScript
   // ---------------------------------------------------------------------------
-
+  
   "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.validate.enable": false,
   
   // Python Extension
   // ---------------------------------------------------------------------------
@@ -227,10 +238,11 @@
     "editorOverviewRuler.errorForeground": "#0000",
     "editorOverviewRuler.infoForeground": "#0000",
     "editorOverviewRuler.warningForeground": "#0000",
+    "list.inactiveFocusBackground": "#0000"
   },
 
   // Zen Mode
   // ---------------------------------------------------------------------------
 
-  "zenMode.centerLayout": false,
+  "zenMode.centerLayout": false
 }

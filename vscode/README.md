@@ -16,7 +16,6 @@ The script asks you if you want to install the extensions. Type `y` for yes. Def
 `Do you want to install VSCode extensions? [y|N]`
 
 This will install or update to the last version of all the extensions [listed below] (#useful-extensions)
-
 Then you will be asked if you want to overwrite your own config.
 
 `Do you want to create symlinks to user config and keybindings? [y|N]`

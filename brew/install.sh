@@ -42,7 +42,8 @@ brew install git-flow
 brew install git-extras
 brew install httpie
 brew install hub
-brew install TomAnthony/brews/itermocil
+brew install itermocil
+mkdir ~/.itermocil
 brew install jq
 brew install neovim
 brew install python     # python 3

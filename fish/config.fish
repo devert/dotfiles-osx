@@ -19,6 +19,8 @@ alias p="cd ~/Projects"
 
 # Shorten commonly typed
 alias d="docker"
+alias dsa="docker stop (docker ps -q)"
+alias dka="docker kill (docker ps -q)"
 alias dc="docker-compose"
 alias dcu="docker-compose up"
 alias dce="docker-compose exec"

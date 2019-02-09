@@ -23,9 +23,8 @@
   bd = branch -d                  # branch delete
   bdf = branch -D                 # branch force delete
   # shortcut for git-extras delete-merged-branches (https://github.com/tj/git-extras/blob/master/Commands.md#git-delete-merged-branches)
-  dmb = delete-merged-branches    
-  # shortcut to delete squashed and merged branches (https://github.com/not-an-aardvark/git-delete-squashed)
-  dsb = "!f() { git-delete-squashed; }; f"
+  # AND shortcut to delete squashed and merged branches (https://github.com/not-an-aardvark/git-delete-squashed)
+  dmb = "!f() { git-delete-squashed; git delete-merged-branches; }; f"
 
   # commit
   c = commit -m                   # commit with message
@@ -63,6 +62,7 @@
 
   # pull request
   pr = !hub pull-request
+  prco = !hub pr checkout
 
   # push
   ps = push
@@ -103,10 +103,10 @@
   set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
   su = set-upstream
 [difftool "sourcetree"]
-	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [commit]
   template = /Users/dennisevert/.stCommitMsg

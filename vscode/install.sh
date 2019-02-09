@@ -22,6 +22,7 @@ if [[ $? -eq 0 ]];then
         code --install-extension christian-kohler.npm-intellisense
         code --install-extension christian-kohler.path-intellisense
         code --install-extension cmstead.jsrefactor
+        code --install-extension codemooseus.vscode-devtools-for-chrome
         code --install-extension cpylua.language-postcss
         code --install-extension cssho.vscode-svgviewer
         code --install-extension DavidAnson.vscode-markdownlint
@@ -30,7 +31,6 @@ if [[ $? -eq 0 ]];then
         code --install-extension dsznajder.es7-react-js-snippets
         code --install-extension dunstontc.viml
         code --install-extension eamodio.gitlens
-        code --install-extension eamodio.toggle-excluded-files
         code --install-extension EditorConfig.EditorConfig
         code --install-extension esbenp.prettier-vscode
         code --install-extension file-icons.file-icons
@@ -44,12 +44,10 @@ if [[ $? -eq 0 ]];then
         code --install-extension ms-vscode.atom-keybindings
         code --install-extension msjsdiag.debugger-for-chrome
         code --install-extension naumovs.color-highlight
-        code --install-extension Orta.vscode-jest
         code --install-extension patbenatar.advanced-new-file
         code --install-extension paulmolluzzo.convert-css-in-js
         code --install-extension PeterJausovec.vscode-docker
         code --install-extension pnp.polacode
-        code --install-extension pranaygp.vscode-css-peek
         code --install-extension shinnn.stylelint
         code --install-extension skyapps.fish-vscode
         code --install-extension streetsidesoftware.code-spell-checker
