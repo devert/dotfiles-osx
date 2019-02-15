@@ -13,8 +13,9 @@ sudo ln -s ~/.dotfiles/fish/config.fish ~/.config/fish/config.fish
 
 # Install Oh My Fish Packages
 omf install bass
-omf install hub
 omf install brew
+omf install foreign-env
+omf install hub
 omf install nvm
 omf install virtualfish
 omf install z

@@ -35,6 +35,7 @@ reload
 # Install Other Homebrew Packages
 echo "Installing Other Homebrew Packages"
 
+brew install black
 brew install fish
 brew install gdrive
 brew install git
@@ -63,10 +64,12 @@ brew cask install alfred
 brew cask install appcleaner
 brew cask install charles
 brew cask install chromium
+brew cask install contexts
 brew cask install docker
 brew cask install dropbox
 brew cask install evernote
 brew cask install google-chrome
+brew cask install hazeover
 brew cask install iterm2
 brew cask install insomnia
 brew cask install kdiff3
