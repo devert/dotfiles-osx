@@ -17,6 +17,7 @@
     "Neovim",
     "Unfocus",
     "clickshield",
+    "customizations",
     "gitlens",
     "lifecycle",
     "monospace",
@@ -179,6 +180,9 @@
   // ---------------------------------------------------------------------------
   
   "python.pythonPath": "/usr/local/bin/python",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "/usr/local/bin/black",
+  
   
   // SCM
   // ---------------------------------------------------------------------------
@@ -223,6 +227,7 @@
   "vim.easymotionMarkerYOffset": 0,
   "vim.surround": true,
   "vim.enableNeovim": true,
+  "vim.leader": "<Space>",
   "vim.neovimPath": "/usr/local/bin/nvim",
   "vim.insertModeKeyBindings": [
     {
