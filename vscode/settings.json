@@ -26,8 +26,10 @@
     "postcss",
     "pylint",
     "repo",
+    "scrollbar",
     "stylelint",
     "subdomain",
+    "templating",
     "unmount"
   ],
   "cSpell.enabledLanguageIds": [
@@ -105,7 +107,8 @@
   },
   "editor.wordBasedSuggestions": false,
   "editor.suggestOnTriggerCharacters": false,
-      
+  "editor.parameterHints.enabled": false,
+
   // Emmet
   // ---------------------------------------------------------------------------
   
@@ -258,7 +261,6 @@
 
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.colorTheme": "Monokai Pro",
-  "workbench.iconTheme": "file-icons",
   "workbench.startupEditor": "none",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.statusBar.visible": true,
@@ -277,5 +279,6 @@
   // Zen Mode
   // ---------------------------------------------------------------------------
 
-  "zenMode.centerLayout": false
+  "zenMode.centerLayout": false,
+  "workbench.iconTheme": "Monokai Pro Icons"
 }

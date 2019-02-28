@@ -7,6 +7,19 @@
     "key": "alt+down",
     "command": "workbench.action.decreaseViewSize"
   },
+  {
+    "key": "cmd+]",
+    "command": "workbench.action.focusRightGroup",
+  },
+  {
+    "key": "cmd+[",
+    "command": "workbench.action.focusLeftGroup",
+  },
+  {
+    "key": "shift+cmd+space",
+    "command": "closeParameterHints",
+    "when": "editorTextFocus && parameterHintsVisible"
+  }, 
   { 
     "key": "ctrl+tab", 
     "command": "workbench.action.terminal.focusNext",
@@ -41,5 +54,25 @@
     "key": "cmd+t", 
     "command": "workbench.action.terminal.new",
     "when": "terminalFocus",
+  },
+  {
+    "key": "cmd+/",
+    "command": "workbench.action.togglePanelPosition",
+    "when": "terminalFocus",
+  },
+  {
+    "key": "shift+cmd+enter",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "terminalFocus",
+  },
+  {
+    "key": "alt+cmd+=",
+    "command": "workbench.action.increaseViewSize",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+cmd+-",
+    "command": "workbench.action.decreaseViewSize",
+    "when": "terminalFocus"
   },
 ]
