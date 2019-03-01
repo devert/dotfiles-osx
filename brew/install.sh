@@ -62,12 +62,14 @@ brew install brew-cask-completion
 brew cask install 1password
 brew cask install alfred
 brew cask install appcleaner
+brew cask install bettertouchtool
 brew cask install charles
 brew cask install chromium
 brew cask install contexts
 brew cask install docker
 brew cask install dropbox
 brew cask install evernote
+brew cask install firefox
 brew cask install google-chrome
 brew cask install hazeover
 brew cask install iterm2
@@ -77,8 +79,8 @@ brew cask install notion
 brew cask install scroll-reverser
 brew cask install sketch
 brew cask install slack
+brew cask install spotify
 brew cask install sourcetree
-brew cask install firefox
 brew cask install virtualbox
 brew cask install visual-studio-code
 brew cask install vlc
