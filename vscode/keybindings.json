@@ -73,6 +73,10 @@
   {
     "key": "alt+cmd+-",
     "command": "workbench.action.decreaseViewSize",
-    "when": "terminalFocus"
+    "when": "terminalFocus",
   },
+  {
+    "key": "ctrl+shift+-",
+    "command": "workbench.files.action.collapseExplorerFolders",
+  }
 ]
