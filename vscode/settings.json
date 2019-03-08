@@ -229,7 +229,6 @@
   "vim.easymotionMarkerFontWeight": "bold",
   "vim.easymotionMarkerHeight": 22,
   "vim.easymotionMarkerYOffset": 0,
-  "vim.surround": true,
   "vim.enableNeovim": true,
   "vim.debug.silent": true,
   "vim.leader": "<Space>",
@@ -270,6 +269,7 @@
   "workbench.statusBar.feedback.visible": false,
   "workbench.activityBar.visible": false,
   "workbench.editor.tabCloseButton": "off",
+  "workbench.iconTheme": "Monokai Pro Icons",
   
   // Make info, error and warning decorations in overview ruler transparent
   "workbench.colorCustomizations": {
@@ -283,5 +283,4 @@
   // ---------------------------------------------------------------------------
 
   "zenMode.centerLayout": false,
-  "workbench.iconTheme": "Monokai Pro Icons",
 }
