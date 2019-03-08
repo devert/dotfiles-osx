@@ -231,8 +231,10 @@
   "vim.easymotionMarkerYOffset": 0,
   "vim.surround": true,
   "vim.enableNeovim": true,
+  "vim.debug.silent": true,
   "vim.leader": "<Space>",
   "vim.neovimPath": "/usr/local/bin/nvim",
+  "vim.useSystemClipboard": true,
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
@@ -281,5 +283,5 @@
   // ---------------------------------------------------------------------------
 
   "zenMode.centerLayout": false,
-  "workbench.iconTheme": "Monokai Pro Icons"
+  "workbench.iconTheme": "Monokai Pro Icons",
 }

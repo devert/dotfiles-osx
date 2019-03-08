@@ -1,4 +1,14 @@
 [
+  // Editor
+  // ---------------------------------------------------------------------------
+  {
+    "key": "shift+cmd+space",
+    "command": "closeParameterHints",
+    "when": "editorTextFocus && parameterHintsVisible"
+  },
+  
+  // Workbench
+  // ---------------------------------------------------------------------------
   {
     "key": "alt+up",
     "command": "workbench.action.increaseViewSize"
@@ -16,10 +26,12 @@
     "command": "workbench.action.focusLeftGroup",
   },
   {
-    "key": "shift+cmd+space",
-    "command": "closeParameterHints",
-    "when": "editorTextFocus && parameterHintsVisible"
-  }, 
+    "key": "ctrl+shift+-",
+    "command": "workbench.files.action.collapseExplorerFolders",
+  },
+  
+  // Terminal
+  // ---------------------------------------------------------------------------
   { 
     "key": "ctrl+tab", 
     "command": "workbench.action.terminal.focusNext",
@@ -75,8 +87,37 @@
     "command": "workbench.action.decreaseViewSize",
     "when": "terminalFocus",
   },
+
+  // Vim Movement
+  // ---------------------------------------------------------------------------
   {
-    "key": "ctrl+shift+-",
-    "command": "workbench.files.action.collapseExplorerFolders",
-  }
+    "key": "ctrl+j",
+    "command": "selectNextSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "selectPrevSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "list.focusDown",
+    "when": "listFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "list.focusUp",
+    "when": "listFocus"
+  },
 ]
