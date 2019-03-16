@@ -1,9 +1,9 @@
 {
   // Atom Keymap Extension
   // ---------------------------------------------------------------------------
-  
+
   "atomKeymap.promptV3Features": true,
-  
+
   // Code Spell Checker
   // ---------------------------------------------------------------------------
 
@@ -11,15 +11,21 @@
     "Flyout",
     "Guid",
     "Hacky",
+    "Helvetica",
     "Keymap",
+    "Leadpage",
     "Menlo",
     "Monokai",
     "Neovim",
+    "Stateful",
     "Strikethrough",
     "Unfocus",
+    "backend",
     "clickshield",
     "customizations",
+    "dropdown",
     "gitlens",
+    "keyframes",
     "lifecycle",
     "monospace",
     "oauth",
@@ -31,7 +37,10 @@
     "stylelint",
     "subdomain",
     "templating",
-    "unmount"
+    "uncategorized",
+    "unmount",
+    "unstyled",
+    "woff"
   ],
   "cSpell.enabledLanguageIds": [
     "asciidoc",
@@ -63,21 +72,21 @@
     "yml"
   ],
   "cSpell.showStatus": false,
-  
+
   // Color Highlight Extension
   // ---------------------------------------------------------------------------
-  
+
   "color-highlight.markerType": "dot-before",
   "color-highlight.markRuler": false,
-  
+
   // CSS Class Completion
   // ---------------------------------------------------------------------------
-  
+
   "html-css-class-completion.enableEmmetSupport": true,
 
   // Editor
   // ---------------------------------------------------------------------------
-  
+
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "phase",
   "editor.multiCursorModifier": "ctrlCmd",
@@ -91,16 +100,16 @@
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
   "editor.selectionHighlight": false,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "[javascript]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": false
   },
-  "[json]": {
-    "editor.formatOnSave": false,
-  },
-  "[jsonc]": {
-    "editor.formatOnSave": false,
-  },
+  // "[json]": {
+  //   "editor.formatOnSave": false,
+  // },
+  // "[jsonc]": {
+  //   "editor.formatOnSave": false,
+  // },
   "editor.quickSuggestions": {
     "other": true,
     "comments": false,
@@ -112,7 +121,7 @@
 
   // Emmet
   // ---------------------------------------------------------------------------
-  
+
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
     "postcss": "css",
@@ -121,30 +130,30 @@
   "emmet.syntaxProfiles": {
     "postcss": "css"
   },
-  
+
   // ESLint
   // ---------------------------------------------------------------------------
-  
-  "eslint.autoFixOnSave": false,
+
+  "eslint.autoFixOnSave": true,
   "eslint.packageManager": "yarn",
 
   // Exports Autocomplete
   // ---------------------------------------------------------------------------
-  
+
   "vscode-exports-autocomplete.addSpacingAroundCurlyBraces": true,
-  
+
   // Files
   // ---------------------------------------------------------------------------
-  
+
   "files.associations": {
     "*.css": "postcss",
     ".*": "shellscript"
   },
   "files.autoSave": "onFocusChange",
-  
+
   // GitLens
   // ---------------------------------------------------------------------------
-  
+
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.statusBar.enabled": false,
@@ -164,38 +173,37 @@
 
   // Open In Browser
   // ---------------------------------------------------------------------------
-  
+
   "open-in-browser.default": "Google Chrome",
 
   // HTML
   // ---------------------------------------------------------------------------
-  
+
   "html.format.indentHandlebars": true,
   "html.format.indentInnerHtml": true,
-  
+
   // JavaScript
   // ---------------------------------------------------------------------------
-  
+
   "javascript.implicitProjectConfig.experimentalDecorators": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.validate.enable": false,
-  
+
   // Python Extension
   // ---------------------------------------------------------------------------
-  
+
   "python.pythonPath": "/usr/local/bin/python",
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "/usr/local/bin/black",
-  
-  
+
   // SCM
   // ---------------------------------------------------------------------------
-  
+
   "scm.diffDecorations": "gutter",
-  
+
   // Search
   // ---------------------------------------------------------------------------
-  
+
   "search.location": "sidebar",
   "search.useIgnoreFiles": true,
   "search.useGlobalIgnoreFiles": true,
@@ -238,7 +246,7 @@
     {
       "before": ["j", "j"],
       "after": ["<Esc>"]
-    },
+    }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
@@ -248,8 +256,8 @@
     {
       "before": ["<"],
       "commands": ["editor.action.outdentLines"]
-    },
-],  
+    }
+  ],
 
   // Window
   // ---------------------------------------------------------------------------
@@ -270,7 +278,7 @@
   "workbench.activityBar.visible": false,
   "workbench.editor.tabCloseButton": "off",
   "workbench.iconTheme": "Monokai Pro Icons",
-  
+
   // Make info, error and warning decorations in overview ruler transparent
   "workbench.colorCustomizations": {
     "editorOverviewRuler.errorForeground": "#0000",
@@ -282,5 +290,5 @@
   // Zen Mode
   // ---------------------------------------------------------------------------
 
-  "zenMode.centerLayout": false,
+  "zenMode.centerLayout": false
 }
