@@ -242,6 +242,7 @@
   "vim.leader": "<Space>",
   "vim.neovimPath": "/usr/local/bin/nvim",
   "vim.useSystemClipboard": true,
+  "vim.camelCaseMotion": true,
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
