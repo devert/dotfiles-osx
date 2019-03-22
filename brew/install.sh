@@ -37,6 +37,7 @@ echo "Installing Other Homebrew Packages"
 
 brew install black
 brew install fish
+brew install fzf
 brew install gdrive
 brew install git
 brew install git-flow
@@ -52,6 +53,7 @@ brew install python@2   # python 2
 brew install pipenv
 brew install TomAnthony/brews/queue
 brew install tmux
+brew install watchman
 brew install yarn
 brew install z
 

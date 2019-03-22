@@ -3,9 +3,19 @@
 
 set nocompatible
 set encoding=utf-8
+set fileencoding=utf-8
 set timeoutlen=500 ttimeoutlen=0
 
-let mapleader = " "
+let g:mapleader="\<Space>"
+
+
+" Vim UI
+" ---------------------------------------------------------------
+
+set mouse=a                     " Automatically enable mouse usage
+set mousehide                   " Hide the mouse cursor while typing
+set clipboard=unnamed          " Allows copy-pasting from other apps
+
 
 " Plugins
 " ---------------------------------------------------------------
@@ -24,6 +34,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
 " Language Packs
 Plug 'sheerun/vim-polyglot'
@@ -31,26 +43,18 @@ Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
-" Vim UI
+
+" Theme/Editor Config 
 " ---------------------------------------------------------------
 
 syntax on                       " Enable syntax highlighting
-set mouse=a                     " Automatically enable mouse usage
-set mousehide                   " Hide the mouse cursor while typing
-set background=dark             " Assujme a dark background
-set bg=dark
-set number                      " Line numbers on
-set numberwidth=5
-" set spell                       " Spell checking on
-
-" set list listchars=space:.
-" set list listchars=tab:→\ ,trail:·
-
 filetype plugin indent on       " Automatically detect file types
 
-set termguicolors
+set termguicolors               " Enables truecolor
 colorscheme monokai_pro
 
+set number                      " Line numbers on
+set numberwidth=5
 highlight LineNr guibg=NONE    " Make line number column transparent
 
 " Show leading spaces
@@ -60,27 +64,31 @@ autocmd BufWinEnter * syn match LeadingSpace /\(^ *\)\@<= / containedin=ALL conc
 autocmd BufReadPre * setl conceallevel=2 concealcursor=nv
 autocmd BufReadPre * syn match LeadingSpace /\(^ *\)\@<= / containedin=ALL conceal cchar=·
 
-" NerdTree Config
+
+" NERDTree Config
 " ---------------------------------------------------------------
 
 map <C-e> :NERDTreeToggle<CR>:
 
-let NERDTreeShowHidden=1
-let NERDTreeMouseMode=2
+" Close vim if the only window left open is NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" if isdirectory(expand("~/.local/share/nvim/plugged/nerdtree"))
-"   map <leader>e :NERDTreeFind<CR>
-"   nmap <leader>nt :NERDTreeFind<CR>
+if isdirectory(expand("~/.local/share/nvim/plugged/nerdtree"))
+  map <leader>e :NERDTreeFind<CR>
+  nmap <leader>nt :NERDTreeFind<CR>
 
-"   let NERDTreeShowBookmarks=1
-"   " let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$']
-"   let NERDTreeChDirMode=0
-"   let NERDTreeQuitOnOpen=1
-"   let NERDTreeMouseMode=2
-"   let NERDTreeShowHidden=1
-"   let NERDTreeKeepTreeInNewTab=1
-"   let g:nerdtree_tabs_open_on_gui_startup=0
-" endif
+  let NERDTreeShowBookmarks=1
+  let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$']
+  let NERDTreeChDirMode=0
+  let NERDTreeQuitOnOpen=1
+  let NERDTreeMouseMode=2
+  let NERDTreeShowHidden=1
+  let NERDTreeKeepTreeInNewTab=1
+  let NERDTreeMinimalUI = 1
+  let NERDTreeDirArrows = 1
+  let g:nerdtree_tabs_open_on_gui_startup=0
+endif
+
 
 " Lightline Config
 " ---------------------------------------------------------------
@@ -88,3 +96,8 @@ let NERDTreeMouseMode=2
 let g:lightline = {
   \'colorscheme': 'one',
   \}
+
+" FZF Config
+" ---------------------------------------------------------------
+
+nnoremap <silent> <Leader><Leader> :FZF<CR>

@@ -48,3 +48,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # https://github.com/rupa/z
 . /usr/local/etc/profile.d/z.sh
+
+# https://github.com/junegunn/fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
