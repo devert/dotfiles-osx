@@ -149,7 +149,6 @@
     "*.css": "postcss",
     ".*": "shellscript"
   },
-  "files.autoSave": "onFocusChange",
 
   // GitLens
   // ---------------------------------------------------------------------------
