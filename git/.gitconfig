@@ -2,7 +2,7 @@
   ui = true
 [core]
   autoctrl = input
-  excludesfile = /Users/dennisevert/.gitignore_global
+	excludesfile = /Users/dennisevert/.gitignore_global
   editor = nvim
 [merge]
   ff = false
@@ -109,7 +109,7 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [commit]
-  template = /Users/dennisevert/.stCommitMsg
+	template = /Users/dennisevert/.stCommitMsg
 [user]
-  name = Dennis Evert
-  email = dennisevert@gmail.com
+	name = Dennis Evert
+	email = dennisevert@gmail.com

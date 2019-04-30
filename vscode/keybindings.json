@@ -6,7 +6,15 @@
     "command": "closeParameterHints",
     "when": "editorTextFocus && parameterHintsVisible"
   },
-  
+  {
+    "key": "ctrl+shift+left",
+    "command": "workbench.action.moveEditorLeftInGroup"
+  },
+  {
+    "key": "ctrl+shift+right",
+    "command": "workbench.action.moveEditorRightInGroup"
+  },
+
   // Workbench
   // ---------------------------------------------------------------------------
   {
@@ -19,63 +27,63 @@
   },
   {
     "key": "cmd+]",
-    "command": "workbench.action.focusRightGroup",
+    "command": "workbench.action.focusRightGroup"
   },
   {
     "key": "cmd+[",
-    "command": "workbench.action.focusLeftGroup",
+    "command": "workbench.action.focusLeftGroup"
   },
   {
     "key": "ctrl+shift+-",
-    "command": "workbench.files.action.collapseExplorerFolders",
+    "command": "workbench.files.action.collapseExplorerFolders"
   },
-  
+
   // Terminal
   // ---------------------------------------------------------------------------
-  { 
-    "key": "ctrl+tab", 
+  {
+    "key": "ctrl+tab",
     "command": "workbench.action.terminal.focusNext",
-    "when": "terminalFocus", 
+    "when": "terminalFocus"
   },
-  { 
-    "key": "cmd+]", 
+  {
+    "key": "cmd+]",
     "command": "workbench.action.terminal.focusNextPane",
-    "when": "terminalFocus", 
+    "when": "terminalFocus"
   },
-  { 
-    "key": "ctrl+shift+tab", 
+  {
+    "key": "ctrl+shift+tab",
     "command": "workbench.action.terminal.focusPrevious",
-    "when": "terminalFocus", 
+    "when": "terminalFocus"
   },
-  { 
-    "key": "cmd+[", 
+  {
+    "key": "cmd+[",
     "command": "workbench.action.terminal.focusPreviousPane",
-    "when": "terminalFocus", 
+    "when": "terminalFocus"
   },
-  { 
-    "key": "cmd+w", 
+  {
+    "key": "cmd+w",
     "command": "workbench.action.terminal.kill",
-    "when": "terminalFocus",
+    "when": "terminalFocus"
   },
-  { 
-    "key": "cmd+d", 
+  {
+    "key": "cmd+d",
     "command": "workbench.action.terminal.split",
-    "when": "terminalFocus",
+    "when": "terminalFocus"
   },
-  { 
-    "key": "cmd+t", 
+  {
+    "key": "cmd+t",
     "command": "workbench.action.terminal.new",
-    "when": "terminalFocus",
+    "when": "terminalFocus"
   },
   {
     "key": "cmd+/",
     "command": "workbench.action.togglePanelPosition",
-    "when": "terminalFocus",
+    "when": "terminalFocus"
   },
   {
     "key": "shift+cmd+enter",
     "command": "workbench.action.toggleMaximizedPanel",
-    "when": "terminalFocus",
+    "when": "terminalFocus"
   },
   {
     "key": "alt+cmd+=",
@@ -85,7 +93,7 @@
   {
     "key": "alt+cmd+-",
     "command": "workbench.action.decreaseViewSize",
-    "when": "terminalFocus",
+    "when": "terminalFocus"
   },
 
   // Vim Movement
@@ -119,5 +127,5 @@
     "key": "ctrl+k",
     "command": "list.focusUp",
     "when": "listFocus"
-  },
+  }
 ]
