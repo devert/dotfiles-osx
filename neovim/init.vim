@@ -14,8 +14,17 @@ let g:mapleader="\<Space>"
 
 set mouse=a                     " Automatically enable mouse usage
 set mousehide                   " Hide the mouse cursor while typing
-set clipboard=unnamed          " Allows copy-pasting from other apps
 
+" Allows copy-pasting from other apps
+" workaround: https://github.com/neovim/neovim/issues/8631
+let g:clipboard = {'copy': {'+': 'pbcopy', '*': 'pbcopy'}, 'paste': {'+': 'pbpaste', '*': 'pbpaste'}, 'name': 'pbcopy', 'cache_enabled': 0}
+if has('clipboard')
+  if has('unnamedplus')
+    set clipboard=unnamedplus,unnamed
+else
+    set clipboard=unnamed
+  endif
+endif
 
 " Plugins
 " ---------------------------------------------------------------
@@ -26,18 +35,21 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'itchyny/lightline.vim'
 
-" Theme
+" " Theme
 Plug 'phanviet/vim-monokai-pro'
 
-" Utility
-Plug 'editorconfig/editorconfig-vim'
+" " Utility
+" Currently causing slow down when opening files
+" https://github.com/editorconfig/editorconfig-vim/issues/100
+" Plug 'editorconfig/editorconfig-vim' 
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-surround'
+Plug '907th/vim-auto-save'
 Plug 'terryma/vim-multiple-cursors'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 
-" Language Packs
+" " Language Packs
 Plug 'sheerun/vim-polyglot'
 
 
@@ -47,15 +59,22 @@ call plug#end()
 " Theme/Editor Config 
 " ---------------------------------------------------------------
 
-syntax on                       " Enable syntax highlighting
+syntax on                      " Enable syntax highlighting
 filetype plugin indent on       " Automatically detect file types
 
 set termguicolors               " Enables truecolor
 colorscheme monokai_pro
 
+" Line Numbers
 set number                      " Line numbers on
 set numberwidth=5
-highlight LineNr guibg=NONE    " Make line number column transparent
+" Make line number column transparent
+highlight LineNr guibg=NONE guifg=#555555
+
+" Cursor Line
+set cursorline
+highlight CursorLineNr guifg=#BBBBBB 
+highlight CursorLine guibg=NONE guifg=NONE
 
 " Show leading spaces
 highlight Conceal guibg=NONE ctermbg=NONE guifg=#676767
@@ -89,13 +108,19 @@ if isdirectory(expand("~/.local/share/nvim/plugged/nerdtree"))
   let g:nerdtree_tabs_open_on_gui_startup=0
 endif
 
-
 " Lightline Config
 " ---------------------------------------------------------------
 
 let g:lightline = {
   \'colorscheme': 'one',
   \}
+
+
+" Vim-AutoSave Config
+" ---------------------------------------------------------------
+
+let g:auto_save = 1  " enable AutoSave on Vim startup
+
 
 " FZF Config
 " ---------------------------------------------------------------

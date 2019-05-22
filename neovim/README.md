@@ -1,2 +1,3 @@
 # Neovim Setup
 
+How to install...
