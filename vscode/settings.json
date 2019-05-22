@@ -264,7 +264,7 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "<leader>" "m"],
+      "before": ["<leader>", "<leader>", "m"],
       "commands": ["bookmarks.toggle"]
     },
     {
