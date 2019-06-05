@@ -121,6 +121,8 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.parameterHints.enabled": false,
 
+  "breadcrumbs.enabled": false,
+
   // Emmet
   // ---------------------------------------------------------------------------
 
