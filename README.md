@@ -35,7 +35,7 @@ git pull origin master
 When setting up a new Mac, you may want to set some sensible macOS defaults:
 
 ```sh
-./.macos
+./macos/install.sh
 ```
 
 ## Install Homebrew Packages and Casks

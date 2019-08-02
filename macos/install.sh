@@ -7,7 +7,7 @@ osascript -e 'tell application "System Preferences" to quit'
 # Ask for the administrator password upfront
 sudo -v
 
-# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+# Keep-alive: update existing `sudo` time stamp until `./macos/install.sh` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ###############################################################################
@@ -56,6 +56,10 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
 sudo systemsetup -settimezone "America/Chicago" > /dev/null
+
+# Disable "bonk" sound when using CTRL+CMD+DOWN in Electron apps
+mkdir -p ~/Library/KeyBindings
+sudo ln -s ~/.dotfiles/macos/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
 
 ###############################################################################
 # Screen
