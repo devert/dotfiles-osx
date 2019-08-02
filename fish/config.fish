@@ -38,7 +38,7 @@ alias git=hub
 alias reload="exec fish"
 
 # Web serve current directory at a specified port
-alias serve="python -m SimpleHTTPServer"
+# alias serve="python -m SimpleHTTPServer"
 
 # Extra machine specific configuration
 if test -e ~/.dotfiles/fish/extra_config.fish

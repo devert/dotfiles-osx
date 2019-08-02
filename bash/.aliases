@@ -28,7 +28,7 @@ alias y="yarn"
 alias git=hub
 
 # Web serve current directory at a specified port
-alias serve="python -m SimpleHTTPServer"
+# alias serve="python -m SimpleHTTPServer"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

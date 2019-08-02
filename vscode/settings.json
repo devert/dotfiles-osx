@@ -121,7 +121,7 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.parameterHints.enabled": false,
 
-  "breadcrumbs.enabled": false,
+  "breadcrumbs.enabled": true,
 
   // Emmet
   // ---------------------------------------------------------------------------
@@ -302,7 +302,6 @@
   "workbench.startupEditor": "none",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.statusBar.visible": true,
-  "workbench.statusBar.feedback.visible": false,
   "workbench.activityBar.visible": false,
   "workbench.editor.tabCloseButton": "off",
   "workbench.iconTheme": "Monokai Pro Icons",
