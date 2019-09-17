@@ -14,10 +14,13 @@ if [[ $? -eq 0 ]];then
     if [[ $configresponse =~ ^(y|yes|Y) ]];then
         echo "Installing extensions please wait..."
         
+        code --install-extension alefragnani.Bookmarks
         code --install-extension alefragnani.project-manager
         code --install-extension alexdima.copy-relative-path
         code --install-extension andys8.jest-snippets
         code --install-extension angryobject.react-pure-to-class-vscode
+        code --install-extension bpruitt-goddard.mermaid-markdown-syntax-highlighting
+        code --install-extension BriteSnow.vscode-toggle-quotes
         code --install-extension capaj.vscode-exports-autocomplete
         code --install-extension christian-kohler.npm-intellisense
         code --install-extension christian-kohler.path-intellisense
@@ -31,22 +34,23 @@ if [[ $? -eq 0 ]];then
         code --install-extension dsznajder.es7-react-js-snippets
         code --install-extension dunstontc.viml
         code --install-extension eamodio.gitlens
+        code --install-extension earshinov.permute-lines
         code --install-extension EditorConfig.EditorConfig
         code --install-extension esbenp.prettier-vscode
         code --install-extension file-icons.file-icons
         code --install-extension formulahendry.auto-close-tag
-        code --install-extension formulahendry.auto-rename-tag
         code --install-extension gottfired.css2react
         code --install-extension GrapeCity.gc-excelviewer
         code --install-extension jpoissonnier.vscode-styled-components
+        code --install-extension midnightsyntax.vscode-wrap-console-log
         code --install-extension monokai.theme-monokai-pro-vscode
+        code --install-extension ms-azuretools.vscode-docker
         code --install-extension ms-python.python
         code --install-extension ms-vscode.atom-keybindings
         code --install-extension msjsdiag.debugger-for-chrome
         code --install-extension naumovs.color-highlight
         code --install-extension patbenatar.advanced-new-file
         code --install-extension paulmolluzzo.convert-css-in-js
-        code --install-extension PeterJausovec.vscode-docker
         code --install-extension pnp.polacode
         code --install-extension shinnn.stylelint
         code --install-extension skyapps.fish-vscode
@@ -56,9 +60,9 @@ if [[ $? -eq 0 ]];then
         code --install-extension vscodevim.vim
         code --install-extension vstirbu.vscode-mermaid-preview
         code --install-extension wix.vscode-import-cost
+        code --install-extension wmaurer.change-case
         code --install-extension wwm.better-align
         code --install-extension yzhang.markdown-all-in-one
-        code --install-extension Zignd.html-css-class-completion
 
         echo "Extensions for VSCode have been installed. Please restart VSCode."
     else
