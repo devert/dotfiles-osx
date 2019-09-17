@@ -1,4 +1,5 @@
 eslint
+git-delete-squashed
 gulp-cli
 npm-check-updates
-git-delete-squashed
+serve
