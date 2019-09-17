@@ -40,7 +40,6 @@ brew install fish
 brew install fzf
 brew install gdrive
 brew install git
-brew install git-flow
 brew install git-extras
 brew install httpie
 brew install hub
@@ -64,6 +63,7 @@ brew install brew-cask-completion
 brew cask install 1password
 brew cask install alfred
 brew cask install appcleaner
+brew cask install audio-hijack
 brew cask install bettertouchtool
 brew cask install charles
 brew cask install chromium
@@ -78,11 +78,12 @@ brew cask install iterm2
 brew cask install insomnia
 brew cask install kdiff3
 brew cask install notion
+brew cask install pixel-check
 brew cask install scroll-reverser
 brew cask install sketch
 brew cask install slack
-brew cask install spotify
 brew cask install sourcetree
+brew cask install spotify
 brew cask install virtualbox
 brew cask install visual-studio-code
 brew cask install vlc
