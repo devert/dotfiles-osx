@@ -101,15 +101,16 @@
   "editor.tabSize": 2,
   "editor.selectionHighlight": false,
   "editor.formatOnSave": true,
+  "editor.scrollBeyondLastLine": false,
   "[javascript]": {
     "editor.formatOnSave": false
   },
-  // "[json]": {
-  //   "editor.formatOnSave": false,
-  // },
-  // "[jsonc]": {
-  //   "editor.formatOnSave": false,
-  // },
+  "[json]": {
+    "editor.formatOnSave": false
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": false
+  },
   "editor.quickSuggestions": {
     "comments": false,
     "other": false,
@@ -120,7 +121,6 @@
   "editor.suggestOnTriggerCharacters": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.parameterHints.enabled": false,
-
   "breadcrumbs.enabled": true,
 
   // Emmet
@@ -234,6 +234,7 @@
 
   // Vim
   // ---------------------------------------------------------------------------
+
   // "vim.easymotion": true,
   // "vim.easymotionMarkerFontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   // "vim.easymotionMarkerFontSize": "14",
@@ -272,18 +273,6 @@
     {
       "before": ["<leader>", "<leader>", "b"],
       "commands": ["bookmarks.list"]
-    },
-    // Workaround for issue with unexpected cursor jumps after a delete
-    // https://github.com/VSCodeVim/Vim/issues/3713
-    // https://github.com/VSCodeVim/Vim/issues/3694
-    // https://github.com/VSCodeVim/Vim/issues/3455#issuecomment-489694562
-    {
-      "before": ["j"],
-      "after": ["g", "j"]
-    },
-    {
-      "before": ["k"],
-      "after": ["g", "k"]
     }
   ],
 
