@@ -47,6 +47,7 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
 ## Run additional install scripts
 
 ```sh
+./fonts/install.sh
 ./git/install.sh
 ./bash/install.sh
 ./python/install.sh
