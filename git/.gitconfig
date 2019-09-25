@@ -2,7 +2,7 @@
   ui = true
 [core]
   autocrlf = input
-	excludesfile = /Users/dennisevert/.gitignore_global
+  excludesfile = /Users/dennisevert/.gitignore_global
   editor = nvim
 [push]
   default = current
@@ -110,5 +110,4 @@
 [user]
 	name = Dennis Evert
 	email = dennisevert@gmail.com
-[commit]
-	template = /Users/dennisevert/.stCommitMsg
+  
