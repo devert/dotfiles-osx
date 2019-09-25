@@ -11,7 +11,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # Shortcuts
-alias db="cd ~/Documents/Dropbox"
+alias db="cd ~/Dropbox\ \(Personal\)/"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias df="cd ~/.dotfiles"

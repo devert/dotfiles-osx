@@ -2,7 +2,7 @@
   ui = true
 [core]
   autocrlf = input
-  excludesfile = /Users/dennisevert/.gitignore_global
+	excludesfile = /Users/dennisevert/.gitignore_global
   editor = nvim
 [push]
   default = current
@@ -105,8 +105,10 @@
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-  name = Dennis Evert
-  email = dennisevert@gmail.com
+	name = Dennis Evert
+	email = dennisevert@gmail.com
+[commit]
+	template = /Users/dennisevert/.stCommitMsg

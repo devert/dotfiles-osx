@@ -37,20 +37,26 @@ echo "Installing Other Homebrew Packages"
 
 brew install black
 brew install fish
+
 brew install fzf
+/usr/local/opt/fzf/install
+
 brew install gdrive
 brew install git
 brew install git-extras
 brew install httpie
 brew install hub
-brew install itermocil
-mkdir ~/.itermocil
+
 brew install jq
 brew install neovim
 brew install python     # python 3
 brew install python@2   # python 2
 brew install pipenv
+
+mkdir -p ~/.itermocil
+brew install TomAnthony/brews/itermocil
 brew install TomAnthony/brews/queue
+
 brew install tmux
 brew install watchman
 brew install yarn

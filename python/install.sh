@@ -13,4 +13,5 @@ pip install virtualfish
 
 # Symlink a global requirements.txt file that is applied to 
 # every existing and new virtualenv. 
+mkdir -p ~/.virtualenv
 sudo ln -s ~/.dotfiles/python/global_requirements.txt ~/.virtualenv/global_requirements.txt
