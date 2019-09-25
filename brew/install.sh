@@ -57,6 +57,7 @@ mkdir -p ~/.itermocil
 brew install TomAnthony/brews/itermocil
 brew install TomAnthony/brews/queue
 
+brew install tree
 brew install tmux
 brew install watchman
 brew install yarn
