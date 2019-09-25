@@ -88,10 +88,20 @@ if [[ $? -eq 0 ]];then
         sudo ln -s $HOME/.dotfiles/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
         rm -rf $HOME/Library/Application\ Support/Code/User/snippets
         sudo ln -s $HOME/.dotfiles/vscode/snippets $HOME/Library/Application\ Support/Code/User/snippets
-
         echo "New user config and keybindings have been written. Please restart VSCode."
     else
         echo "Skipping user config overwriting.";
+    fi
+
+    read -r -p "Do you want to create a symlink to project manager projects.json? [y|N] " projectsresponse
+    if [[ $projectsresponse =~ ^(y|yes|Y) ]]; then
+        if [ ! -f "$HOME/Library/Application\ Support/Code/User/globalStorage/alefragnani.project-manager/projects.json" ]; then
+            mkdir -p $HOME/Library/Application\ Support/Code/User/globalStorage/alefragnani.project-manager
+            touch $HOME/Library/Application\ Support/Code/User/globalStorage/alefragnani.project-manager/projects.json
+        fi
+        sudo ln -s $HOME/Library/Application\ Support/Code/User/globalStorage/alefragnani.project-manager/projects.json $HOME/Library/Application\ Support/Code/User/projects.json
+    else
+        echo "Skipping project manager projects.json symlink.";
     fi
 else
     echo "It looks like the command 'code' isn't accessible."
