@@ -8,7 +8,7 @@
   default = current
 [alias]
   # add
-  a = add                         # addq
+  a = add                         # add
   aa = add --all                  # add all files
   au = add -u                     # add all deleted files
   ap = add --patch                # stage commits chunk by chunk
@@ -18,6 +18,7 @@
 
   # branch
   b = branch -v                   # branch (verbose)
+  br = branch -rv               # branch (remote, verbose)
   bd = branch -d                  # branch delete
   bdf = branch -D                 # branch force delete
   # shortcut for git-extras delete-merged-branches (https://github.com/tj/git-extras/blob/master/Commands.md#git-delete-merged-branches)
@@ -52,7 +53,7 @@
   short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
   shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
 
-  # pull
+  # pullz
   pl = pull
 
   # prune
@@ -63,6 +64,7 @@
   prco = !hub pr checkout
 
   # push
+  p = push
   ps = push
 
   # rebase
@@ -85,6 +87,7 @@
   sl = stash list                 # list stashes
   sa = stash apply                # apply stash (restore changes)
   sd = stash drop                 # drop stashes (destory changes)
+  ssa = stash --all               # stash all files, including untracked and ignored files.
 
   # status
   s = status                      # status
