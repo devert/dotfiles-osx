@@ -59,7 +59,6 @@ if [[ $? -eq 0 ]];then
         code --install-extension vilicvane.es-quotes
         code --install-extension vscodevim.vim
         code --install-extension vstirbu.vscode-mermaid-preview
-        code --install-extension wix.vscode-import-cost
         code --install-extension wmaurer.change-case
         code --install-extension wwm.better-align
         code --install-extension yzhang.markdown-all-in-one
