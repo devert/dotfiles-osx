@@ -9,6 +9,11 @@ if test -e ~/.dotfiles/fish/aliases.fish
   source ~/.dotfiles/fish/aliases.fish
 end
 
+# Load functions
+if test -e ~/.dotfiles/fish/functions.fish
+  source ~/.dotfiles/fish/functions.fish
+end
+
 # Extra machine specific configuration
 if test -e ~/.dotfiles/fish/extra_config.fish
   source ~/.dotfiles/fish/extra_config.fish
