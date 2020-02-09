@@ -100,16 +100,24 @@
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
   "editor.selectionHighlight": false,
-  "editor.formatOnSave": true,
   "editor.scrollBeyondLastLine": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll": true,
+  },
+  "editor.formatOnSave": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[javascript]": {
-    "editor.formatOnSave": false
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[json]": {
-    "editor.formatOnSave": false
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[jsonc]": {
-    "editor.formatOnSave": false
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.quickSuggestions": {
     "comments": false,
@@ -138,8 +146,8 @@
   // ESLint
   // ---------------------------------------------------------------------------
 
-  "eslint.autoFixOnSave": true,
   "eslint.packageManager": "yarn",
+  "eslint.alwaysShowStatus": true,
 
   // Exports Autocomplete
   // ---------------------------------------------------------------------------
@@ -195,6 +203,11 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.validate.enable": false,
 
+  // Prettier Extension
+  // ---------------------------------------------------------------------------
+
+  "prettier.disableLanguages": ["js"],
+  
   // Python Extension
   // ---------------------------------------------------------------------------
 
@@ -206,11 +219,6 @@
   // ---------------------------------------------------------------------------
 
   "scm.diffDecorations": "gutter",
-
-  // Search
-  // ---------------------------------------------------------------------------
-
-  "search.location": "sidebar",
   "search.useIgnoreFiles": true,
   "search.useGlobalIgnoreFiles": true,
 
@@ -234,6 +242,7 @@
   "terminal.integrated.shell.osx": "/usr/local/bin/fish",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.rendererType": "canvas",
 
   // Vim
   // ---------------------------------------------------------------------------
@@ -285,6 +294,8 @@
   "window.zoomLevel": 1,
   "window.newWindowDimensions": "inherit",
   "window.restoreWindows": "none",
+  // "window.title": "${rootName}${separator}${activeEditorShort}",
+  "window.title": "${rootName}",
 
   // Workbench
   // ---------------------------------------------------------------------------
@@ -312,5 +323,5 @@
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false,
+  "zenMode.hideTabs": false
 }
