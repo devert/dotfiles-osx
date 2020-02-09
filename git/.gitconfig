@@ -2,7 +2,7 @@
   ui = true
 [core]
   autocrlf = input
-  excludesfile = /Users/dennisevert/.gitignore_global
+	excludesfile = /Users/dennisevert/.gitignore_global
   editor = nvim
 [push]
   default = current
@@ -87,6 +87,7 @@
   sl = stash list                 # list stashes
   sa = stash apply                # apply stash (restore changes)
   sd = stash drop                 # drop stashes (destory changes)
+  ssu = stash --include-untracked # stash changes including untracked files.
   ssa = stash --all               # stash all files, including untracked and ignored files.
 
   # status
@@ -108,8 +109,10 @@
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
 	name = Dennis Evert
 	email = dennisevert@gmail.com
+[commit]
+	template = /Users/dennisevert/.stCommitMsg

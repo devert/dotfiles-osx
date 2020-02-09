@@ -9,11 +9,13 @@
 
   "cSpell.userWords": [
     "Flyout",
+    "Greyscale",
     "Guid",
     "Hacky",
     "Helvetica",
     "Keymap",
     "Leadpage",
+    "Leadpages",
     "Menlo",
     "Monokai",
     "Neovim",
@@ -36,6 +38,7 @@
     "scrollbar",
     "stylelint",
     "subdomain",
+    "subheader",
     "templating",
     "uncategorized",
     "unmount",
@@ -87,6 +90,7 @@
   // Editor
   // ---------------------------------------------------------------------------
 
+  "breadcrumbs.enabled": true,
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "phase",
   "editor.multiCursorModifier": "ctrlCmd",
@@ -103,7 +107,7 @@
   "editor.formatOnSave": true,
   "editor.scrollBeyondLastLine": false,
   "[javascript]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "[json]": {
     "editor.formatOnSave": false
@@ -121,7 +125,9 @@
   "editor.suggestOnTriggerCharacters": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.parameterHints.enabled": false,
-  "breadcrumbs.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
 
   // Emmet
   // ---------------------------------------------------------------------------
@@ -138,7 +144,6 @@
   // ESLint
   // ---------------------------------------------------------------------------
 
-  "eslint.autoFixOnSave": true,
   "eslint.packageManager": "yarn",
 
   // Exports Autocomplete
@@ -244,14 +249,15 @@
   // "vim.easymotionMarkerFontWeight": "bold",
   // "vim.easymotionMarkerHeight": 22,
   // "vim.easymotionMarkerYOffset": 0,
-  "vim.enableNeovim": true,
+  "vim.enableNeovim": false,
+  // "vim.neovimPath": "/usr/local/bin/nvim",
   "vim.debug.silent": true,
   "vim.leader": "<Space>",
-  "vim.neovimPath": "/usr/local/bin/nvim",
   "vim.useSystemClipboard": true,
   "vim.camelCaseMotion.enable": true,
   "vim.highlightedyank.enable": true,
   "vim.visualstar": true,
+  "vim.statusBarColorControl": false,
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
@@ -276,6 +282,14 @@
     {
       "before": ["<leader>", "<leader>", "b"],
       "commands": ["bookmarks.list"]
+    },
+    {
+      "before": ["<leader>", "<leader>", "a"],
+      "commands": ["bookmarks.listFromAllFiles"]
+    },
+    {
+      "before": ["<leader>", "<leader>", "w"],
+      "commands": ["workbench.action.switchWindow"]
     }
   ],
 
@@ -303,7 +317,6 @@
     "editorOverviewRuler.errorForeground": "#0000",
     "editorOverviewRuler.infoForeground": "#0000",
     "editorOverviewRuler.warningForeground": "#0000",
-    "list.inactiveFocusBackground": "#0000"
   },
 
   // Zen Mode
@@ -313,4 +326,7 @@
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.hideTabs": false,
+  // "[javascriptreact]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
 }

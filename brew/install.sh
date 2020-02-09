@@ -71,6 +71,7 @@ brew cask install 1password
 brew cask install alfred
 brew cask install appcleaner
 brew cask install audio-hijack
+brew cask install balenaetcher
 brew cask install bettertouchtool
 brew cask install charles
 brew cask install chromium
