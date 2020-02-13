@@ -14,6 +14,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX
 ###############################################################################
 
+# Set the timezone; see `sudo systemsetup -listtimezones` for other values
+sudo systemsetup -settimezone "America/Chicago" > /dev/null
+
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=%80
 
@@ -43,7 +46,7 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 ###############################################################################
-# Trackpad, mouse, keyboard, Bluetooth accessories, and input
+# Trackpad
 ###############################################################################
 
 # System Preferences > Trackpad > Tap to click
@@ -59,8 +62,23 @@ defaults write com.apple.AppleMultitouchTrackpad ForceSuppressed -bool true
 # Speed up Trackpad Tracking Speed
 defaults write NSGlobalDomain com.apple.trackpad.scaling -int 2
 
-# Increase sound quality for Bluetooth headphones/headsets
-defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+###############################################################################
+# Mouse
+###############################################################################
+
+# Speed up Mouse Tracking Speed
+defaults write NSGlobalDomain com.apple.mouse.scaling -int 2
+
+# Set a slightly faster Scrolling Speed
+defaults write NSGlobalDomain com.apple.mouse.scaling -string "0.5"
+
+# Unset Natural Scrolling for Mouse
+defaults write NSGlobalDomain com.apple.swipescrolldirection -int 2
+
+
+###############################################################################
+# Keyboard
+###############################################################################
 
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
@@ -73,12 +91,16 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
-# Set the timezone; see `sudo systemsetup -listtimezones` for other values
-sudo systemsetup -settimezone "America/Chicago" > /dev/null
-
 # Disable "bonk" sound when using CTRL+CMD+DOWN in Electron apps
 mkdir -p ~/Library/KeyBindings
 sudo ln -s ~/.dotfiles/macos/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
+
+###############################################################################
+# Bluetooth Accessories
+###############################################################################
+
+# Increase sound quality for Bluetooth headphones/headsets
+defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
 ###############################################################################
 # Screen
