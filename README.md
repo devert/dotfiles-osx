@@ -38,24 +38,52 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
 ./macos/install.sh
 ```
 
+## Install and Configure Bash
+
+```sh
+./bash/install.sh
+```
+
 ## Install Homebrew Packages and Casks
 
 ```sh
 ./brew/install.sh
 ```
 
-## Run additional install scripts
+NOTE: You will likely have to rerun the cask install for Virtualbox
+
+## Install Node and Python
 
 ```sh
-./git/install.sh
-./fonts/install.sh
-./bash/install.sh
-./python/install.sh
+mkdir -p ~/.nvm
+  
+reload
+
 ./node/install.sh
+./python/install.sh
+```
+
+## Install Fish Shell And Make Default Shell
+
+```sh
 ./fish/install.sh
+reload
+./fish/configure.sh
+```
+
+## Run remaining install scripts
+
+```sh
+./fonts/install.sh
+./git/install.sh
+./neovim/install.sh
 ./tmux/install.sh
 ./vscode/install.sh
 ```
+
+## Configure iTerm2
+
+## Configure Alfred
 
 ## Heavily influenced by the following .dotfiles projects
 

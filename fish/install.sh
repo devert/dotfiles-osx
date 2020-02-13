@@ -3,31 +3,19 @@
 # Ask for the administrator password upfront.
 sudo -v
 
-# Install Oh My Fish
-curl -L https://get.oh-my.fish | fish
+# Keep-alive: update existing `sudo` time stamp until the script has finished.
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# Install bash-git-prompt for fish
-mkdir -p ~/.config/fish/functions
-sudo ln -s /usr/local/share/gitprompt.fish ~/.config/fish/functions/fish_prompt.fish
+# Install Homebrew Fish
+echo "Installing Homebrew Fish"
 
-# Symlink config and kebindings
-sudo ln -s ~/.dotfiles/fish/config.fish ~/.config/fish/config.fish
-sudo ln -s ~/.dotfiles/fish/fish_user_key_bindings.fish ~/.config/fish/functions/fish_user_key_bindings.fish
-
-# Install Oh My Fish Packages
-omf install bass
-omf install brew
-omf install foreign-env
-omf install hub
-omf install nvm
-omf install virtualfish
-omf install z
-
-# Remove default fish greeting
-set fish_greeting
+brew install fish
 
 # Switch to using fish as default shell
 if ! fgrep -q '/usr/local/bin/fish' /etc/shells; then
   echo '/usr/local/bin/fish' | sudo tee -a /etc/shells;
   chsh -s /usr/local/bin/fish;
 fi;
+
+echo "Fish installed as default shell." 
+echo "Reload shell and run './fish/configure.sh"
