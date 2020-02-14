@@ -20,6 +20,7 @@ omf install brew
 omf install foreign-env
 omf install hub
 omf install nvm
+omf install pyenv
 omf install virtualfish
 omf install z
 

@@ -26,10 +26,7 @@ brew install hub
 
 brew install jq
 brew install neovim
-brew install python     # python 3
-brew install pipenv
 brew install pyenv
-brew install ruby
 
 mkdir -p ~/.itermocil
 brew install TomAnthony/brews/itermocil
