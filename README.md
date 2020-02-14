@@ -87,7 +87,6 @@ reload
 
 ## Heavily influenced by the following .dotfiles projects
 
-* [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
-* [Pawel Grzybek](https://github.com/pawelgrzybek/dotfiles)
-* [Springload](https://github.com/springload/dotfiles)
-
+- [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
+- [Pawel Grzybek](https://github.com/pawelgrzybek/dotfiles)
+- [Springload](https://github.com/springload/dotfiles)

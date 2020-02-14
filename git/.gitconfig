@@ -2,7 +2,7 @@
   ui = true
 [core]
   autocrlf = input
-  excludesfile = ~/.gitignore_global
+	excludesfile = /Users/devert/.gitignore_global
   editor = nvim
 [push]
   default = current

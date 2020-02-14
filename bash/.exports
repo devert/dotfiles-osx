@@ -1,2 +1,6 @@
 export NVM_DIR="$HOME/.nvm"
 export WORKON_HOME="$HOME/.virtualenvs"
+
+# Pip env variables
+export CPPFLAGS="-I/usr/local/include"
+export LDFLAGS="-L/usr/local/lib"
