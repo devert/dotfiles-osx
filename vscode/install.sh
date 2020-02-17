@@ -21,12 +21,10 @@ if [[ $? -eq 0 ]];then
         code --install-extension angryobject.react-pure-to-class-vscode
         code --install-extension bpruitt-goddard.mermaid-markdown-syntax-highlighting
         code --install-extension BriteSnow.vscode-toggle-quotes
-        code --install-extension capaj.vscode-exports-autocomplete
         code --install-extension christian-kohler.npm-intellisense
         code --install-extension christian-kohler.path-intellisense
         code --install-extension cmstead.jsrefactor
         code --install-extension codemooseus.vscode-devtools-for-chrome
-        code --install-extension cpylua.language-postcss
         code --install-extension cssho.vscode-svgviewer
         code --install-extension DavidAnson.vscode-markdownlint
         code --install-extension dbaeumer.vscode-eslint
@@ -37,7 +35,6 @@ if [[ $? -eq 0 ]];then
         code --install-extension earshinov.permute-lines
         code --install-extension EditorConfig.EditorConfig
         code --install-extension esbenp.prettier-vscode
-        code --install-extension file-icons.file-icons
         code --install-extension formulahendry.auto-close-tag
         code --install-extension gottfired.css2react
         code --install-extension GrapeCity.gc-excelviewer
@@ -60,7 +57,6 @@ if [[ $? -eq 0 ]];then
         code --install-extension vscodevim.vim
         code --install-extension vstirbu.vscode-mermaid-preview
         code --install-extension wmaurer.change-case
-        code --install-extension wwm.better-align
         code --install-extension yzhang.markdown-all-in-one
 
         echo "Extensions for VSCode have been installed. Please restart VSCode."

@@ -141,10 +141,6 @@
   "eslint.autoFixOnSave": true,
   "eslint.packageManager": "yarn",
 
-  // Exports Autocomplete
-  // ---------------------------------------------------------------------------
-
-  "vscode-exports-autocomplete.addSpacingAroundCurlyBraces": true,
 
   // Files
   // ---------------------------------------------------------------------------
@@ -207,11 +203,6 @@
   // ---------------------------------------------------------------------------
 
   "scm.diffDecorations": "gutter",
-
-  // Search
-  // ---------------------------------------------------------------------------
-
-  "search.location": "sidebar",
   "search.useIgnoreFiles": true,
   "search.useGlobalIgnoreFiles": true,
 
