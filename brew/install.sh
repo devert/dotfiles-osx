@@ -60,6 +60,7 @@ brew cask install iterm2
 brew cask install insomnia
 brew cask install kdiff3
 brew cask install notion
+brew cask install scroll-reverser
 brew cask install sketch
 brew cask install slack
 brew cask install sourcetree
