@@ -38,7 +38,6 @@ if [[ $? -eq 0 ]];then
         code --install-extension formulahendry.auto-close-tag
         code --install-extension gottfired.css2react
         code --install-extension GrapeCity.gc-excelviewer
-        code --install-extension jpoissonnier.vscode-styled-components
         code --install-extension midnightsyntax.vscode-wrap-console-log
         code --install-extension monokai.theme-monokai-pro-vscode
         code --install-extension ms-azuretools.vscode-docker
@@ -53,7 +52,6 @@ if [[ $? -eq 0 ]];then
         code --install-extension skyapps.fish-vscode
         code --install-extension streetsidesoftware.code-spell-checker
         code --install-extension techer.open-in-browser
-        code --install-extension vilicvane.es-quotes
         code --install-extension vscodevim.vim
         code --install-extension vstirbu.vscode-mermaid-preview
         code --install-extension wmaurer.change-case
