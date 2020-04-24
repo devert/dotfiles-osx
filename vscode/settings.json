@@ -37,6 +37,7 @@
     "performant",
     "postcss",
     "pylint",
+    "refetch",
     "repo",
     "scrollbar",
     "stylelint",
@@ -84,6 +85,11 @@
   "color-highlight.markerType": "dot-before",
   "color-highlight.markRuler": false,
 
+  // Diff Editor
+  // ---------------------------------------------------------------------------
+
+  "diffEditor.renderSideBySide": false,
+  
   // Editor
   // ---------------------------------------------------------------------------
 
@@ -176,35 +182,37 @@
   // ---------------------------------------------------------------------------
 
   "open-in-browser.default": "Google Chrome",
-
+  
   // HTML
   // ---------------------------------------------------------------------------
-
+  
   "html.format.indentHandlebars": true,
   "html.format.indentInnerHtml": true,
   "html.mirrorCursorOnMatchingTag": false,
-
+  
   // JavaScript
   // ---------------------------------------------------------------------------
-
+  
   "javascript.implicitProjectConfig.experimentalDecorators": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.validate.enable": false,
-
+  
   // Prettier Extension
   // ---------------------------------------------------------------------------
-
+  
   // "prettier.disableLanguages": ["js"],
   "prettier.packageManager": "yarn",
   "prettier.requireConfig": true,
-
+  
   // Python Extension
   // ---------------------------------------------------------------------------
-
+  
   "python.pythonPath": "/usr/local/bin/python3",
-  "python.linting.pylintEnabled": true,
   "python.linting.enabled": true,
   "python.formatting.provider": "black",
+  "python.venvFolders": [
+    "~/.pyenv/versions"
+  ],
 
   // SCM
   // ---------------------------------------------------------------------------
@@ -243,6 +251,7 @@
   "terminal.integrated.shell.osx": "/usr/local/bin/fish",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.experimentalRefreshOnResume": true,
 
   // Vim
   // ---------------------------------------------------------------------------

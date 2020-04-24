@@ -59,7 +59,9 @@ brew cask install hazeover
 brew cask install iterm2
 brew cask install insomnia
 brew cask install kdiff3
+brew cask install microsoft-edge
 brew cask install notion
+brew cask install pixelsnap
 brew cask install scroll-reverser
 brew cask install sketch
 brew cask install slack
