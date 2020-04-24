@@ -25,8 +25,8 @@ end
 eval (~/.pyenv/versions/2.7.17/bin/python -m virtualfish compat_aliases global_requirements auto_activation)
 
 # Init Pyenv environment automatically
-status --is-interactive; and source (pyenv init -|psub)
-status --is-interactive; and source (pyenv virtualenv-init -|psub)
+status --is-interactive; and pyenv init - | source
+status --is-interactive; and pyenv virtualenv-init - | source
 
 # Change prompt for Virtualfish
 functions -c fish_prompt _old_fish_prompt
