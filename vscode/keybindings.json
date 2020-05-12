@@ -22,7 +22,15 @@
     "command": "workbench.action.increaseViewSize"
   },
   {
+    "key": "alt+j",
+    "command": "workbench.action.increaseViewSize"
+  },
+  {
     "key": "alt+down",
+    "command": "workbench.action.decreaseViewSize"
+  },
+  {
+    "key": "alt+k",
     "command": "workbench.action.decreaseViewSize"
   },
   {
