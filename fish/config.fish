@@ -22,7 +22,15 @@ end
 # Load Virtualfish
 # NOTE: Needs to be loaded after anything that changes PATH 
 # https://virtualfish.readthedocs.io/en/latest/install.html#installing
-eval (python -m virtualfish compat_aliases global_requirements auto_activation)
+if type -q vf
+  eval (python -m virtualfish compat_aliases global_requirements auto_activation)
+end
+
+# Init Pyenv environment automatically
+if type -q pyenv
+  status --is-interactive; and pyenv init - | source
+  status --is-interactive; and pyenv virtualenv-init - | source
+end
 
 # Change prompt for Virtualfish
 functions -c fish_prompt _old_fish_prompt

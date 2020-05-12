@@ -4,6 +4,11 @@
 
   "atomKeymap.promptV3Features": true,
 
+  // Breadcrumbs
+  // ---------------------------------------------------------------------------
+
+  "breadcrumbs.enabled": true,
+
   // Code Spell Checker
   // ---------------------------------------------------------------------------
 
@@ -32,6 +37,7 @@
     "performant",
     "postcss",
     "pylint",
+    "refetch",
     "repo",
     "scrollbar",
     "stylelint",
@@ -79,11 +85,11 @@
   "color-highlight.markerType": "dot-before",
   "color-highlight.markRuler": false,
 
-  // CSS Class Completion
+  // Diff Editor
   // ---------------------------------------------------------------------------
 
-  "html-css-class-completion.enableEmmetSupport": true,
-
+  "diffEditor.renderSideBySide": false,
+  
   // Editor
   // ---------------------------------------------------------------------------
 
@@ -100,28 +106,23 @@
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
   "editor.selectionHighlight": false,
-  "editor.formatOnSave": true,
   "editor.scrollBeyondLastLine": false,
-  "[javascript]": {
-    "editor.formatOnSave": false
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll": true
   },
-  "[json]": {
-    "editor.formatOnSave": false
-  },
-  "[jsonc]": {
-    "editor.formatOnSave": false
-  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.quickSuggestions": {
     "comments": false,
     "other": false,
     "strings": false
   },
-  // "editor.quickSuggestionsDelay": 1000,
+  "editor.quickSuggestionsDelay": 0,
   "editor.wordBasedSuggestions": false,
   "editor.suggestOnTriggerCharacters": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.parameterHints.enabled": false,
-  "breadcrumbs.enabled": true,
 
   // Emmet
   // ---------------------------------------------------------------------------
@@ -138,13 +139,13 @@
   // ESLint
   // ---------------------------------------------------------------------------
 
-  "eslint.autoFixOnSave": true,
   "eslint.packageManager": "yarn",
+  "eslint.alwaysShowStatus": true,
 
-  // Exports Autocomplete
+  // File Explorer
   // ---------------------------------------------------------------------------
 
-  "vscode-exports-autocomplete.addSpacingAroundCurlyBraces": true,
+  "explorer.openEditors.visible": 0,
 
   // Files
   // ---------------------------------------------------------------------------
@@ -181,26 +182,37 @@
   // ---------------------------------------------------------------------------
 
   "open-in-browser.default": "Google Chrome",
-
+  
   // HTML
   // ---------------------------------------------------------------------------
-
+  
   "html.format.indentHandlebars": true,
   "html.format.indentInnerHtml": true,
-
+  "html.mirrorCursorOnMatchingTag": false,
+  
   // JavaScript
   // ---------------------------------------------------------------------------
-
+  
   "javascript.implicitProjectConfig.experimentalDecorators": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.validate.enable": false,
-
+  
+  // Prettier Extension
+  // ---------------------------------------------------------------------------
+  
+  // "prettier.disableLanguages": ["js"],
+  "prettier.packageManager": "yarn",
+  "prettier.requireConfig": true,
+  
   // Python Extension
   // ---------------------------------------------------------------------------
-
-  "python.pythonPath": "/usr/local/bin/python",
-  // "python.formatting.provider": "black",
-  // "python.formatting.blackPath": "/usr/local/bin/black",
+  
+  "python.pythonPath": "/usr/local/bin/python3",
+  "python.linting.enabled": true,
+  "python.formatting.provider": "black",
+  "python.venvFolders": [
+    "~/.pyenv/versions"
+  ],
 
   // SCM
   // ---------------------------------------------------------------------------
@@ -210,7 +222,12 @@
   // Search
   // ---------------------------------------------------------------------------
 
-  "search.location": "sidebar",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/dist": true
+  },
   "search.useIgnoreFiles": true,
   "search.useGlobalIgnoreFiles": true,
 
@@ -234,6 +251,7 @@
   "terminal.integrated.shell.osx": "/usr/local/bin/fish",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.experimentalRefreshOnResume": true,
 
   // Vim
   // ---------------------------------------------------------------------------
@@ -285,6 +303,7 @@
   "window.zoomLevel": 1,
   "window.newWindowDimensions": "inherit",
   "window.restoreWindows": "none",
+  "window.title": "${rootName}",
 
   // Workbench
   // ---------------------------------------------------------------------------
@@ -313,4 +332,7 @@
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.hideTabs": false,
+
+  // Placeholder - Settings generated by VS Code
+  // ---------------------------------------------------------------------------
 }

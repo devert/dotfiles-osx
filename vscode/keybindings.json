@@ -22,7 +22,15 @@
     "command": "workbench.action.increaseViewSize"
   },
   {
+    "key": "alt+j",
+    "command": "workbench.action.increaseViewSize"
+  },
+  {
     "key": "alt+down",
+    "command": "workbench.action.decreaseViewSize"
+  },
+  {
+    "key": "alt+k",
     "command": "workbench.action.decreaseViewSize"
   },
   {
@@ -77,7 +85,12 @@
   },
   {
     "key": "cmd+/",
-    "command": "workbench.action.togglePanelPosition",
+    "command": "workbench.action.positionPanelRight",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+shift+/",
+    "command": "workbench.action.positionPanelBottom",
     "when": "terminalFocus"
   },
   {

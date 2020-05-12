@@ -1,2 +1,6 @@
 bash/.extra
 fish/extra_config.fish
+
+# Filenames used when working on macos configuration
+before
+after
