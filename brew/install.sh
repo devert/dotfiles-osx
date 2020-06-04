@@ -15,6 +15,7 @@ brew upgrade --all
 # Install command-line tools using Homebrew.
 echo "Installing Homebrew Packages"
 
+brew install asdf
 brew install fish
 brew install fzf
 /usr/local/opt/fzf/install

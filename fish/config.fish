@@ -32,6 +32,11 @@ if type -q pyenv
   status --is-interactive; and pyenv virtualenv-init - | source
 end
 
+# Load asdf
+if type -q asdf
+  source (brew --prefix asdf)/asdf.fish
+end
+
 # Change prompt for Virtualfish
 functions -c fish_prompt _old_fish_prompt
 function fish_prompt
