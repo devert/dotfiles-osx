@@ -154,7 +154,7 @@
     "**/*.snap": true
   },
   "files.associations": {
-    "*.css": "postcss",
+    "*.css": "css",
     ".*": "shellscript"
   },
 
