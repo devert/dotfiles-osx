@@ -19,10 +19,13 @@ omf install bass
 omf install brew
 omf install foreign-env
 omf install hub
-omf install nvm
 omf install pyenv
 omf install virtualfish
 omf install z
+
+# Install Fast NVM Fish
+# https://github.com/brigand/fast-nvm-fish
+curl -sSL https://raw.githubusercontent.com/brigand/fast-nvm-fish/master/nvm.fish > ~/.config/fish/functions/nvm.fish
 
 # Remove default fish greeting
 set fish_greeting

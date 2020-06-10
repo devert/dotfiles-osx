@@ -4,6 +4,9 @@ echo "Now using fish $FISH_VERSION"
 # Location of brew installed bash-git-prompt for fish
 set __GIT_PROMPT_DIR /usr/local/share
 
+# Set brew installed curl
+set -g fish_user_paths "/usr/local/opt/curl/bin" $fish_user_paths
+
 # Load aliases
 if test -e ~/.dotfiles/fish/aliases.fish
   source ~/.dotfiles/fish/aliases.fish
@@ -20,8 +23,9 @@ if test -e ~/.dotfiles/fish/extra_config.fish
 end
 
 # Load Virtualfish
-# NOTE: Needs to be loaded after anything that changes PATH 
+# NOTE: Needs to be loaded after anything that changes PATH
 # https://virtualfish.readthedocs.io/en/latest/install.html#installing
+# TODO: Phase out Virtualfish for pyenv
 if type -q vf
   eval (python -m virtualfish compat_aliases global_requirements auto_activation)
 end
