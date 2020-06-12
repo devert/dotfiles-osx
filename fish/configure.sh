@@ -18,7 +18,6 @@ sudo ln -s ~/.dotfiles/fish/fish_user_key_bindings.fish ~/.config/fish/functions
 omf install bass
 omf install brew
 omf install foreign-env
-omf install hub
 omf install pyenv
 omf install virtualfish
 omf install z
