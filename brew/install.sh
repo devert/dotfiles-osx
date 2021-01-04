@@ -43,35 +43,39 @@ brew install z
 echo "Install Applications with Homebrew Cask"
 
 brew install brew-cask-completion
-brew cask install 1password
-brew cask install alfred
-brew cask install appcleaner
-brew cask install audio-hijack
-brew cask install balenaetcher
-brew cask install bettertouchtool
-brew cask install brave-browser
-brew cask install charles
-brew cask install chromium
-brew cask install contexts
-brew cask install docker
-brew cask install dropbox
-brew cask install firefox
-brew cask install google-chrome
-brew cask install hazeover
-brew cask install iterm2
-brew cask install insomnia
-brew cask install kdiff3
-brew cask install microsoft-edge
-brew cask install notion
-brew cask install pixelsnap
-brew cask install scroll-reverser
-brew cask install sketch
-brew cask install slack
-brew cask install sourcetree
-brew cask install spotify
-brew cask install virtualbox
-brew cask install visual-studio-code
-brew cask install vlc
+brew install --cask 1password
+brew install --cask adobe-acrobat-reader
+brew install --cask alfred
+brew install --cask appcleaner
+brew install --cask applepi-baker
+brew install --cask audio-hijack
+brew install --cask bettertouchtool
+brew install --cask brave-browser
+brew install --cask charles
+brew install --cask chromium
+brew install --cask contexts
+brew install --cask docker
+brew install --cask dropbox
+brew install --cask firefox
+brew install --cask google-chrome
+brew install --cask hazeover
+brew install --cask insomnia
+brew install --cask iterm2
+brew install --cask kdiff3
+brew install --cask microsoft-edge
+brew install --cask notion
+brew install --cask pixelsnap
+brew install --cask raspberry-pi-imager
+brew install --cask rocket
+brew install --cask scroll-reverser
+brew install --cask sketch
+brew install --cask slack
+brew install --cask sourcetree
+brew install --cask spotify
+brew install --cask virtualbox
+brew install --cask visual-studio-code
+brew install --cask vlc
+brew install --cask zoomus
 
 # Reload shell
 reload
