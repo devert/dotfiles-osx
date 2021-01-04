@@ -41,7 +41,7 @@ Plug 'phanviet/vim-monokai-pro'
 " " Utility
 " Currently causing slow down when opening files
 " https://github.com/editorconfig/editorconfig-vim/issues/100
-" Plug 'editorconfig/editorconfig-vim' 
+" Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-surround'
 Plug '907th/vim-auto-save'
@@ -56,7 +56,7 @@ Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 
-" Theme/Editor Config 
+" Theme/Editor Config
 " ---------------------------------------------------------------
 
 syntax on                      " Enable syntax highlighting
@@ -71,9 +71,13 @@ set numberwidth=5
 " Make line number column transparent
 highlight LineNr guibg=NONE guifg=#555555
 
+" Cursor Styles
+" Block in normal, line in insert, underline in replace
+set guicursor=n-v-c-sm:block,i-ci-ve:ver25-Cursor,r-cr-o:hor20
+
 " Cursor Line
 set cursorline
-highlight CursorLineNr guifg=#BBBBBB 
+highlight CursorLineNr guifg=#BBBBBB
 highlight CursorLine guibg=NONE guifg=NONE
 
 " Show leading spaces
