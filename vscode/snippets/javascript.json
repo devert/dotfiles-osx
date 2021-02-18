@@ -18,9 +18,14 @@
     "body": ["debugger; // eslint-disable-line"],
     "description": "Debugger statement with ESLint line disable"
   },
+  "Console Log": {
+    "prefix": "cl",
+    "body": ["console.log($1);"],
+    "description": "Log to console"
+  },
   "Console Warn": {
     "prefix": "cw",
     "body": ["console.warn($1);"],
     "description": "Log warning to console"
-  }
+  },
 }
