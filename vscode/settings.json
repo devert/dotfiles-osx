@@ -298,6 +298,30 @@
     {
       "before": ["<"],
       "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["t", "u"],
+      "commands": ["editor.action.transformToUppercase"]
+    },
+    {
+      "before": ["t", "l"],
+      "commands": ["editor.action.transformToLowercase"]
+    },
+    {
+      "before": ["t", "s"],
+      "commands": ["editor.action.transformToSnakecase"]
+    },
+    {
+      "before": ["t", "t"],
+      "commands": ["editor.action.transformToTitlecase"]
+    },
+    {
+      "before": ["t", "c"],
+      "commands": ["extension.changeCase.camel"]
+    },
+    {
+      "before": ["t", "k"],
+      "commands": ["extension.changeCase.kebab"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
