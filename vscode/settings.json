@@ -266,6 +266,7 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.defaultProfile.osx": "fish",
 
   // Vim
   // ---------------------------------------------------------------------------
@@ -298,30 +299,6 @@
     {
       "before": ["<"],
       "commands": ["editor.action.outdentLines"]
-    },
-    {
-      "before": ["t", "u"],
-      "commands": ["editor.action.transformToUppercase"]
-    },
-    {
-      "before": ["t", "l"],
-      "commands": ["editor.action.transformToLowercase"]
-    },
-    {
-      "before": ["t", "s"],
-      "commands": ["editor.action.transformToSnakecase"]
-    },
-    {
-      "before": ["t", "t"],
-      "commands": ["editor.action.transformToTitlecase"]
-    },
-    {
-      "before": ["t", "c"],
-      "commands": ["extension.changeCase.camel"]
-    },
-    {
-      "before": ["t", "k"],
-      "commands": ["extension.changeCase.kebab"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -340,6 +317,30 @@
     {
       "before": ["<leader>", "b"],
       "commands": ["bookmarks.list"]
+    },
+    {
+      "before": ["<leader>", "c", "u"],
+      "commands": ["editor.action.transformToUppercase"]
+    },
+    {
+      "before": ["<leader>", "c", "l"],
+      "commands": ["editor.action.transformToLowercase"]
+    },
+    {
+      "before": ["<leader>", "c", "s"],
+      "commands": ["editor.action.transformToSnakecase"]
+    },
+    {
+      "before": ["<leader>", "c", "t"],
+      "commands": ["editor.action.transformToTitlecase"]
+    },
+    {
+      "before": ["<leader>", "c", "c"],
+      "commands": ["extension.changeCase.camel"]
+    },
+    {
+      "before": ["<leader>", "c", "k"],
+      "commands": ["extension.changeCase.kebab"]
     }
   ],
 
@@ -357,6 +358,9 @@
   "workbench.editor.decorations.colors": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.wrapTabs": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
   "workbench.colorTheme": "Monokai Pro",
   "workbench.startupEditor": "none",
   "workbench.quickOpen.closeOnFocusLost": false,
@@ -379,5 +383,6 @@
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false
+  "zenMode.hideTabs": false,
+  "gitlens.mode.active": "zen"
 }
