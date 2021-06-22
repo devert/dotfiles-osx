@@ -6,11 +6,6 @@
     "command": "closeParameterHints",
     "when": "editorTextFocus && parameterHintsVisible"
   },
-  {
-    "key": "alt+h",
-    "command": "editor.action.showHover",
-    "when": "editorTextFocus"
-  },
 
   // Workbench
   // ---------------------------------------------------------------------------

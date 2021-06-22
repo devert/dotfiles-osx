@@ -116,6 +116,7 @@
   "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
+  "editor.tabCompletion": "onlySnippets",
   "editor.selectionHighlight": false,
   "editor.scrollBeyondLastLine": false,
   "editor.codeActionsOnSave": {
@@ -143,7 +144,6 @@
   // Emmet
   // ---------------------------------------------------------------------------
 
-  "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
     "postcss": "css",
     "javascript": "javascriptreact"
@@ -319,6 +319,10 @@
       "commands": ["bookmarks.list"]
     },
     {
+      "before": ["<leader>", "u", "t"],
+      "commands": ["editor.emmet.action.updateTag"]
+    },
+    {
       "before": ["<leader>", "c", "u"],
       "commands": ["editor.action.transformToUppercase"]
     },
@@ -383,6 +387,5 @@
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false,
-  "gitlens.mode.active": "zen"
+  "zenMode.hideTabs": false
 }

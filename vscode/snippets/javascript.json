@@ -6,20 +6,6 @@
     ],
     "description": "Debugger statement with ESLint line disable"
   },
-  "cl": {
-    "prefix": "cl",
-    "body": [
-      "console.log($1);"
-    ],
-    "description": "Log to console"
-  },
-  "cw": {
-    "prefix": "cw",
-    "body": [
-      "console.warn($1);"
-    ],
-    "description": "Log warning to console"
-  },
   "test": {
     "prefix": "test",
     "description": "Scaffolding for Jest test with React Testing Library",
