@@ -22,14 +22,6 @@ if test -e ~/.dotfiles/fish/extra_config.fish
   source ~/.dotfiles/fish/extra_config.fish
 end
 
-# Load Virtualfish
-# NOTE: Needs to be loaded after anything that changes PATH
-# https://virtualfish.readthedocs.io/en/latest/install.html#installing
-# TODO: Phase out Virtualfish for pyenv
-if type -q vf
-  eval (python -m virtualfish compat_aliases global_requirements auto_activation)
-end
-
 # Init Pyenv environment automatically
 if type -q pyenv
   status --is-interactive; and pyenv init - | source

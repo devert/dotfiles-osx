@@ -20,7 +20,6 @@ omf install brew
 omf install foreign-env
 omf install hub
 omf install pyenv
-omf install virtualfish
 omf install z
 
 # Install Fast NVM Fish
