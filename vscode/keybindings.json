@@ -77,27 +77,17 @@
   },
   {
     "key": "cmd+/",
-    "command": "workbench.action.positionPanelRight",
+    "command": "workbench.action.movePanelToSidePanel",
     "when": "terminalFocus"
   },
   {
     "key": "cmd+shift+/",
-    "command": "workbench.action.positionPanelBottom",
+    "command": "workbench.action.moveSidePanelToPanel",
     "when": "terminalFocus"
   },
   {
     "key": "shift+cmd+enter",
     "command": "workbench.action.toggleMaximizedPanel",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "alt+cmd+=",
-    "command": "workbench.action.increaseViewSize",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "alt+cmd+-",
-    "command": "workbench.action.decreaseViewSize",
     "when": "terminalFocus"
   },
 

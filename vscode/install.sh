@@ -13,17 +13,19 @@ if [[ $? -eq 0 ]];then
     read -r -p "Do you want to install VSCode extensions? [y|N] " configresponse
     if [[ $configresponse =~ ^(y|yes|Y) ]];then
         echo "Installing extensions please wait..."
-        
+
         code --install-extension alefragnani.Bookmarks
         code --install-extension alefragnani.project-manager
         code --install-extension alexdima.copy-relative-path
+        code --install-extension ambooth.git-rename
         code --install-extension andys8.jest-snippets
-        code --install-extension angryobject.react-pure-to-class-vscode
         code --install-extension bpruitt-goddard.mermaid-markdown-syntax-highlighting
         code --install-extension BriteSnow.vscode-toggle-quotes
+        code --install-extension bungcip.better-toml
+        code --install-extension ChakrounAnas.turbo-console-log
         code --install-extension christian-kohler.npm-intellisense
         code --install-extension christian-kohler.path-intellisense
-        code --install-extension cmstead.jsrefactor
+        code --install-extension cmstead.js-codeformer
         code --install-extension codemooseus.vscode-devtools-for-chrome
         code --install-extension cssho.vscode-svgviewer
         code --install-extension DavidAnson.vscode-markdownlint
@@ -36,22 +38,28 @@ if [[ $? -eq 0 ]];then
         code --install-extension EditorConfig.EditorConfig
         code --install-extension esbenp.prettier-vscode
         code --install-extension formulahendry.auto-close-tag
+        code --install-extension frhtylcn.pythonsnippets
         code --install-extension gottfired.css2react
         code --install-extension GrapeCity.gc-excelviewer
-        code --install-extension midnightsyntax.vscode-wrap-console-log
+        code --install-extension GraphQL.vscode-graphql
+        code --install-extension inu1255.easy-snippet
+        code --install-extension KevinRose.vsc-python-indent
         code --install-extension monokai.theme-monokai-pro-vscode
         code --install-extension ms-azuretools.vscode-docker
         code --install-extension ms-python.python
+        code --install-extension ms-python.vscode-pylance
         code --install-extension ms-vscode.atom-keybindings
-        code --install-extension msjsdiag.debugger-for-chrome
         code --install-extension naumovs.color-highlight
+        code --install-extension njpwerner.autodocstring
         code --install-extension patbenatar.advanced-new-file
         code --install-extension paulmolluzzo.convert-css-in-js
-        code --install-extension pnp.polacode
-        code --install-extension shinnn.stylelint
+        code --install-extension rust-lang.rust-analyzer
+        code --install-extension SimonSiefke.auto-rename-tag
         code --install-extension skyapps.fish-vscode
+        code --install-extension sleistner.vscode-fileutils
         code --install-extension streetsidesoftware.code-spell-checker
         code --install-extension techer.open-in-browser
+        code --install-extension vscodeshift.material-ui-codemorphs
         code --install-extension vscodevim.vim
         code --install-extension vstirbu.vscode-mermaid-preview
         code --install-extension wmaurer.change-case

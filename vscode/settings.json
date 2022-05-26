@@ -99,11 +99,13 @@
   // Diff Editor
   // ---------------------------------------------------------------------------
 
+  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
 
   // Editor
   // ---------------------------------------------------------------------------
 
+  "editor.accessibilitySupport": "off",
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "phase",
   "editor.multiCursorModifier": "ctrlCmd",
@@ -128,7 +130,7 @@
     "other": false,
     "strings": false
   },
-  "editor.quickSuggestionsDelay": 0,
+  "editor.quickSuggestionsDelay": 100000,
   "editor.wordBasedSuggestions": false,
   "editor.suggestOnTriggerCharacters": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
@@ -137,9 +139,6 @@
   // Formatting
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust"
-  },
 
   // Emmet
   // ---------------------------------------------------------------------------
@@ -210,6 +209,7 @@
   // Python Extension
   // ---------------------------------------------------------------------------
 
+  "python.defaultInterpreterPath": "~/.pyenv/versions/3.9.0/bin/python3",
   "python.pythonPath": "~/.pyenv/versions/3.9.0/bin/python3",
   "python.linting.enabled": true,
   "python.formatting.provider": "black",
@@ -230,6 +230,16 @@
     // },
   },
 
+  // Rust
+  // ---------------------------------------------------------------------------
+
+  "rust-analyzer.inlayHints.renderColons": false,
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+
   // SCM
   // ---------------------------------------------------------------------------
 
@@ -247,14 +257,6 @@
   "search.useIgnoreFiles": true,
   "search.useGlobalIgnoreFiles": true,
 
-  // Stylelint Extension
-  // ---------------------------------------------------------------------------
-
-  // Override default CSS validation in favor of Stylelint extension
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
-
   // Typescript
   // ---------------------------------------------------------------------------
 
@@ -263,6 +265,7 @@
   // Terminal
   // ---------------------------------------------------------------------------
 
+  "terminal.integrated.allowMnemonics": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.2,
@@ -299,6 +302,10 @@
     {
       "before": ["<"],
       "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "commands": ["turboConsoleLog.displayLogMessage"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -345,6 +352,18 @@
     {
       "before": ["<leader>", "c", "k"],
       "commands": ["extension.changeCase.kebab"]
+    },
+    {
+      "before": ["<leader>", "l", "d"],
+      "commands": ["turboConsoleLog.deleteAllLogMessages"]
+    },
+    {
+      "before": ["<leader>", "l", "c"],
+      "commands": ["turboConsoleLog.commentAllLogMessages"]
+    },
+    {
+      "before": ["<leader>", "l", "u"],
+      "commands": ["turboConsoleLog.uncommentAllLogMessages"]
     }
   ],
 
@@ -362,9 +381,6 @@
   "workbench.editor.decorations.colors": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.wrapTabs": true,
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
-  },
   "workbench.colorTheme": "Monokai Pro",
   "workbench.startupEditor": "none",
   "workbench.quickOpen.closeOnFocusLost": false,
