@@ -66,7 +66,6 @@ brew install --cask microsoft-edge
 brew install --cask notion
 brew install --cask pixelsnap
 brew install --cask raspberry-pi-imager
-brew install --cask rocket
 brew install --cask scroll-reverser
 brew install --cask sketch
 brew install --cask slack
