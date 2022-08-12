@@ -23,7 +23,7 @@ brew install fzf
 
 brew install git
 brew install git-extras
-brew install github/gh/gh
+brew install gh
 brew install httpie
 
 brew install jq
