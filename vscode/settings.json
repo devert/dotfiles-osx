@@ -13,19 +13,6 @@
   // ---------------------------------------------------------------------------
 
   "cSpell.userWords": [
-    "Flyout",
-    "Guid",
-    "Hacky",
-    "Helvetica",
-    "Keymap",
-    "Leadpage",
-    "Leadpages",
-    "Menlo",
-    "Monokai",
-    "Neovim",
-    "Stateful",
-    "Strikethrough",
-    "Unfocus",
     "backend",
     "browserslist",
     "clickshield",
@@ -33,10 +20,21 @@
     "customizations",
     "dropdown",
     "esnext",
+    "Fastify",
+    "Flyout",
     "gitlens",
+    "Guid",
+    "Hacky",
+    "Helvetica",
     "keyframes",
+    "Keymap",
+    "Leadpage",
+    "Leadpages",
     "lifecycle",
+    "Menlo",
+    "Monokai",
     "monospace",
+    "Neovim",
     "oauth",
     "performant",
     "postcss",
@@ -46,12 +44,15 @@
     "repo",
     "rerender",
     "scrollbar",
+    "Stateful",
+    "Strikethrough",
     "stylelint",
     "subdomain",
     "subheadline",
     "templating",
     "transpiled",
     "uncategorized",
+    "Unfocus",
     "unhover",
     "unhovered",
     "unmock",
@@ -156,6 +157,13 @@
 
   "eslint.packageManager": "yarn",
   "eslint.alwaysShowStatus": true,
+
+  // Extensions
+  // ---------------------------------------------------------------------------
+
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
 
   // File Explorer
   // ---------------------------------------------------------------------------
