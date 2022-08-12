@@ -25,6 +25,9 @@ alias vim="nvim"
 alias v="vim"
 alias y="yarn"
 
+# https://hub.github.com/
+alias git=hub
+
 # Web serve current directory at a specified port
 # alias serve="python -m SimpleHTTPServer"
 

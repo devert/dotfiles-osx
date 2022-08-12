@@ -25,5 +25,8 @@ alias vim="nvim"
 alias v="vim"
 alias y="yarn"
 
+# https://hub.github.com/
+alias git=hub
+
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec fish"

@@ -25,6 +25,7 @@ brew install git
 brew install git-extras
 brew install gh
 brew install httpie
+brew install hub
 
 brew install jq
 brew install neovim
