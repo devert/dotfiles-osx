@@ -11,9 +11,8 @@ pip install bumpversion
 # pip install pep8
 pip install virtualenv
 pip install virtualenvwrapper
-pip install virtualfish
 
-# Symlink a global requirements.txt file that is applied to 
-# every existing and new virtualenv. 
+# Symlink a global requirements.txt file that is applied to
+# every existing and new virtualenv.
 mkdir -p ~/.virtualenvs
 sudo ln -s ~/.dotfiles/python/global_requirements.txt ~/.virtualenvs/global_requirements.txt

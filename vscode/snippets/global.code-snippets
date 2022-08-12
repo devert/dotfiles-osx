@@ -1,0 +1,43 @@
+{
+  "db": {
+    "scope": "javascript, javascriptreact, typescript, typescriptreact",
+    "prefix": "db",
+    "body": ["debugger; // eslint-disable-line"],
+    "description": "Debugger statement with ESLint line disable"
+  },
+  "spec": {
+    "scope": "javascript, javascriptreact, typescript, typescriptreact",
+    "prefix": "spec",
+    "description": "Scaffolding for Jest test with React Testing Library",
+    "body": [
+      "import React from 'react';",
+      "import { render, screen } from '@testing-library/react';",
+      "import userEvent from '@testing-library/user-event';",
+      "",
+      "import ${TM_FILENAME_BASE/(.spec)//} from '${1:./${TM_FILENAME_BASE/(.spec)//}}';",
+      "",
+      "describe('${TM_FILENAME_BASE/(.spec)//}', () => {",
+      "  let props;",
+      "",
+      "  beforeEach(() => {",
+      "    props = {",
+      "      ${2}",
+      "    };",
+      "  });",
+      "",
+      "  it('should ${3}', () => {",
+      "    render(<${TM_FILENAME_BASE/(.spec)//} {...props} />);",
+      "  });",
+      "});",
+      "",
+      ""
+    ]
+  },
+  // Material UI
+  "useStyles": {
+    "scope": "javascript, javascriptreact, typescript, typescriptreact",
+    "prefix": "useStyles",
+    "body": ["const useStyles = makeStyles({}, { classNamePrefix: '$1' })"],
+    "description": "Define Material UI Component Styles using Hook API"
+  }
+}

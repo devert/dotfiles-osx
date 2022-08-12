@@ -13,6 +13,8 @@ Thumbs.db
 # Python files
 *.pyc
 .venv
+.python-version
+.pytest_cache
 
 # Compiled C++ files
 *.out

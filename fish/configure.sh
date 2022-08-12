@@ -19,7 +19,6 @@ omf install bass
 omf install brew
 omf install foreign-env
 omf install pyenv
-omf install virtualfish
 omf install z
 
 # Install Fast NVM Fish

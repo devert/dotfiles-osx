@@ -13,37 +13,49 @@
   // ---------------------------------------------------------------------------
 
   "cSpell.userWords": [
+    "backend",
+    "browserslist",
+    "clickshield",
+    "clsx",
+    "customizations",
+    "dropdown",
+    "esnext",
+    "Fastify",
     "Flyout",
+    "gitlens",
     "Guid",
     "Hacky",
     "Helvetica",
+    "keyframes",
     "Keymap",
     "Leadpage",
+    "Leadpages",
+    "lifecycle",
     "Menlo",
     "Monokai",
-    "Neovim",
-    "Stateful",
-    "Strikethrough",
-    "Unfocus",
-    "backend",
-    "clickshield",
-    "customizations",
-    "dropdown",
-    "gitlens",
-    "keyframes",
-    "lifecycle",
     "monospace",
+    "Neovim",
     "oauth",
     "performant",
     "postcss",
     "pylint",
+    "pytest",
     "refetch",
     "repo",
+    "rerender",
     "scrollbar",
+    "Stateful",
+    "Strikethrough",
     "stylelint",
     "subdomain",
+    "subheadline",
     "templating",
+    "transpiled",
     "uncategorized",
+    "Unfocus",
+    "unhover",
+    "unhovered",
+    "unmock",
     "unmount",
     "unstyled",
     "woff"
@@ -88,11 +100,13 @@
   // Diff Editor
   // ---------------------------------------------------------------------------
 
+  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": false,
-  
+
   // Editor
   // ---------------------------------------------------------------------------
 
+  "editor.accessibilitySupport": "off",
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "phase",
   "editor.multiCursorModifier": "ctrlCmd",
@@ -105,29 +119,31 @@
   "editor.minimap.enabled": false,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
+  "editor.tabCompletion": "onlySnippets",
   "editor.selectionHighlight": false,
   "editor.scrollBeyondLastLine": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll": true
   },
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.quickSuggestions": {
     "comments": false,
     "other": false,
     "strings": false
   },
-  "editor.quickSuggestionsDelay": 0,
+  "editor.quickSuggestionsDelay": 100000,
   "editor.wordBasedSuggestions": false,
   "editor.suggestOnTriggerCharacters": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.parameterHints.enabled": false,
 
+  // Formatting
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
   // Emmet
   // ---------------------------------------------------------------------------
 
-  "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
     "postcss": "css",
     "javascript": "javascriptreact"
@@ -142,6 +158,13 @@
   "eslint.packageManager": "yarn",
   "eslint.alwaysShowStatus": true,
 
+  // Extensions
+  // ---------------------------------------------------------------------------
+
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+
   // File Explorer
   // ---------------------------------------------------------------------------
 
@@ -154,8 +177,12 @@
     "**/*.snap": true
   },
   "files.associations": {
+    ".*": "shellscript",
     "*.css": "css",
-    ".*": "shellscript"
+    "*.json": "json",
+    ".babelrc": "json",
+    ".prettierrc": "json",
+    ".eslintrc.json": "jsonc"
   },
 
   // GitLens
@@ -164,55 +191,62 @@
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.statusBar.enabled": false,
-  "gitlens.resultsExplorer.location": "scm",
-  "gitlens.historyExplorer.enabled": true,
-  "gitlens.historyExplorer.location": "scm",
   "gitlens.keymap": "none",
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.fileHistory.location": "scm",
-  "gitlens.views.lineHistory.enabled": true,
-  "gitlens.views.lineHistory.location": "scm",
-  "gitlens.views.compare.location": "scm",
-  "gitlens.views.search.location": "scm",
 
   // Open In Browser
   // ---------------------------------------------------------------------------
 
   "open-in-browser.default": "Google Chrome",
-  
+
   // HTML
   // ---------------------------------------------------------------------------
-  
+
   "html.format.indentHandlebars": true,
   "html.format.indentInnerHtml": true,
-  "html.mirrorCursorOnMatchingTag": false,
-  
+
   // JavaScript
   // ---------------------------------------------------------------------------
-  
-  "javascript.implicitProjectConfig.experimentalDecorators": true,
+
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "javascript.validate.enable": false,
-  
+
   // Prettier Extension
   // ---------------------------------------------------------------------------
-  
-  // "prettier.disableLanguages": ["js"],
-  "prettier.packageManager": "yarn",
+
   "prettier.requireConfig": true,
-  
+
   // Python Extension
   // ---------------------------------------------------------------------------
-  
-  "python.pythonPath": "/usr/local/bin/python3",
+
+  "python.defaultInterpreterPath": "~/.pyenv/versions/3.9.0/bin/python3",
+  "python.pythonPath": "~/.pyenv/versions/3.9.0/bin/python3",
   "python.linting.enabled": true,
   "python.formatting.provider": "black",
-  "python.venvFolders": [
-    "~/.pyenv/versions"
-  ],
+  "python.formatting.blackPath": "~/.pyenv/versions/3.9.0/bin/black",
+  "python.terminal.activateEnvironment": false,
+  // "python.sortImports.path": "~/.pyenv/versions/3.9.0/bin/isort",
+  // "python.sortImports.args": [
+  //   "-rc",
+  //   "-sp isort.cfg"
+  //  ],
+  "python.venvPath": "~/.pyenv",
+  "python.venvFolders": ["~/.pyenv/versions"],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.rulers": [88]
+    // "editor.codeActionsOnSave": {
+    //   "source.organizeImports": true
+    // },
+  },
+
+  // Rust
+  // ---------------------------------------------------------------------------
+
+  "rust-analyzer.inlayHints.renderColons": false,
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
 
   // SCM
   // ---------------------------------------------------------------------------
@@ -231,27 +265,19 @@
   "search.useIgnoreFiles": true,
   "search.useGlobalIgnoreFiles": true,
 
-  // Stylelint Extension
-  // ---------------------------------------------------------------------------
-
-  // Override default CSS validation in favor of Stylelint extension
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
-
   // Typescript
   // ---------------------------------------------------------------------------
 
-  "typescript.validate.enable": false,
+  // "typescript.validate.enable": false,
 
   // Terminal
   // ---------------------------------------------------------------------------
 
+  "terminal.integrated.allowMnemonics": true,
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.shell.osx": "/usr/local/bin/fish",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.2,
-  "terminal.integrated.experimentalRefreshOnResume": true,
+  "terminal.integrated.defaultProfile.osx": "fish",
 
   // Vim
   // ---------------------------------------------------------------------------
@@ -262,9 +288,9 @@
   // "vim.easymotionMarkerFontWeight": "bold",
   // "vim.easymotionMarkerHeight": 22,
   // "vim.easymotionMarkerYOffset": 0,
-  "vim.enableNeovim": true,
   "vim.debug.silent": true,
   "vim.leader": "<Space>",
+  "vim.enableNeovim": true,
   "vim.neovimPath": "/usr/local/bin/nvim",
   "vim.useSystemClipboard": true,
   "vim.camelCaseMotion.enable": true,
@@ -284,16 +310,68 @@
     {
       "before": ["<"],
       "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "commands": ["turboConsoleLog.displayLogMessage"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "<leader>", "m"],
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["<leader>", "m"],
       "commands": ["bookmarks.toggle"]
     },
     {
-      "before": ["<leader>", "<leader>", "b"],
+      "before": ["<leader>", "b"],
       "commands": ["bookmarks.list"]
+    },
+    {
+      "before": ["<leader>", "u", "t"],
+      "commands": ["editor.emmet.action.updateTag"]
+    },
+    {
+      "before": ["<leader>", "c", "u"],
+      "commands": ["editor.action.transformToUppercase"]
+    },
+    {
+      "before": ["<leader>", "c", "l"],
+      "commands": ["editor.action.transformToLowercase"]
+    },
+    {
+      "before": ["<leader>", "c", "s"],
+      "commands": ["editor.action.transformToSnakecase"]
+    },
+    {
+      "before": ["<leader>", "c", "t"],
+      "commands": ["editor.action.transformToTitlecase"]
+    },
+    {
+      "before": ["<leader>", "c", "c"],
+      "commands": ["extension.changeCase.camel"]
+    },
+    {
+      "before": ["<leader>", "c", "k"],
+      "commands": ["extension.changeCase.kebab"]
+    },
+    {
+      "before": ["<leader>", "l", "d"],
+      "commands": ["turboConsoleLog.deleteAllLogMessages"]
+    },
+    {
+      "before": ["<leader>", "l", "c"],
+      "commands": ["turboConsoleLog.commentAllLogMessages"]
+    },
+    {
+      "before": ["<leader>", "l", "u"],
+      "commands": ["turboConsoleLog.uncommentAllLogMessages"]
     }
   ],
 
@@ -308,7 +386,9 @@
   // Workbench
   // ---------------------------------------------------------------------------
 
+  "workbench.editor.decorations.colors": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.wrapTabs": true,
   "workbench.colorTheme": "Monokai Pro",
   "workbench.startupEditor": "none",
   "workbench.quickOpen.closeOnFocusLost": false,
@@ -331,8 +411,5 @@
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false,
-
-  // Placeholder - Settings generated by VS Code
-  // ---------------------------------------------------------------------------
+  "zenMode.hideTabs": false
 }
