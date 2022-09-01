@@ -20,6 +20,7 @@ alias dce="docker-compose exec"
 alias dck="docker-compose kill"
 alias dcu="docker-compose up"
 alias g="git"
+alias kc="kubectl"
 alias up="itermocil"
 alias vim="nvim"
 alias v="vim"
@@ -27,6 +28,9 @@ alias y="yarn"
 
 # https://hub.github.com/
 alias git=hub
+
+# Switch to local Docker Kubernetes cluster.
+alias kubelocal="kubectl config use-context docker-desktop"
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec fish"
