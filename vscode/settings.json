@@ -209,6 +209,11 @@
 
   "javascript.updateImportsOnFileMove.enabled": "always",
 
+  // Playwright Extension
+  // ---------------------------------------------------------------------------
+  
+  "playwright.reuseBrowser": true,
+  
   // Prettier Extension
   // ---------------------------------------------------------------------------
 
@@ -232,7 +237,7 @@
   "python.venvFolders": ["~/.pyenv/versions"],
   "[python]": {
     "editor.defaultFormatter": "ms-python.python",
-    "editor.rulers": [88]
+    "editor.rulers": [88],
     // "editor.codeActionsOnSave": {
     //   "source.organizeImports": true
     // },
