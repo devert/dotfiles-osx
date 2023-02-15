@@ -1,6 +1,6 @@
-# OSX Dotfiles
+# macOS Dotfiles
 
-Setup, software installation and dotfiles for OSX.
+Setup, software installation and dotfiles for macOS.
 
 ## Install Command Line Tools (CLT) for Xcode
 
@@ -8,18 +8,22 @@ Setup, software installation and dotfiles for OSX.
 xcode-select --install
 ```
 
-[developer.apple.com/downloads](https://developer.apple.com/downloads) or [Xcode 3](https://itunes.apple.com/us/app/xcode/id497799835)
+[developer.apple.com/downloads](https://developer.apple.com/downloads) or [Xcode](https://itunes.apple.com/us/app/xcode/id497799835)
 
-## Install [Homebrew](http://brew.sh/) and Git
+## Install [Homebrew](http://brew.sh/), Git, Chrome and 1Password
 
 ```sh
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install git
+/opt/homebrew/bin/brew install git
+/opt/homebrew/bin/brew install --cask google-chrome
+/opt/homebrew/bin/brew install --cask 1password
 ```
 
 ## Checkout dotfiles project
 
-[Generate SSH Key](https://help.github.com/articles/connecting-to-github-with-ssh/) and add it to GitHub [profile](https://github.com/settings/keys). Then pull the repo using the following steps.
+[Generate SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and add it to GitHub [profile](https://github.com/settings/keys).
+
+Then pull this repo using the following steps.
 
 ```sh
 cd ~/
