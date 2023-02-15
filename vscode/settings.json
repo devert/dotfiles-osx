@@ -211,9 +211,9 @@
 
   // Playwright Extension
   // ---------------------------------------------------------------------------
-  
+
   "playwright.reuseBrowser": true,
-  
+
   // Prettier Extension
   // ---------------------------------------------------------------------------
 
@@ -238,6 +238,7 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.python",
     "editor.rulers": [88],
+    "editor.formatOnType": true
     // "editor.codeActionsOnSave": {
     //   "source.organizeImports": true
     // },
