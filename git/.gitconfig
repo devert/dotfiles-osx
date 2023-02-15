@@ -18,12 +18,13 @@
 
   # branch
   b = branch -v                   # branch (verbose)
-  br = branch -rv               # branch (remote, verbose)
+  br = branch -rv                 # branch (remote, verbose)
   bd = branch -d                  # branch delete
   bdf = branch -D                 # branch force delete
-  # shortcut for git-extras delete-merged-branches (https://github.com/tj/git-extras/blob/master/Commands.md#git-delete-merged-branches)
-  # AND shortcut to delete squashed and merged branches (https://github.com/not-an-aardvark/git-delete-squashed)
-  dmb = "!f() { git-delete-squashed; git delete-merged-branches; }; f"
+
+  # Shortcut for git-extras delete-merged-branches (https://github.com/tj/git-extras/blob/master/Commands.md#git-delete-merged-branches)
+  # and delete-squashed-branches (https://github.com/tj/git-extras/blob/master/Commands.md#git-delete-squashed-branches)
+  dmb = "!f() { git delete-squashed-branches; git delete-merged-branches; }; f"
 
   # commit
   c = commit -m                   # commit with message
@@ -102,7 +103,7 @@
   su = set-upstream
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
