@@ -4,7 +4,7 @@ echo "Now using fish $FISH_VERSION"
 # Location of brew installed bash-git-prompt for fish
 set __GIT_PROMPT_DIR /usr/local/share
 
-# Set brew installed curl
+# Set brew installed curl - TODO: Conditionally add this if not present
 set -g fish_user_paths "/usr/local/opt/curl/bin" $fish_user_paths
 
 # Load aliases
@@ -28,16 +28,16 @@ if type -q pyenv
   status --is-interactive; and pyenv virtualenv-init - | source
 end
 
-# Load asdf
-if type -q asdf
-  source (brew --prefix asdf)/asdf.fish
-end
+# Load asdf - TODO: Remove asdf?
+# if type -q asdf
+#   source (brew --prefix asdf)/libexec/asdf.fish
+# end
 
 # Change prompt for Virtualfish
-functions -c fish_prompt _old_fish_prompt
-function fish_prompt
-  if set -q VIRTUAL_ENV
-    echo -n -s (set_color -b normal blue) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
-  end
-  _old_fish_prompt
-end
+# functions -c fish_prompt _old_fish_prompt
+# function fish_prompt
+#   if set -q VIRTUAL_ENV
+#     echo -n -s (set_color -b normal blue) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
+#   end
+#   _old_fish_prompt
+# end
