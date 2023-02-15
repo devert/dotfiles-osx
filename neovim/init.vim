@@ -48,6 +48,7 @@ Plug '907th/vim-auto-save'
 Plug 'terryma/vim-multiple-cursors'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
 " " Language Packs
 Plug 'sheerun/vim-polyglot'
@@ -130,3 +131,20 @@ let g:auto_save = 1  " enable AutoSave on Vim startup
 " ---------------------------------------------------------------
 
 nnoremap <silent> <Leader><Leader> :FZF<CR>
+
+
+" Firenvim Config
+" ---------------------------------------------------------------
+
+let g:firenvim_config = {
+    \ 'localSettings': {
+        \ '.*': {
+            \ 'selector': 'textarea',
+            \ 'takeover': 'never',
+        \ },
+    \ }
+\ }
+
+if exists('g:started_by_firenvim')
+ let g:auto_save = 0
+endif
