@@ -6,6 +6,17 @@
   editor = nvim
 [push]
   default = current
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Dennis Evert
+	email = dennisevert@gmail.com
+[commit]
+	template = /Users/devert/.stCommitMsg
 [alias]
   # add
   a = add                         # add
@@ -13,18 +24,22 @@
   au = add -u                     # add all deleted files
   ap = add --patch                # stage commits chunk by chunk
 
+  # aliases
   # output all aliases
   la = "!git config --get-regexp '^alias\\.' | cut -c 7- | sed 's/ / = /'"
 
   # branch
   b = branch -v                   # branch (verbose)
   br = branch -rv                 # branch (remote, verbose)
-  bd = branch -d                  # branch delete
-  bdf = branch -D                 # branch force delete
-
+  bd = branch -d                  # branch delete (local)
+  bdf = branch -D                 # branch force delete (local)
+  # Shortcut for git-extras delete-branch (https://github.com/tj/git-extras/blob/master/Commands.md#git-delete-branch)
+  db = rename-tag
   # Shortcut for git-extras delete-merged-branches (https://github.com/tj/git-extras/blob/master/Commands.md#git-delete-merged-branches)
   # and delete-squashed-branches (https://github.com/tj/git-extras/blob/master/Commands.md#git-delete-squashed-branches)
   dmb = "!f() { git delete-squashed-branches; git delete-merged-branches; }; f"
+  # Shortcut for git-extras rename-branch (https://github.com/tj/git-extras/blob/master/Commands.md#git-rename-branch)
+  rnb = rename-branch
 
   # commit
   c = commit -m                   # commit with message
@@ -40,13 +55,6 @@
   dc = diff --cached              # diff staged changes
   last = diff HEAD^               # diff last committed change
 
-  # update-index
-  ignore-change = !git update-index --assume-unchanged
-  ic = ignore-change
-  unignore-change = !git update-index --no-assume-unchanged
-  uc = unignore-change
-  ignored = !git ls-files -v | grep ^[a-z]
-
   # log
   l = log --graph --date=short
   changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
@@ -54,7 +62,10 @@
   short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
   shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
 
-  # pullz
+  # mergetool
+  mt = mergetool                  # fire up the merge tool
+
+  # pull
   pl = pull
 
   # prune
@@ -65,8 +76,8 @@
   ps = push
 
   # rebase
-  rc = rebase --continue          # continue rebase
-  rs = rebase --skip              # skip rebase
+  rbc = rebase --continue          # continue rebase
+  rbs = rebase --skip              # skip rebase
 
   # remote
   rv = remote -v                  # show remotes (verbose)
@@ -77,7 +88,8 @@
   unstage = reset HEAD            # remove files from index (tracking)
   uncommit = reset --soft HEAD^   # go back before last commit, with files in uncommitted state
   filelog = log -u                # show changes to a file
-  mt = mergetool                  # fire up the merge tool
+  # Shortcut for git-extras reset-file (https://github.com/tj/git-extras/blob/master/Commands.md#git-reset-file)
+  rsf = reset-file
 
   # stash
   ss = stash                      # stash changes
@@ -87,28 +99,28 @@
   ssa = stash --all               # stash all files, including untracked and ignored files.
 
   # status
-  s = status                      # status
   st = status                     # status
-  stat = status                   # status
 
   # tag
   t = tag -n                      # show tags with <n> lines of each tag message
+  # Shortcut for git-extras delete-branch (https://github.com/tj/git-extras/blob/master/Commands.md#git-delete-branch)
+  dt = delete-tag
+  # Shortcut for git-extras rename-tag (https://github.com/tj/git-extras/blob/master/Commands.md#git-rename-tag)
+  rnt = rename-tag
 
+  # update
   # https://adamcod.es/2014/12/10/git-pull-correct-workflow.html
   update-from = "!f() { git fetch $1 --prune; git merge --ff-only $1/$2 || git rebase --preserve-merges $1/$2; }; f"
   uf = update-from
 
+  # update-index
+  ignore-change = !git update-index --assume-unchanged
+  ic = ignore-change
+  unignore-change = !git update-index --no-assume-unchanged
+  uc = unignore-change
+  ignored = !git ls-files -v | grep ^[a-z]
+
+  # upstream
   # https://zarino.co.uk/post/git-set-upstream/
   set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
   su = set-upstream
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[user]
-	name = Dennis Evert
-	email = dennisevert@gmail.com
-[commit]
-	template = /Users/devert/.stCommitMsg
