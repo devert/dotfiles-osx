@@ -15,7 +15,6 @@ brew upgrade --all
 # Install command-line tools using Homebrew.
 echo "Installing Homebrew Packages"
 
-brew install asdf
 brew install curl
 brew install fish
 brew install fzf
