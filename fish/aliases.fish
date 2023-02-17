@@ -25,9 +25,6 @@ alias vim="nvim"
 alias v="vim"
 alias y="yarn"
 
-# https://hub.github.com/
-alias git=hub
-
 # Switch to local Docker Kubernetes cluster.
 alias kubelocal="kubectl config use-context docker-desktop"
 

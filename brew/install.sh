@@ -24,16 +24,16 @@ brew install fzf
 brew install git
 brew install git-extras
 brew install gh
+
+# Conflicts with git-extras sync, so override
+brew install jacobwgillespie/tap/git-sync
+brew link --overwrite git-sync
+
 brew install httpie
-brew install hub
 
 brew install jq
 brew install neovim
 brew install pyenv
-
-mkdir -p ~/.itermocil
-brew install TomAnthony/brews/itermocil
-brew install TomAnthony/brews/queue
 
 brew install tree
 brew install tmux
