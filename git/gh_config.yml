@@ -5,3 +5,4 @@ editor: vim
 # Aliases allow you to create nicknames for gh commands
 aliases:
   prco: pr checkout
+  clone: repo clone
