@@ -27,12 +27,3 @@ if type -q pyenv
   status --is-interactive; and pyenv init - | source
   status --is-interactive; and pyenv virtualenv-init - | source
 end
-
-# Change prompt for Virtualfish
-# functions -c fish_prompt _old_fish_prompt
-# function fish_prompt
-#   if set -q VIRTUAL_ENV
-#     echo -n -s (set_color -b normal blue) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
-#   end
-#   _old_fish_prompt
-# end
