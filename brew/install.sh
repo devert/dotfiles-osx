@@ -39,6 +39,7 @@ brew install tmux
 brew install watchman
 brew install yarn
 brew install z
+brew install zsh
 
 echo "Install Applications with Homebrew Cask"
 
