@@ -16,9 +16,9 @@ brew upgrade --all
 echo "Installing Homebrew Packages"
 
 brew install curl
-brew install fish
 brew install fzf
-/usr/local/opt/fzf/install
+# To install useful key bindings and fuzzy completion:
+$(brew --prefix)/opt/fzf/install
 
 brew install git
 brew install git-extras
