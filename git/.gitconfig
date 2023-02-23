@@ -17,6 +17,8 @@
 	email = dennisevert@gmail.com
 [commit]
 	template = /Users/devert/.stCommitMsg
+[pager]
+	branch = false
 [alias]
   # add
   a = add                         # add
