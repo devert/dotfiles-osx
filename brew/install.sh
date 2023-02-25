@@ -62,6 +62,7 @@ brew install --cask google-chrome
 brew install --cask hazeover
 brew install --cask insomnia
 brew install --cask iterm2
+brew install --cask karabiner-elements
 brew install --cask kdiff3
 brew install --cask microsoft-edge
 brew install --cask notion
