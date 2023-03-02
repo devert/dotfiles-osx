@@ -113,7 +113,7 @@ defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 # Enable subpixel font rendering on non-Apple LCDs and fix blurry thin type.
 # http://osxdaily.com/2018/09/26/fix-blurry-thin-fonts-text-macos-mojave/
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
-defaults -currentHost write -globalDomain AppleFontSmoothing -int 1
+defaults -currentHost write -g AppleFontSmoothing -int 1
 
 ###############################################################################
 # Finder
