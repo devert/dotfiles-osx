@@ -47,6 +47,7 @@ brew install --cask audio-hijack
 brew install --cask bettertouchtool
 brew install --cask brave-browser
 brew install --cask charles # TODO: consider removing
+brew install --cask chromium --no-quarantine
 brew install --cask contexts
 brew install --cask docker
 brew install --cask dropbox
