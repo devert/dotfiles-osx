@@ -40,23 +40,24 @@ brew install zsh
 echo "Install Applications with Homebrew Cask"
 
 brew install --cask 1password
-brew install --cask adobe-acrobat-reader # consider removing
+brew install --cask adobe-acrobat-reader # TODO: consider removing
 brew install --cask appcleaner
 brew install --cask applepi-baker
 brew install --cask audio-hijack
 brew install --cask bettertouchtool
 brew install --cask brave-browser
-brew install --cask charles # consider removing
+brew install --cask charles # TODO: consider removing
 brew install --cask contexts
 brew install --cask docker
 brew install --cask dropbox
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask hiddenbar
-brew install --cask insomnia
+brew install --cask httpie # TODO: determine which one is better between this and insomnia
+brew install --cask insomnia # TODO: determine which one is better between this and httpie
 brew install --cask iterm2
 brew install --cask karabiner-elements
-brew install --cask kdiff3 # consider removing
+brew install --cask kdiff3 # TODO: consider removing or finding new diff app
 brew install --cask microsoft-edge
 brew install --cask notion
 brew install --cask pixelsnap
@@ -65,13 +66,13 @@ brew install --cask raspberry-pi-imager
 brew install --cask raycast
 brew install --cask scroll-reverser
 brew install --cask shift
-brew install --cask slack
+brew install --cask slack # TODO: consider removing since used with Shift
 brew install --cask sourcetree
 brew install --cask spotify
-brew install --cask virtualbox
+brew install --cask virtualbox # TODO: consider removing
 brew install --cask visual-studio-code
 brew install --cask vlc
-brew install --cask zoomus
+brew install --cask zoom
 
 # Reload shell
 reload
