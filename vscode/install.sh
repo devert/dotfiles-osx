@@ -42,13 +42,18 @@ if [[ $? -eq 0 ]];then
         code --install-extension gottfired.css2react
         code --install-extension GrapeCity.gc-excelviewer
         code --install-extension GraphQL.vscode-graphql
+        code --install-extension GraphQL.vscode-graphql-execution
+        code --install-extension GraphQL.vscode-graphql-syntax
         code --install-extension inu1255.easy-snippet
         code --install-extension KevinRose.vsc-python-indent
         code --install-extension monokai.theme-monokai-pro-vscode
         code --install-extension ms-azuretools.vscode-docker
+        code --install-extension ms-playwright.playwright
+        code --install-extension ms-python.isort
         code --install-extension ms-python.python
         code --install-extension ms-python.vscode-pylance
         code --install-extension ms-vscode.atom-keybindings
+        code --install-extension ms-vsliveshare.vsliveshare
         code --install-extension naumovs.color-highlight
         code --install-extension njpwerner.autodocstring
         code --install-extension patbenatar.advanced-new-file
@@ -64,6 +69,7 @@ if [[ $? -eq 0 ]];then
         code --install-extension vstirbu.vscode-mermaid-preview
         code --install-extension wmaurer.change-case
         code --install-extension yzhang.markdown-all-in-one
+        code --install-extension ZixuanChen.vitest-explorer
 
         echo "Extensions for VSCode have been installed. Please restart VSCode."
     else
