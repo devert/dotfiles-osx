@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 # Path shortcuts
-alias db="cd ~/Dropbox\ \(Personal\)/"
+alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias df="cd ~/.dotfiles"
