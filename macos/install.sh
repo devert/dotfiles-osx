@@ -211,6 +211,12 @@ defaults write com.apple.dock autohide-time-modifier -float 0.5
 # System Preferences > Dock > Automatically hide and show the Dock (delay)
 defaults write com.apple.dock autohide-delay -float 0
 
+# Disable all Hot Corners
+defaults write com.apple.dock wvous-tl-corner -int 0 # Top left
+defaults write com.apple.dock wvous-tr-corner -int 0 # Top right
+defaults write com.apple.dock wvous-bl-corner -int 0 # Bottom left
+defaults write com.apple.dock wvous-br-corner -int 0 # Bottom right
+
 ###############################################################################
 # Terminal & iTerm 2
 ###############################################################################
