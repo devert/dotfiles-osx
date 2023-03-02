@@ -378,6 +378,14 @@
     {
       "before": ["<leader>", "l", "u"],
       "commands": ["turboConsoleLog.uncommentAllLogMessages"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["testing.runAtCursor"]
+    },
+    {
+      "before": ["<leader>", "t", "f"],
+      "commands": ["testing.runCurrentFile"]
     }
   ],
 
