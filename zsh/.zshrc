@@ -117,9 +117,5 @@ source $ZSH/oh-my-zsh.sh
 # Disable highlighting of pasted commands
 zle_highlight=('paste:none')
 
-# Puppeteer installs will skip Chromium install and use Homebrew installed Chromium
-export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
-export PUPPETEER_EXECUTABLE_PATH=`which chromium`
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
