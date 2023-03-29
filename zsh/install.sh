@@ -41,4 +41,5 @@ sudo ln -s ~/.dotfiles/zsh/.p10k.zsh ~/.p10k.zsh
 
 # Install custom configuration files
 sudo ln -s ~/.dotfiles/zsh/aliases.zsh $ZSH_CUSTOM/aliases.zsh
+sudo ln -s ~/.dotfiles/zsh/functions.zsh $ZSH_CUSTOM/functions.zsh
 
