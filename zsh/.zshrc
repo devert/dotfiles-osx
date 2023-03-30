@@ -76,6 +76,7 @@ plugins=(
     docker-compose
     # fast-loading-nvm
     fzf
+    gcloud
     git
     git-extras
     gh
