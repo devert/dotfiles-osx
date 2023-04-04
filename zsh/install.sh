@@ -31,8 +31,6 @@ sudo ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
 echo "Installing Custom Zsh Plugins"
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-git clone https://github.com/mafredri/zsh-async $ZSH_CUSTOM/plugins/async
-git clone https://github.com/devert/fast-zsh-nvm $ZSH_CUSTOM/plugins/fast-loading-nvm
 
 # Install custom Zsh theme
 echo "Installing Custom Zsh Theme"

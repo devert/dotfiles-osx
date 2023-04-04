@@ -42,8 +42,11 @@ zstyle ':omz:plugins:nvm' autoload yes
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
-# Uncomment the following line to enable command auto-correction.
+# Enable command auto-correction.
 ENABLE_CORRECTION="true"
+
+# Disable auto-correction for these command arguments
+CORRECT_IGNORE_FILE=".storybook|tests"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -70,11 +73,10 @@ ENABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    vi-mode # Must enable this before fzf to not conflict with keybindings
     alias-finder
-    # async
     docker
     docker-compose
-    # fast-loading-nvm
     fzf
     gcloud
     git
@@ -96,9 +98,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-# fast-loading-nvm config
-# AUTO_LOAD_NVMRC_FILES=true
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
