@@ -388,10 +388,10 @@
       "commands": ["testing.runCurrentFile"]
     }
   ],
-
+  
   // Window
   // ---------------------------------------------------------------------------
-
+  
   "window.zoomLevel": 1,
   "window.newWindowDimensions": "inherit",
   "window.restoreWindows": "none",
@@ -406,7 +406,6 @@
   "workbench.colorTheme": "Monokai Pro",
   "workbench.startupEditor": "none",
   "workbench.quickOpen.closeOnFocusLost": false,
-  "workbench.statusBar.visible": true,
   "workbench.activityBar.visible": false,
   "workbench.editor.tabCloseButton": "off",
   "workbench.iconTheme": "Monokai Pro Icons",
@@ -425,5 +424,5 @@
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false
+  "zenMode.hideTabs": false,
 }
