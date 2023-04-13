@@ -222,11 +222,10 @@
   // Python Extension
   // ---------------------------------------------------------------------------
 
-  "python.defaultInterpreterPath": "~/.pyenv/versions/3.9.0/bin/python3",
-  "python.pythonPath": "~/.pyenv/versions/3.9.0/bin/python3",
+  "python.defaultInterpreterPath": "~/.pyenv/versions/3.8.16/bin/python3",
   "python.linting.enabled": true,
   "python.formatting.provider": "black",
-  "python.formatting.blackPath": "~/.pyenv/versions/3.9.0/bin/black",
+  "python.formatting.blackPath": "/opt/homebrew/bin/black",
   "python.terminal.activateEnvironment": false,
   // "python.sortImports.path": "~/.pyenv/versions/3.9.0/bin/isort",
   // "python.sortImports.args": [
@@ -388,10 +387,10 @@
       "commands": ["testing.runCurrentFile"]
     }
   ],
-  
+
   // Window
   // ---------------------------------------------------------------------------
-  
+
   "window.zoomLevel": 1,
   "window.newWindowDimensions": "inherit",
   "window.restoreWindows": "none",
@@ -424,5 +423,5 @@
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false,
+  "zenMode.hideTabs": false
 }
