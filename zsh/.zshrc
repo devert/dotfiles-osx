@@ -73,11 +73,9 @@ CORRECT_IGNORE_FILE=".storybook|tests"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    vi-mode # Must enable this before fzf to not conflict with keybindings
     alias-finder
     docker
     docker-compose
-    fzf
     gcloud
     git
     git-extras
@@ -93,6 +91,8 @@ plugins=(
     z
     zsh-autosuggestions
     zsh-syntax-highlighting
+    vi-mode # Must enable this before fzf to not conflict with keybindings
+    fzf
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -116,6 +116,23 @@ source $ZSH/oh-my-zsh.sh
 
 # Disable highlighting of pasted commands
 zle_highlight=('paste:none')
+
+# Configuration for zsh-autosuggestions plugin
+bindkey '^f' autosuggest-accept
+
+# Configuration for vi-mode plugin
+VI_MODE_SET_CURSOR=true
+
+# 0, 1 - Blinking block
+# 2 - Solid block
+# 3 - Blinking underline
+# 4 - Solid underline
+# 5 - Blinking line
+# 6 - Solid line
+VI_MODE_CURSOR_NORMAL=0
+VI_MODE_CURSOR_VISUAL=0
+VI_MODE_CURSOR_INSERT=5
+VI_MODE_CURSOR_OPPEND=0
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
