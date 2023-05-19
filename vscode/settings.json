@@ -13,6 +13,7 @@
   // ---------------------------------------------------------------------------
 
   "cSpell.userWords": [
+    "Adsense",
     "backend",
     "browserslist",
     "clickshield",
@@ -287,12 +288,7 @@
   // Vim
   // ---------------------------------------------------------------------------
 
-  // "vim.easymotion": true,
-  // "vim.easymotionMarkerFontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
-  // "vim.easymotionMarkerFontSize": "14",
-  // "vim.easymotionMarkerFontWeight": "bold",
-  // "vim.easymotionMarkerHeight": 22,
-  // "vim.easymotionMarkerYOffset": 0,
+  "vim.easymotion": true,
   "vim.debug.silent": true,
   "vim.leader": "<Space>",
   "vim.enableNeovim": true,

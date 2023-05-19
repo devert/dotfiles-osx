@@ -46,7 +46,7 @@ zstyle ':omz:plugins:nvm' autoload yes
 ENABLE_CORRECTION="true"
 
 # Disable auto-correction for these command arguments
-CORRECT_IGNORE_FILE=".storybook|tests"
+CORRECT_IGNORE_FILE=".storybook|tests|ci"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
