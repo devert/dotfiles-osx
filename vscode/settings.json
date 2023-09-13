@@ -51,6 +51,7 @@
     "subdomain",
     "subheadline",
     "templating",
+    "textbox",
     "transpiled",
     "uncategorized",
     "Unfocus",
@@ -137,6 +138,8 @@
   "editor.suggestOnTriggerCharacters": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.parameterHints.enabled": false,
+  "editor.linkedEditing": true,
+  "editor.inlineSuggest.enabled": true,
 
   // Formatting
   "editor.formatOnSave": true,
@@ -186,6 +189,11 @@
     ".eslintrc.json": "jsonc"
   },
 
+  // Github Copilot
+  // ---------------------------------------------------------------------------
+
+  "github.copilot.editor.enableAutoCompletions": false,
+
   // GitLens
   // ---------------------------------------------------------------------------
 
@@ -214,13 +222,14 @@
   // ---------------------------------------------------------------------------
 
   "playwright.reuseBrowser": true,
+  "playwright.showTrace": false,
 
   // Prettier Extension
   // ---------------------------------------------------------------------------
 
   "prettier.requireConfig": true,
 
-  // Python Extension
+  // Python and Extension(s) - Black and iSort
   // ---------------------------------------------------------------------------
 
   "python.defaultInterpreterPath": "~/.pyenv/versions/3.8.16/bin/python3",
@@ -228,21 +237,17 @@
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "/opt/homebrew/bin/black",
   "python.terminal.activateEnvironment": false,
-  // "python.sortImports.path": "~/.pyenv/versions/3.9.0/bin/isort",
-  // "python.sortImports.args": [
-  //   "-rc",
-  //   "-sp isort.cfg"
-  //  ],
   "python.venvPath": "~/.pyenv",
   "python.venvFolders": ["~/.pyenv/versions"],
   "[python]": {
-    "editor.defaultFormatter": "ms-python.python",
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.rulers": [88],
-    "editor.formatOnType": true
-    // "editor.codeActionsOnSave": {
-    //   "source.organizeImports": true
-    // },
+    "editor.formatOnType": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
   },
+  "isort.args": ["--profile", "black"],
 
   // Rust
   // ---------------------------------------------------------------------------
@@ -387,6 +392,7 @@
   // Window
   // ---------------------------------------------------------------------------
 
+  "window.commandCenter": false,
   "window.zoomLevel": 1,
   "window.newWindowDimensions": "inherit",
   "window.restoreWindows": "none",
