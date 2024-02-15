@@ -4,5 +4,6 @@ git_protocol: ssh
 editor: vim
 # Aliases allow you to create nicknames for gh commands
 aliases:
-    prco: pr checkout
-    clone: repo clone
+  prco: pr checkout
+  clone: repo clone
+version: "1"
