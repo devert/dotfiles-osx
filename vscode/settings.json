@@ -16,6 +16,7 @@
     "Adsense",
     "backend",
     "browserslist",
+    "camelcase",
     "clickshield",
     "clsx",
     "customizations",
@@ -125,8 +126,8 @@
   "editor.selectionHighlight": false,
   "editor.scrollBeyondLastLine": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll": true
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll": "explicit"
   },
   "editor.quickSuggestions": {
     "comments": false,
@@ -134,7 +135,7 @@
     "strings": false
   },
   "editor.quickSuggestionsDelay": 100000,
-  "editor.wordBasedSuggestions": false,
+  "editor.wordBasedSuggestions": "off",
   "editor.suggestOnTriggerCharacters": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.parameterHints.enabled": false,
@@ -160,7 +161,6 @@
   // ---------------------------------------------------------------------------
 
   "eslint.packageManager": "yarn",
-  "eslint.alwaysShowStatus": true,
 
   // Extensions
   // ---------------------------------------------------------------------------
@@ -192,7 +192,7 @@
   // Github Copilot
   // ---------------------------------------------------------------------------
 
-  "github.copilot.editor.enableAutoCompletions": false,
+  "github.copilot.editor.enableAutoCompletions": true,
 
   // GitLens
   // ---------------------------------------------------------------------------
@@ -244,7 +244,7 @@
     "editor.rulers": [88],
     "editor.formatOnType": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     }
   },
   "isort.args": ["--profile", "black"],
@@ -302,12 +302,7 @@
   "vim.camelCaseMotion.enable": true,
   "vim.highlightedyank.enable": true,
   "vim.visualstar": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-    }
-  ],
+  "vim.smartRelativeLine": true,
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": [">"],
@@ -407,9 +402,10 @@
   "workbench.colorTheme": "Monokai Pro",
   "workbench.startupEditor": "none",
   "workbench.quickOpen.closeOnFocusLost": false,
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.location": "hidden",
   "workbench.editor.tabCloseButton": "off",
   "workbench.iconTheme": "Monokai Pro Icons",
+  "workbench.editor.tabActionCloseVisibility": false,
 
   // Make info, error and warning decorations in overview ruler transparent
   "workbench.colorCustomizations": {
@@ -424,6 +420,5 @@
 
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
-  "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false
+  "zenMode.hideLineNumbers": false
 }
