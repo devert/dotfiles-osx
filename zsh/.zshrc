@@ -43,7 +43,7 @@ zstyle ':omz:plugins:nvm' autoload yes
 # DISABLE_AUTO_TITLE="true"
 
 # Enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Disable auto-correction for these command arguments
 CORRECT_IGNORE_FILE=".storybook|tests|ci"
