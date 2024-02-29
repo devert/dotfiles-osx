@@ -1,2 +1,3 @@
-# Install Monokai Pro theme that I generated at warp-themes.com
-curl -s -N 'https://warp-themes.com/d/IEtj6P3AD5GvGKtjHlfC' | bash
+# Install Monokai Pro theme
+mkdir -p ~/.warp/themes/
+sudo ln -s ~/.dotfiles/warp/monokai_pro.yaml ~/.warp/themes/monokai_pro.yaml
