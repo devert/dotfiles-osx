@@ -10,6 +10,7 @@ alias pp="cd ~/Projects/Personal"
 
 # Shorten commonly typed commands
 alias c="cargo"
+alias code="code ."
 alias d="docker"
 alias dsa="docker stop (docker ps -q)"
 alias dka="docker kill (docker ps -q)"
