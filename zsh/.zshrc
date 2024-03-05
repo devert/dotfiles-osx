@@ -135,4 +135,11 @@ VI_MODE_CURSOR_INSERT=5
 VI_MODE_CURSOR_OPPEND=0
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.p10k.zsh ]] || {
+  source ~/.p10k.zsh
+  # Warp adds an additional line break to the prompt, so we need to remove the first and last elements to fix that.
+  if [[ $TERM_PROGRAM == "WarpTerminal" ]]; then
+    POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(${POWERLEVEL9K_LEFT_PROMPT_ELEMENTS[1,-3]})
+    POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(${POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS[1,-2]})
+  fi
+}
