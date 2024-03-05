@@ -100,12 +100,6 @@
   "color-highlight.markerType": "dot-before",
   "color-highlight.markRuler": false,
 
-  // Diff Editor
-  // ---------------------------------------------------------------------------
-
-  "diffEditor.ignoreTrimWhitespace": false,
-  "diffEditor.renderSideBySide": false,
-
   // Editor
   // ---------------------------------------------------------------------------
 
@@ -252,9 +246,9 @@
   // Rust
   // ---------------------------------------------------------------------------
 
-  "rust-analyzer.inlayHints.renderColons": false,
-  "rust-analyzer.inlayHints.typeHints.enable": false,
-  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  // "rust-analyzer.inlayHints.renderColons": false,
+  // "rust-analyzer.inlayHints.typeHints.enable": false,
+  // "rust-analyzer.inlayHints.parameterHints.enable": false,
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
@@ -293,7 +287,6 @@
   // Vim
   // ---------------------------------------------------------------------------
 
-  "vim.easymotion": true,
   "vim.debug.silent": true,
   "vim.leader": "<Space>",
   "vim.enableNeovim": true,
@@ -303,6 +296,11 @@
   "vim.highlightedyank.enable": true,
   "vim.visualstar": true,
   "vim.smartRelativeLine": true,
+  "vim.foldfix": true,
+  "vim.easymotion": true,
+  "vim.easymotionMarkerForegroundColorOneChar": "#ff6188",
+  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#78dce8",
+  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#78dce8",
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": [">"],
@@ -315,6 +313,16 @@
     {
       "before": ["<leader>", "l"],
       "commands": ["turboConsoleLog.displayLogMessage"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-j>"],
+      "after": ["3", "j"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["3", "k"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -333,6 +341,34 @@
     {
       "before": ["<leader>", "b"],
       "commands": ["bookmarks.list"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["editor.toggleFold"]
+    },
+    {
+      "before": ["<leader>", "<leader>", "f"],
+      "commands": ["editor.foldAll"]
+    },
+    {
+      "before": ["<leader>", "<leader>", "u"],
+      "commands": ["editor.unfoldAll"]
+    },
+    {
+      "before": ["<leader>", "u", "c"],
+      "commands": ["editor.emmet.action.balanceOutward"]
+    },
+    {
+      "before": ["<leader>", "u", "i"],
+      "commands": ["editor.emmet.action.balanceInward"]
+    },
+    {
+      "before": ["<leader>", "u", "d"],
+      "commands": ["editor.emmet.action.splitJoinTag"]
+    },
+    {
+      "before": ["<leader>", "u", "e"],
+      "commands": ["editor.emmet.action.matchTag"]
     },
     {
       "before": ["<leader>", "u", "t"],
@@ -403,12 +439,12 @@
   "workbench.startupEditor": "none",
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.activityBar.location": "hidden",
-  "workbench.editor.tabCloseButton": "off",
   "workbench.iconTheme": "Monokai Pro Icons",
   "workbench.editor.tabActionCloseVisibility": false,
 
   // Make info, error and warning decorations in overview ruler transparent
   "workbench.colorCustomizations": {
+    "editorInlayHint.background": "#0000",
     "editorOverviewRuler.errorForeground": "#0000",
     "editorOverviewRuler.infoForeground": "#0000",
     "editorOverviewRuler.warningForeground": "#0000",
@@ -420,5 +456,6 @@
 
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
-  "zenMode.hideLineNumbers": false
+  "zenMode.hideLineNumbers": false,
+  "diffEditor.ignoreTrimWhitespace": false
 }
