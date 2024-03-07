@@ -19,3 +19,9 @@ kubesh () {
     echo "Shelling into pod $POD"
     kubectl exec -ti $POD -- sh
 }
+
+# Output the time it takes for zsh to startup and become interactive.
+timesh () {
+  shell=${1-$SHELL}
+  for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
+}

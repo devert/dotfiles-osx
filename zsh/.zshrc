@@ -1,3 +1,6 @@
+# Enable profiling of zsh startup time
+# zmodload zsh/zprof
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -144,3 +147,6 @@ VI_MODE_CURSOR_OPPEND=0
     POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(${POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS[1,-2]})
   fi
 }
+
+# Enable profiling of zsh startup time
+# zprof
