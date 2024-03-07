@@ -1,4 +1,5 @@
-# Enable profiling of zsh startup time
+# Enable profiling of zsh startup time.
+# Uncomment this line and run `zprof` after starting a new shell to see the results.
 # zmodload zsh/zprof
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -147,6 +148,3 @@ VI_MODE_CURSOR_OPPEND=0
     POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(${POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS[1,-2]})
   fi
 }
-
-# Enable profiling of zsh startup time
-# zprof
