@@ -47,7 +47,6 @@ brew install --cask applepi-baker
 brew install --cask audio-hijack
 brew install --cask bettertouchtool
 brew install --cask brave-browser
-brew install --cask charles # TODO: consider removing
 brew install --cask chromium --no-quarantine
 brew install --cask contexts
 brew install --cask docker
@@ -62,6 +61,7 @@ brew install --cask karabiner-elements
 brew install --cask kdiff3 # TODO: consider removing or finding new diff app
 brew install --cask microsoft-edge
 brew install --cask notion
+brew install --cask overkill
 brew install --cask pixelsnap
 brew install --cask plex
 brew install --cask raspberry-pi-imager
