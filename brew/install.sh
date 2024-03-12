@@ -33,6 +33,7 @@ brew install jq
 brew install neovim
 brew install pyenv
 brew install pyenv-virtualenv
+brew install ripgrep
 brew install tree
 brew install yarn
 brew install z
