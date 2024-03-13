@@ -77,12 +77,32 @@
   },
   {
     "key": "cmd+/",
-    "command": "workbench.action.movePanelToSidePanel",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        {
+          "command": "workbench.action.positionPanelRight"
+        },
+        {
+          "command": "workbench.action.terminal.focus"
+        }
+      ]
+    },
     "when": "terminalFocus"
   },
   {
     "key": "cmd+shift+/",
-    "command": "workbench.action.moveSidePanelToPanel",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        {
+          "command": "workbench.action.positionPanelBottom"
+        },
+        {
+          "command": "workbench.action.terminal.focus"
+        }
+      ]
+    },
     "when": "terminalFocus"
   },
   {
