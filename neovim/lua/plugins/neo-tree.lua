@@ -8,6 +8,13 @@ return {
       -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
     },
     config = function()
+      require("neo-tree").setup({
+      window = {
+          mappings = {
+            ["<space>"] = { "toggle_node", nowait = true },
+          },
+        },
+      })
       vim.keymap.set("n", "<C-n>", ":Neotree toggle<CR>", {})
       vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
     end,
