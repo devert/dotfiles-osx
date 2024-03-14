@@ -110,6 +110,11 @@
     "command": "workbench.action.toggleMaximizedPanel",
     "when": "terminalFocus"
   },
+  {
+    "key": "ctrl+1", // overrides default behavior to focus first in active editor group
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  }
 
   // Vim Movement
   // ---------------------------------------------------------------------------
