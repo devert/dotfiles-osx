@@ -1,9 +1,4 @@
 {
-  // Atom Keymap Extension
-  // ---------------------------------------------------------------------------
-
-  "atomKeymap.promptV3Features": true,
-
   // Breadcrumbs
   // ---------------------------------------------------------------------------
 
@@ -13,8 +8,10 @@
   // ---------------------------------------------------------------------------
 
   "cSpell.userWords": [
+    "Adsense",
     "backend",
     "browserslist",
+    "camelcase",
     "clickshield",
     "clsx",
     "customizations",
@@ -50,6 +47,7 @@
     "subdomain",
     "subheadline",
     "templating",
+    "textbox",
     "transpiled",
     "uncategorized",
     "Unfocus",
@@ -97,12 +95,6 @@
   "color-highlight.markerType": "dot-before",
   "color-highlight.markRuler": false,
 
-  // Diff Editor
-  // ---------------------------------------------------------------------------
-
-  "diffEditor.ignoreTrimWhitespace": false,
-  "diffEditor.renderSideBySide": false,
-
   // Editor
   // ---------------------------------------------------------------------------
 
@@ -111,7 +103,7 @@
   "editor.cursorBlinking": "phase",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "boundary",
-  "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "OperatorMono NF, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
   "editor.fontWeight": "400",
   "editor.letterSpacing": 0.3,
@@ -123,8 +115,8 @@
   "editor.selectionHighlight": false,
   "editor.scrollBeyondLastLine": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll": true
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll": "explicit"
   },
   "editor.quickSuggestions": {
     "comments": false,
@@ -132,10 +124,12 @@
     "strings": false
   },
   "editor.quickSuggestionsDelay": 100000,
-  "editor.wordBasedSuggestions": false,
+  "editor.wordBasedSuggestions": "off",
   "editor.suggestOnTriggerCharacters": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.parameterHints.enabled": false,
+  "editor.linkedEditing": true,
+  "editor.inlineSuggest.enabled": true,
 
   // Formatting
   "editor.formatOnSave": true,
@@ -152,23 +146,10 @@
     "postcss": "css"
   },
 
-  // ESLint
-  // ---------------------------------------------------------------------------
-
-  "eslint.packageManager": "yarn",
-  "eslint.alwaysShowStatus": true,
-
-  // Extensions
-  // ---------------------------------------------------------------------------
-
-  "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
-  },
-
   // File Explorer
   // ---------------------------------------------------------------------------
 
-  "explorer.openEditors.visible": 0,
+  "explorer.openEditors.visible": 1,
 
   // Files
   // ---------------------------------------------------------------------------
@@ -184,6 +165,11 @@
     ".prettierrc": "json",
     ".eslintrc.json": "jsonc"
   },
+
+  // Github Copilot
+  // ---------------------------------------------------------------------------
+
+  "github.copilot.editor.enableAutoCompletions": true,
 
   // GitLens
   // ---------------------------------------------------------------------------
@@ -213,43 +199,39 @@
   // ---------------------------------------------------------------------------
 
   "playwright.reuseBrowser": true,
+  "playwright.showTrace": false,
 
   // Prettier Extension
   // ---------------------------------------------------------------------------
 
   "prettier.requireConfig": true,
 
-  // Python Extension
+  // Python and Extension(s) - Black and iSort
   // ---------------------------------------------------------------------------
 
-  "python.defaultInterpreterPath": "~/.pyenv/versions/3.9.0/bin/python3",
-  "python.pythonPath": "~/.pyenv/versions/3.9.0/bin/python3",
+  "python.defaultInterpreterPath": "~/.pyenv/versions/3.8.16/bin/python3",
   "python.linting.enabled": true,
   "python.formatting.provider": "black",
-  "python.formatting.blackPath": "~/.pyenv/versions/3.9.0/bin/black",
+  "python.formatting.blackPath": "/opt/homebrew/bin/black",
   "python.terminal.activateEnvironment": false,
-  // "python.sortImports.path": "~/.pyenv/versions/3.9.0/bin/isort",
-  // "python.sortImports.args": [
-  //   "-rc",
-  //   "-sp isort.cfg"
-  //  ],
   "python.venvPath": "~/.pyenv",
   "python.venvFolders": ["~/.pyenv/versions"],
   "[python]": {
-    "editor.defaultFormatter": "ms-python.python",
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.rulers": [88],
-    "editor.formatOnType": true
-    // "editor.codeActionsOnSave": {
-    //   "source.organizeImports": true
-    // },
+    "editor.formatOnType": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
   },
+  "isort.args": ["--profile", "black"],
 
   // Rust
   // ---------------------------------------------------------------------------
 
-  "rust-analyzer.inlayHints.renderColons": false,
-  "rust-analyzer.inlayHints.typeHints.enable": false,
-  "rust-analyzer.inlayHints.parameterHints.enable": false,
+  // "rust-analyzer.inlayHints.renderColons": false,
+  // "rust-analyzer.inlayHints.typeHints.enable": false,
+  // "rust-analyzer.inlayHints.parameterHints.enable": false,
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
@@ -283,18 +265,15 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.2,
-  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.integrated.defaultProfile.osx": "zsh",
 
   // Vim
   // ---------------------------------------------------------------------------
 
-  // "vim.easymotion": true,
-  // "vim.easymotionMarkerFontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
-  // "vim.easymotionMarkerFontSize": "14",
-  // "vim.easymotionMarkerFontWeight": "bold",
-  // "vim.easymotionMarkerHeight": 22,
-  // "vim.easymotionMarkerYOffset": 0,
-  "vim.debug.silent": true,
+  // To improve performance
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
   "vim.leader": "<Space>",
   "vim.enableNeovim": true,
   "vim.neovimPath": "/usr/local/bin/nvim",
@@ -302,12 +281,12 @@
   "vim.camelCaseMotion.enable": true,
   "vim.highlightedyank.enable": true,
   "vim.visualstar": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-    }
-  ],
+  "vim.smartRelativeLine": true,
+  "vim.foldfix": true,
+  "vim.easymotion": true,
+  "vim.easymotionMarkerForegroundColorOneChar": "#ff6188",
+  "vim.easymotionMarkerForegroundColorTwoCharFirst": "#78dce8",
+  "vim.easymotionMarkerForegroundColorTwoCharSecond": "#78dce8",
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": [">"],
@@ -320,6 +299,16 @@
     {
       "before": ["<leader>", "l"],
       "commands": ["turboConsoleLog.displayLogMessage"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-j>"],
+      "after": ["3", "j"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["3", "k"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -338,6 +327,34 @@
     {
       "before": ["<leader>", "b"],
       "commands": ["bookmarks.list"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["editor.toggleFold"]
+    },
+    {
+      "before": ["<leader>", "<leader>", "f"],
+      "commands": ["editor.foldAll"]
+    },
+    {
+      "before": ["<leader>", "<leader>", "u"],
+      "commands": ["editor.unfoldAll"]
+    },
+    {
+      "before": ["<leader>", "u", "c"],
+      "commands": ["editor.emmet.action.balanceOutward"]
+    },
+    {
+      "before": ["<leader>", "u", "i"],
+      "commands": ["editor.emmet.action.balanceInward"]
+    },
+    {
+      "before": ["<leader>", "u", "d"],
+      "commands": ["editor.emmet.action.splitJoinTag"]
+    },
+    {
+      "before": ["<leader>", "u", "e"],
+      "commands": ["editor.emmet.action.matchTag"]
     },
     {
       "before": ["<leader>", "u", "t"],
@@ -378,12 +395,21 @@
     {
       "before": ["<leader>", "l", "u"],
       "commands": ["turboConsoleLog.uncommentAllLogMessages"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["testing.runAtCursor"]
+    },
+    {
+      "before": ["<leader>", "t", "f"],
+      "commands": ["testing.runCurrentFile"]
     }
   ],
 
   // Window
   // ---------------------------------------------------------------------------
 
+  "window.commandCenter": false,
   "window.zoomLevel": 1,
   "window.newWindowDimensions": "inherit",
   "window.restoreWindows": "none",
@@ -398,13 +424,13 @@
   "workbench.colorTheme": "Monokai Pro",
   "workbench.startupEditor": "none",
   "workbench.quickOpen.closeOnFocusLost": false,
-  "workbench.statusBar.visible": true,
-  "workbench.activityBar.visible": false,
-  "workbench.editor.tabCloseButton": "off",
+  "workbench.activityBar.location": "hidden",
   "workbench.iconTheme": "Monokai Pro Icons",
+  "workbench.editor.tabActionCloseVisibility": false,
 
   // Make info, error and warning decorations in overview ruler transparent
   "workbench.colorCustomizations": {
+    "editorInlayHint.background": "#0000",
     "editorOverviewRuler.errorForeground": "#0000",
     "editorOverviewRuler.infoForeground": "#0000",
     "editorOverviewRuler.warningForeground": "#0000",
@@ -417,5 +443,5 @@
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": false
+  "diffEditor.ignoreTrimWhitespace": false
 }

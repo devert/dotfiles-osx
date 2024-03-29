@@ -23,15 +23,11 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 [Generate SSH Key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and add it to GitHub [profile](https://github.com/settings/keys).
 
-Then pull this repo using the following steps.
+Then pull this repo.
 
 ```sh
 cd ~/
-mkdir .dotfiles
-cd .dotfiles
-git init
-git remote add origin git@github.com:devert/dotfiles-osx.git
-git pull origin master
+git clone git@github.com:devert/dotfiles-osx .dotfiles
 ```
 
 ## Configure sensible macOS defaults

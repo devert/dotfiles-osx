@@ -6,17 +6,20 @@
   editor = nvim
 [push]
   default = current
+	autoSetupRemote = true
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
 	name = Dennis Evert
 	email = dennisevert@gmail.com
 [commit]
 	template = /Users/devert/.stCommitMsg
+[pager]
+	branch = false
 [alias]
   # add
   a = add                         # add
@@ -34,7 +37,7 @@
   bd = branch -d                  # branch delete (local)
   bdf = branch -D                 # branch force delete (local)
   # Shortcut for git-extras delete-branch (https://github.com/tj/git-extras/blob/master/Commands.md#git-delete-branch)
-  db = rename-tag
+  db = delete-branch
   # Shortcut for git-extras delete-merged-branches (https://github.com/tj/git-extras/blob/master/Commands.md#git-delete-merged-branches)
   # and delete-squashed-branches (https://github.com/tj/git-extras/blob/master/Commands.md#git-delete-squashed-branches)
   dmb = "!f() { git delete-squashed-branches; git delete-merged-branches; }; f"
@@ -73,7 +76,6 @@
 
   # push
   p = push
-  ps = push
 
   # rebase
   rbc = rebase --continue          # continue rebase

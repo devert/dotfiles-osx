@@ -23,6 +23,6 @@ Thumbs.db
 venv
 node_modules
 .sass-cache
-iTermocil.yml
 .idea
-.vscode/
+.vscode
+*.sw*

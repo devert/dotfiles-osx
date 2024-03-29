@@ -18,6 +18,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 sudo systemsetup -settimezone "America/Chicago" > /dev/null
 
 # Disable the sound effects on boot
+# sudo nvram SystemAudioVolume=" "
 # sudo nvram SystemAudioVolume=%80
 sudo nvram StartupMute=%01
 
@@ -113,7 +114,7 @@ defaults write com.apple.screencapture location -string "${HOME}/Desktop"
 # Enable subpixel font rendering on non-Apple LCDs and fix blurry thin type.
 # http://osxdaily.com/2018/09/26/fix-blurry-thin-fonts-text-macos-mojave/
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
-defaults -currentHost write -globalDomain AppleFontSmoothing -int 1
+defaults -currentHost write -g AppleFontSmoothing -int 1
 
 ###############################################################################
 # Finder
@@ -210,6 +211,12 @@ defaults write com.apple.dock autohide-time-modifier -float 0.5
 
 # System Preferences > Dock > Automatically hide and show the Dock (delay)
 defaults write com.apple.dock autohide-delay -float 0
+
+# Disable all Hot Corners
+defaults write com.apple.dock wvous-tl-corner -int 0 # Top left
+defaults write com.apple.dock wvous-tr-corner -int 0 # Top right
+defaults write com.apple.dock wvous-bl-corner -int 0 # Bottom left
+defaults write com.apple.dock wvous-br-corner -int 0 # Bottom right
 
 ###############################################################################
 # Terminal & iTerm 2
