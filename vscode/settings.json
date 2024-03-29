@@ -165,6 +165,8 @@
     ".prettierrc": "json",
     ".eslintrc.json": "jsonc"
   },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
 
   // Github Copilot
   // ---------------------------------------------------------------------------
