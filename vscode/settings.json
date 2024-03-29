@@ -1,9 +1,4 @@
 {
-  // Atom Keymap Extension
-  // ---------------------------------------------------------------------------
-
-  "atomKeymap.promptV3Features": true,
-
   // Breadcrumbs
   // ---------------------------------------------------------------------------
 
@@ -151,22 +146,10 @@
     "postcss": "css"
   },
 
-  // ESLint
-  // ---------------------------------------------------------------------------
-
-  "eslint.packageManager": "yarn",
-
-  // Extensions
-  // ---------------------------------------------------------------------------
-
-  "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
-  },
-
   // File Explorer
   // ---------------------------------------------------------------------------
 
-  "explorer.openEditors.visible": 0,
+  "explorer.openEditors.visible": 1,
 
   // Files
   // ---------------------------------------------------------------------------
@@ -287,7 +270,10 @@
   // Vim
   // ---------------------------------------------------------------------------
 
-  "vim.debug.silent": true,
+  // To improve performance
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
   "vim.leader": "<Space>",
   "vim.enableNeovim": true,
   "vim.neovimPath": "/usr/local/bin/nvim",
@@ -341,6 +327,10 @@
     {
       "before": ["<leader>", "b"],
       "commands": ["bookmarks.list"]
+    },
+    {
+      "before": ["<leader>", "b", "a"],
+      "commands": ["bookmarks.listFromAllFiles"]
     },
     {
       "before": ["<leader>", "f"],
@@ -417,6 +407,10 @@
     {
       "before": ["<leader>", "t", "f"],
       "commands": ["testing.runCurrentFile"]
+    },
+    {
+      "before": ["<leader>", "<leader>", "w"],
+      "commands": ["workbench.action.switchWindow"]
     }
   ],
 

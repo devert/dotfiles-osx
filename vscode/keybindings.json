@@ -77,12 +77,32 @@
   },
   {
     "key": "cmd+/",
-    "command": "workbench.action.movePanelToSidePanel",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        {
+          "command": "workbench.action.positionPanelRight"
+        },
+        {
+          "command": "workbench.action.terminal.focus"
+        }
+      ]
+    },
     "when": "terminalFocus"
   },
   {
     "key": "cmd+shift+/",
-    "command": "workbench.action.moveSidePanelToPanel",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        {
+          "command": "workbench.action.positionPanelBottom"
+        },
+        {
+          "command": "workbench.action.terminal.focus"
+        }
+      ]
+    },
     "when": "terminalFocus"
   },
   {
@@ -90,6 +110,11 @@
     "command": "workbench.action.toggleMaximizedPanel",
     "when": "terminalFocus"
   },
+  {
+    "key": "ctrl+1", // overrides default behavior to focus first in active editor group
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  }
 
   // Vim Movement
   // ---------------------------------------------------------------------------

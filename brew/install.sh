@@ -46,6 +46,7 @@ brew install --cask adobe-acrobat-reader # TODO: consider removing
 brew install --cask appcleaner
 brew install --cask applepi-baker
 brew install --cask audio-hijack
+brew install --cask balenaetcher
 brew install --cask bettertouchtool
 brew install --cask brave-browser
 brew install --cask chromium --no-quarantine
