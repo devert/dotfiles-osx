@@ -329,6 +329,10 @@
       "commands": ["bookmarks.list"]
     },
     {
+      "before": ["<leader>", "b", "a"],
+      "commands": ["bookmarks.listFromAllFiles"]
+    },
+    {
       "before": ["<leader>", "f"],
       "commands": ["editor.toggleFold"]
     },
@@ -403,6 +407,10 @@
     {
       "before": ["<leader>", "t", "f"],
       "commands": ["testing.runCurrentFile"]
+    },
+    {
+      "before": ["<leader>", "<leader>", "w"],
+      "commands": ["workbench.action.switchWindow"]
     }
   ],
 
