@@ -197,6 +197,13 @@
 
   "javascript.updateImportsOnFileMove.enabled": "always",
 
+  // Lua
+  // ---------------------------------------------------------------------------
+
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  },
+
   // Playwright Extension
   // ---------------------------------------------------------------------------
 
