@@ -157,6 +157,28 @@
               },
               {
                 "from": {
+                  "key_code": "up_arrow",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_command",
+                      "right_shift",
+                      "right_control",
+                      "right_option",
+                      "right_command"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "mouse_key": {
+                      "vertical_wheel": 32
+                    }
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
                   "key_code": "down_arrow",
                   "modifiers": {
                     "mandatory": [
@@ -171,6 +193,28 @@
                   {
                     "mouse_key": {
                       "y": 1536
+                    }
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "down_arrow",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_command",
+                      "right_shift",
+                      "right_control",
+                      "right_option",
+                      "right_command"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "mouse_key": {
+                      "vertical_wheel": -32
                     }
                   }
                 ],
@@ -199,6 +243,28 @@
               },
               {
                 "from": {
+                  "key_code": "left_arrow",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_command",
+                      "right_shift",
+                      "right_control",
+                      "right_option",
+                      "right_command"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "mouse_key": {
+                      "horizontal_wheel": 32
+                    }
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
                   "key_code": "right_arrow",
                   "modifiers": {
                     "mandatory": [
@@ -213,6 +279,28 @@
                   {
                     "mouse_key": {
                       "x": 1536
+                    }
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "right_arrow",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_command",
+                      "right_shift",
+                      "right_control",
+                      "right_option",
+                      "right_command"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "mouse_key": {
+                      "horizontal_wheel": -32
                     }
                   }
                 ],
