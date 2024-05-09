@@ -3,4 +3,4 @@
 echo "Configuring Karabiner-Elements"
 
 mkdir $HOME/.config/karabiner
-sudo ln -s $HOME/.dotfiles/karabiner/karabiner.json $HOME/.config/karabiner/karabiner.json
+sudo ln -s $HOME/.dotfiles/karabiner/config $HOME/.config/karabiner

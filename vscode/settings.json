@@ -130,6 +130,7 @@
   "editor.parameterHints.enabled": false,
   "editor.linkedEditing": true,
   "editor.inlineSuggest.enabled": true,
+  "editor.lightbulb.enabled": "off",
 
   // Formatting
   "editor.formatOnSave": true,
@@ -165,11 +166,14 @@
     ".prettierrc": "json",
     ".eslintrc.json": "jsonc"
   },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
 
   // Github Copilot
   // ---------------------------------------------------------------------------
 
   "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.editor.enableCodeActions": false,
 
   // GitLens
   // ---------------------------------------------------------------------------
@@ -194,6 +198,13 @@
   // ---------------------------------------------------------------------------
 
   "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // Lua
+  // ---------------------------------------------------------------------------
+
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  },
 
   // Playwright Extension
   // ---------------------------------------------------------------------------
@@ -240,6 +251,7 @@
   // ---------------------------------------------------------------------------
 
   "scm.diffDecorations": "gutter",
+  "diffEditor.ignoreTrimWhitespace": false,
 
   // Search
   // ---------------------------------------------------------------------------
@@ -321,23 +333,11 @@
       "commands": ["editor.action.outdentLines"]
     },
     {
-      "before": ["<leader>", "m"],
-      "commands": ["bookmarks.toggle"]
-    },
-    {
-      "before": ["<leader>", "b"],
-      "commands": ["bookmarks.list"]
-    },
-    {
-      "before": ["<leader>", "b", "a"],
-      "commands": ["bookmarks.listFromAllFiles"]
-    },
-    {
       "before": ["<leader>", "f"],
       "commands": ["editor.toggleFold"]
     },
     {
-      "before": ["<leader>", "<leader>", "f"],
+      "before": ["<leader>", "F"],
       "commands": ["editor.foldAll"]
     },
     {
@@ -451,5 +451,5 @@
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
-  "diffEditor.ignoreTrimWhitespace": false
+  "zenMode.showTabs": "none"
 }

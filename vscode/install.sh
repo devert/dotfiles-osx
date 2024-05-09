@@ -14,7 +14,6 @@ if [[ $? -eq 0 ]];then
     if [[ $configresponse =~ ^(y|yes|Y) ]];then
         echo "Installing extensions please wait..."
 
-        code --install-extension alefragnani.bookmarks
         code --install-extension alefragnani.project-manager
         code --install-extension alexdima.copy-relative-path
         code --install-extension ambooth.git-rename
@@ -25,7 +24,6 @@ if [[ $? -eq 0 ]];then
         code --install-extension chakrounanas.turbo-console-log
         code --install-extension christian-kohler.npm-intellisense
         code --install-extension christian-kohler.path-intellisense
-        code --install-extension cmstead.js-codeformer
         code --install-extension codemooseus.vscode-devtools-for-chrome
         code --install-extension codesandbox-io.codesandbox-projects
         code --install-extension davidanson.vscode-markdownlint
@@ -37,11 +35,9 @@ if [[ $? -eq 0 ]];then
         code --install-extension earshinov.permute-lines
         code --install-extension editorconfig.editorconfig
         code --install-extension esbenp.prettier-vscode
-        code --install-extension formulahendry.auto-close-tag
         code --install-extension frhtylcn.pythonsnippets
         code --install-extension github.copilot
         code --install-extension github.copilot-chat
-        code --install-extension gottfired.css2react
         code --install-extension grapecity.gc-excelviewer
         code --install-extension graphql.vscode-graphql
         code --install-extension graphql.vscode-graphql-execution
@@ -69,10 +65,8 @@ if [[ $? -eq 0 ]];then
         code --install-extension mskelton.playwright-test-snippets
         code --install-extension naumovs.color-highlight
         code --install-extension njpwerner.autodocstring
-        code --install-extension patbenatar.advanced-new-file
         code --install-extension paulmolluzzo.convert-css-in-js
         code --install-extension rust-lang.rust-analyzer
-        code --install-extension skyapps.fish-vscode
         code --install-extension sleistner.vscode-fileutils
         code --install-extension streetsidesoftware.code-spell-checker
         code --install-extension tamasfe.even-better-toml
