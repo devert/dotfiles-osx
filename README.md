@@ -38,12 +38,6 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
 ./macos/install.sh
 ```
 
-## Install and Configure Bash
-
-```sh
-./bash/install.sh
-```
-
 ## Install Homebrew Packages and Casks
 
 ```sh
@@ -63,12 +57,12 @@ reload
 ./python/install.sh
 ```
 
-## Install Fish Shell And Make Default Shell
+## Install and Configure Zsh And Make Default Shell
 
 ```sh
-./fish/install.sh
+./zsh/install.sh
 reload
-./fish/configure.sh
+./zsh/configure.sh
 ```
 
 ## Run remaining install scripts
@@ -76,14 +70,12 @@ reload
 ```sh
 ./fonts/install.sh
 ./git/install.sh
+./iterm/install.sh
+./karabiner/install.sh
 ./neovim/install.sh
 ./tmux/install.sh
 ./vscode/install.sh
 ```
-
-## Configure iTerm2
-
-## Configure Alfred
 
 ## Heavily influenced by the following .dotfiles projects
 
