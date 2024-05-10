@@ -1,3 +1,3 @@
 # Neovim Setup
 
-How to install...
+Neovim configuration is a WIP.
