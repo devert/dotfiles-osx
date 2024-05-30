@@ -71,9 +71,6 @@
   # pull
   pl = pull
 
-  # prune
-  po = remote prune origin
-
   # push
   p = push
 
