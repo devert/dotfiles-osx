@@ -68,7 +68,6 @@ brew install --cask pixelsnap
 brew install --cask plex
 brew install --cask raspberry-pi-imager
 brew install --cask raycast
-brew install --cask scroll-reverser
 brew install --cask shift
 brew install --cask slack # TODO: consider removing since used with Shift
 brew install --cask sourcetree
