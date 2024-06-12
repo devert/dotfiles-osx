@@ -7,6 +7,14 @@
     "when": "editorTextFocus && parameterHintsVisible"
   },
 
+  // Search
+  // ---------------------------------------------------------------------------
+
+  {
+    "key": "cmd+shift+f",
+    "command": "search.action.openNewEditor"
+  }
+  
   // Workbench
   // ---------------------------------------------------------------------------
   {
