@@ -36,7 +36,7 @@ brew install pyenv-virtualenv
 brew install ripgrep
 brew install tree
 brew install yarn
-brew install z
+brew install zoxide
 brew install zsh
 
 echo "Install Applications with Homebrew Cask"

@@ -93,7 +93,7 @@ plugins=(
     poetry
     pyenv
     rust
-    z
+    zoxide
     zsh-autosuggestions
     zsh-syntax-highlighting
     vi-mode # Must enable this before fzf to not conflict with keybindings
