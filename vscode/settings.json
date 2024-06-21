@@ -12,6 +12,7 @@
     "backend",
     "browserslist",
     "camelcase",
+    "Charteris",
     "clickshield",
     "clsx",
     "customizations",
@@ -35,6 +36,7 @@
     "oauth",
     "performant",
     "postcss",
+    "prepopulate",
     "pylint",
     "pytest",
     "refetch",
@@ -147,6 +149,11 @@
     "postcss": "css"
   },
 
+  // ESLint
+  // ---------------------------------------------------------------------------
+
+  "eslint.experimental.useFlatConfig": true,
+
   // File Explorer
   // ---------------------------------------------------------------------------
 
@@ -164,7 +171,8 @@
     "*.json": "json",
     ".babelrc": "json",
     ".prettierrc": "json",
-    ".eslintrc.json": "jsonc"
+    ".eslintrc.json": "jsonc",
+    "tsconfig.json": "jsonc"
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
@@ -284,7 +292,8 @@
 
   // To improve performance
   "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
+    "vscodevim.vim": 1,
+    "GitHub.copilot": 2
   },
   "vim.leader": "<Space>",
   "vim.enableNeovim": true,
@@ -293,7 +302,7 @@
   "vim.camelCaseMotion.enable": true,
   "vim.highlightedyank.enable": true,
   "vim.visualstar": true,
-  "vim.smartRelativeLine": true,
+  // "vim.smartRelativeLine": true,
   "vim.foldfix": true,
   "vim.easymotion": true,
   "vim.easymotionMarkerForegroundColorOneChar": "#ff6188",
