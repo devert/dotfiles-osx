@@ -107,7 +107,7 @@
   "editor.renderWhitespace": "boundary",
   "editor.fontFamily": "OperatorMono NF, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
-  "editor.fontWeight": "400",
+  "editor.fontWeight": 400,
   "editor.letterSpacing": 0.3,
   "editor.lineHeight": 22,
   "editor.minimap.enabled": false,
@@ -182,6 +182,12 @@
 
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.editor.enableCodeActions": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
 
   // GitLens
   // ---------------------------------------------------------------------------
@@ -460,5 +466,5 @@
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.showTabs": "none"
+  "zenMode.showTabs": "none",
 }
