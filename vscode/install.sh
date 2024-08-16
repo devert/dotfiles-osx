@@ -39,9 +39,6 @@ if [[ $? -eq 0 ]];then
         code --install-extension github.copilot
         code --install-extension github.copilot-chat
         code --install-extension grapecity.gc-excelviewer
-        code --install-extension graphql.vscode-graphql
-        code --install-extension graphql.vscode-graphql-execution
-        code --install-extension graphql.vscode-graphql-syntax
         code --install-extension inu1255.easy-snippet
         code --install-extension kevinrose.vsc-python-indent
         code --install-extension monokai.theme-monokai-pro-vscode
