@@ -32,4 +32,3 @@ alias reload="omz reload"
 
 # Edit .zshrc
 alias zshconfig="v ~/.zshrc"
-
