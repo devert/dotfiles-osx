@@ -115,6 +115,7 @@
   "editor.tabSize": 2,
   "editor.tabCompletion": "onlySnippets",
   "editor.selectionHighlight": false,
+  "editor.stickyScroll.enabled": false,
   "editor.scrollBeyondLastLine": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
@@ -176,6 +177,7 @@
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
 
   // Github Copilot
   // ---------------------------------------------------------------------------
@@ -187,6 +189,14 @@
     "plaintext": false,
     "markdown": false,
     "scminput": false
+  },
+  "remote.extensionKind": {
+    "GitHub.copilot": [
+      "ui"
+    ],
+    "GitHub.copilot-chat": [
+      "ui"
+    ]
   },
 
   // GitLens
@@ -235,9 +245,6 @@
   // ---------------------------------------------------------------------------
 
   "python.defaultInterpreterPath": "~/.pyenv/versions/3.8.16/bin/python3",
-  "python.linting.enabled": true,
-  "python.formatting.provider": "black",
-  "python.formatting.blackPath": "/opt/homebrew/bin/black",
   "python.terminal.activateEnvironment": false,
   "python.venvPath": "~/.pyenv",
   "python.venvFolders": ["~/.pyenv/versions"],
@@ -466,5 +473,5 @@
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.showTabs": "none",
+  "zenMode.showTabs": "none"
 }
