@@ -123,5 +123,3 @@
   # https://zarino.co.uk/post/git-set-upstream/
   set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
   su = set-upstream
-[safe]
-	bareRepository = explicit
