@@ -15,7 +15,7 @@ resize-overlay = never
 confirm-close-surface = false
 
 # theme
-palette = 0=#2d2a2e
+palette = 0=#fcfcfa
 palette = 1=#ff6188
 palette = 2=#a9dc76
 palette = 3=#ffd866
