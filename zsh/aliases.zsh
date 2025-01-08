@@ -25,7 +25,9 @@ alias v="vim"
 alias y="yarn"
 
 unalias gb
+unalias gbr
 alias gb="git branch | grep -v \"^\*\" | fzf | xargs git checkout"
+alias gbr="git branch -r | sed 's/.*origin\///' | fzf | xargs -I {} git checkout {}"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
