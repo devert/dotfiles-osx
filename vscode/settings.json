@@ -134,6 +134,8 @@
   "editor.linkedEditing": true,
   "editor.inlineSuggest.enabled": true,
   "editor.lightbulb.enabled": "off",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
 
   // Formatting
   "editor.formatOnSave": true,
@@ -473,5 +475,5 @@
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.showTabs": "none"
+  "zenMode.showTabs": "none",
 }
