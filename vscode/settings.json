@@ -246,6 +246,10 @@
   // Python and Extension(s) - Black and iSort
   // ---------------------------------------------------------------------------
 
+  "black-formatter.importStrategy": "useBundled",
+
+  "isort.args": ["--profile", "black"],
+
   "python.defaultInterpreterPath": "~/.pyenv/versions/3.8.16/bin/python3",
   "python.terminal.activateEnvironment": false,
   "python.venvPath": "~/.pyenv",
@@ -258,7 +262,6 @@
       "source.organizeImports": "explicit"
     }
   },
-  "isort.args": ["--profile", "black"],
 
   // Rust
   // ---------------------------------------------------------------------------
@@ -451,6 +454,7 @@
   // ---------------------------------------------------------------------------
 
   "workbench.editor.decorations.colors": false,
+  "workbench.editor.decorations.badges": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.wrapTabs": true,
   "workbench.colorTheme": "Monokai Pro",
