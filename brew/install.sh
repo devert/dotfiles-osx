@@ -24,9 +24,6 @@ brew install git
 brew install git-extras
 brew install gh
 
-gh extension install github/gh-copilot
-gh extension install gennaro-tedesco/gh-f
-
 # Conflicts with git-extras sync, so override
 brew install jacobwgillespie/tap/git-sync
 brew link --overwrite git-sync
