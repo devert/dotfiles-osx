@@ -4,6 +4,10 @@
 
   "breadcrumbs.enabled": true,
 
+  // Code Rabbit
+  // ---------------------------------------------------------------------------
+  "coderabbit.autoReviewMode": "prompt",
+
   // Code Spell Checker
   // ---------------------------------------------------------------------------
 
@@ -156,6 +160,14 @@
   // ---------------------------------------------------------------------------
 
   "eslint.useFlatConfig": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "jsonc"
+  ],
 
   // File Explorer
   // ---------------------------------------------------------------------------
@@ -229,7 +241,7 @@
   // ---------------------------------------------------------------------------
 
   "[lua]": {
-    "editor.defaultFormatter": "sumneko.lua"
+    "editor.defaultFormatter": "JohnnyMorganz.stylua",
   },
 
   // Playwright Extension
@@ -247,7 +259,7 @@
   // ---------------------------------------------------------------------------
 
   "black-formatter.importStrategy": "useBundled",
-
+  "isort.importStrategy": "useBundled",
   "isort.args": ["--profile", "black"],
 
   "python.defaultInterpreterPath": "~/.pyenv/versions/3.8.16/bin/python3",

@@ -25,9 +25,11 @@ if [[ $? -eq 0 ]];then
         code --install-extension christian-kohler.npm-intellisense
         code --install-extension christian-kohler.path-intellisense
         code --install-extension codemooseus.vscode-devtools-for-chrome
+        code --install-extension coderabbit.coderabbit-vscode
         code --install-extension codesandbox-io.codesandbox-projects
         code --install-extension davidanson.vscode-markdownlint
         code --install-extension dbaeumer.vscode-eslint
+        code --install-extension docker.docker
         code --install-extension donjayamanne.githistory
         code --install-extension dsznajder.es7-react-js-snippets
         code --install-extension dunstontc.viml
@@ -40,8 +42,10 @@ if [[ $? -eq 0 ]];then
         code --install-extension github.copilot-chat
         code --install-extension grapecity.gc-excelviewer
         code --install-extension inu1255.easy-snippet
+        code --install-extension johnnymorganz.stylua
         code --install-extension kevinrose.vsc-python-indent
         code --install-extension monokai.theme-monokai-pro-vscode
+        code --install-extension ms-azuretools.vscode-containers
         code --install-extension ms-azuretools.vscode-docker
         code --install-extension ms-playwright.playwright
         code --install-extension ms-python.black-formatter
@@ -63,9 +67,11 @@ if [[ $? -eq 0 ]];then
         code --install-extension naumovs.color-highlight
         code --install-extension njpwerner.autodocstring
         code --install-extension paulmolluzzo.convert-css-in-js
+        code --install-extension rog2.luacheck
         code --install-extension rust-lang.rust-analyzer
         code --install-extension sleistner.vscode-fileutils
         code --install-extension streetsidesoftware.code-spell-checker
+        code --install-extension sumneko.lua
         code --install-extension tamasfe.even-better-toml
         code --install-extension techer.open-in-browser
         code --install-extension vitest.explorer
