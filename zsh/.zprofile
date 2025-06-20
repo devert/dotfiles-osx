@@ -4,8 +4,8 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Add brew installed curl to path
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
-# Add poetry and poetry2 to path
-export PATH="/opt/poetry/bin:/opt/poetry2/bin:$PATH"
+# Add poetry, poetry2 and poetry37 to path
+export PATH="/opt/poetry/bin:/opt/poetry2/bin:/opt/poetry37/bin:$PATH"
 
 # Add pyenv to path and configure auto initialization
 export PYENV_ROOT="$HOME/.pyenv"
