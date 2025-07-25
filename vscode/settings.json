@@ -196,6 +196,7 @@
   // Github Copilot
   // ---------------------------------------------------------------------------
 
+  "github.copilot.nextEditSuggestions.enabled": true,
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.editor.enableCodeActions": false,
   "github.copilot.enable": {
@@ -258,7 +259,7 @@
   // Python and Extension(s) - Black and iSort
   // ---------------------------------------------------------------------------
 
-  "black-formatter.importStrategy": "useBundled",
+  // "black-formatter.importStrategy": "useBundled",
   "isort.importStrategy": "useBundled",
   "isort.args": ["--profile", "black"],
 
@@ -475,6 +476,7 @@
   "workbench.activityBar.location": "hidden",
   "workbench.iconTheme": "Monokai Pro Icons",
   "workbench.editor.tabActionCloseVisibility": false,
+  "workbench.panel.defaultLocation": "right",
 
   // Make info, error and warning decorations in overview ruler transparent
   "workbench.colorCustomizations": {
