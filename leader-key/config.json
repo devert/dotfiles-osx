@@ -3,11 +3,18 @@
     {
       "actions" : [
         {
+          "iconPath" : "display.and.arrow.down",
+          "key" : "m",
+          "label" : "Next Monitor",
+          "type" : "url",
+          "value" : "btt://execute_assigned_actions_for_trigger/?uuid=F0071A83-2BE1-4C56-980A-CEBEAD2EA326"
+        },
+        {
           "iconPath" : "rectangle.inset.filled",
           "key" : "f",
           "label" : "Toggle Fullscreen",
           "type" : "url",
-          "value" : "raycast://extensions/raycast/window-management/maximize"
+          "value" : "btt://execute_assigned_actions_for_trigger/?uuid=0CE74B44-B7CA-4C2F-B5AB-029C19004545"
         },
         {
           "iconPath" : "rectangle.center.inset.filled",
@@ -21,7 +28,7 @@
           "key" : "h",
           "label" : "Left Half",
           "type" : "url",
-          "value" : "raycast://extensions/raycast/window-management/left-half"
+          "value" : "btt://execute_assigned_actions_for_trigger/?uuid=79A8D147-1DE7-4903-AD63-48609D0C5DA0"
         },
         {
           "key" : "H",
@@ -48,7 +55,7 @@
           "key" : "l",
           "label" : "Right Half",
           "type" : "url",
-          "value" : "raycast://extensions/raycast/window-management/right-half"
+          "value" : "btt://execute_assigned_actions_for_trigger/?uuid=DE85AB12-69C8-40EB-B4D2-BB35B7FCC071"
         },
         {
           "key" : "L",
@@ -63,11 +70,6 @@
               "label" : "Top Left Quarter",
               "type" : "url",
               "value" : "raycast://extensions/raycast/window-management/top-left-quarter"
-            },
-            {
-              "key" : "l",
-              "type" : "application",
-              "value" : ""
             }
           ],
           "key" : "t",
