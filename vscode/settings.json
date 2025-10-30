@@ -101,6 +101,10 @@
   "color-highlight.markerType": "dot-before",
   "color-highlight.markRuler": false,
 
+  // Docker
+  // ---------------------------------------------------------------------------
+  "docker.extension.dockerEngineAvailabilityPrompt": false,
+
   // Editor
   // ---------------------------------------------------------------------------
 
@@ -317,6 +321,7 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.2,
   "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.inheritEnv": true,
 
   // Vim
   // ---------------------------------------------------------------------------
@@ -493,5 +498,5 @@
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.showTabs": "none",
+  "zenMode.showTabs": "none"
 }
