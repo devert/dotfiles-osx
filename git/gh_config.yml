@@ -6,6 +6,7 @@ editor: vim
 aliases:
   a: f adds
   b: f branches
+  l: f logs
   t: f tags
   prs: f prs
   cos: copilot suggest

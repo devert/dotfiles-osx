@@ -26,6 +26,8 @@ alias y="yarn"
 
 unalias gb
 unalias gbr
+alias ga="git status --porcelain | grep -E '^(\?\?| M| D| A)' | fzf | awk '{print \$2}' | xargs git add"
+alias gu="git status --porcelain | grep -E '^(M |A |D |R |C )' | fzf | awk '{print \$2}' | xargs git restore --staged"
 alias gb="git branch | grep -v \"^\*\" | fzf | xargs git checkout"
 alias gbr="git branch -r | sed 's/.*origin\///' | fzf | xargs -I {} git checkout {}"
 
