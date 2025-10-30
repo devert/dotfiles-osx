@@ -2,6 +2,28 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AIFeatureFunctionCalling</key>
+	<true/>
+	<key>AIFeatureHostedCodeInterpeter</key>
+	<true/>
+	<key>AIFeatureHostedFileSearch</key>
+	<true/>
+	<key>AIFeatureHostedWebSearch</key>
+	<true/>
+	<key>AIFeatureStreamingResponses</key>
+	<true/>
+	<key>AITermAPI</key>
+	<integer>2</integer>
+	<key>AIVectorStore</key>
+	<integer>1</integer>
+	<key>AiMaxTokens</key>
+	<integer>1000000</integer>
+	<key>AiModel</key>
+	<string>gpt-4.1</string>
+	<key>AiResponseMaxTokens</key>
+	<integer>32768</integer>
+	<key>AitermURL</key>
+	<string>https://api.openai.com/v1/responses</string>
 	<key>AlternateMouseScroll</key>
 	<true/>
 	<key>AutoCommandHistory</key>
@@ -1225,6 +1247,8 @@
 	<string>Two Left -&gt; One Right</string>
 	<key>Default Bookmark Guid</key>
 	<string>C52FE2DA-3E88-4D1F-B108-A3ACC8CF701D</string>
+	<key>Default Browser Profile Guid</key>
+	<string>C52FE2DA-3E88-4D1F-B108-A3ACC8CF701D</string>
 	<key>DefaultTabBarHeight</key>
 	<real>24</real>
 	<key>DimBackgroundWindows</key>
@@ -1520,13 +1544,13 @@
 				<key>Alpha Component</key>
 				<real>0.5</real>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<real>0.13960540294647217</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.1491314172744751</real>
+				<real>0.25479039549827576</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.92929404973983765</real>
 			</dict>
 			<key>Blink Allowed</key>
 			<false/>
@@ -1577,13 +1601,13 @@
 				<key>Alpha Component</key>
 				<real>0.25</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.99125725030899048</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.9268307089805603</real>
+				<real>0.92047792673110962</real>
 				<key>Red Component</key>
-				<real>0.70213186740875244</real>
+				<real>0.7486259937286377</real>
 			</dict>
 			<key>Cursor Text Color</key>
 			<dict>
@@ -1633,6 +1657,8 @@
 			<false/>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
+			<key>Icon</key>
+			<integer>0</integer>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
@@ -1932,13 +1958,26 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73423302173614502</real>
+				<real>0.70932406187057495</real>
 				<key>Color Space</key>
-				<string>sRGB</string>
+				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.35916060209274292</real>
+				<real>0.35333043336868286</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.1451396644115448</real>
+			</dict>
+			<key>Match Background Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.32116127014160156</real>
+				<key>Color Space</key>
+				<string>P3</string>
+				<key>Green Component</key>
+				<real>0.98600882291793823</real>
+				<key>Red Component</key>
+				<real>0.99697154760360718</real>
 			</dict>
 			<key>Minimum Contrast</key>
 			<real>0.0</real>
