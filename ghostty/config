@@ -8,6 +8,7 @@ font-size = 16
 font-thicken = true
 adjust-cell-height = 2
 
+window-inherit-working-directory=false
 window-padding-x = 10
 window-padding-y = 10
 resize-overlay = never
@@ -48,3 +49,6 @@ keybind = opt+l=resize_split:right,10
 keybind = opt+space=equalize_splits
 keybind = ctrl+j=jump_to_prompt:1
 keybind = ctrl+k=jump_to_prompt:-1
+# sends Ctrl+L (clear) instead of full reset
+keybind = cmd+k=unbind
+keybind = cmd+k=text:\x0c
