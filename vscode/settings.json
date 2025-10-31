@@ -322,6 +322,7 @@
   "terminal.integrated.lineHeight": 1.2,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.inheritEnv": true,
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
 
   // Vim
   // ---------------------------------------------------------------------------
