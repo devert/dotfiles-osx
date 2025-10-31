@@ -18,6 +18,20 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+# Skip completion security checks (speeds up startup)
+ZSH_DISABLE_COMPFIX=true
+
+# Lazy completion init with caching
+export ZSH_COMPDUMP="${XDG_CACHE_HOME:-$HOME/.cache}/zcompdump-${ZSH_VERSION}"
+zstyle ':completion:*' rehash false
+autoload -Uz compinit
+_lazy_compinit() {
+  compinit -C -d "$ZSH_COMPDUMP"
+  [[ -f $ZSH_COMPDUMP.zwc ]] || { zcompile "$ZSH_COMPDUMP" &! }
+  bindkey '^I' complete-word
+}
+bindkey '^I' _lazy_compinit
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -78,21 +92,21 @@ CORRECT_IGNORE_FILE=".storybook|tests|ci"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    alias-finder
-    docker
-    docker-compose
-    gcloud
+    # alias-finder
+    # docker
+    # docker-compose
+    # gcloud
     git
-    git-extras
-    gh
+    # git-extras
+    # gh
     history-substring-search
-    httpie
+    # httpie
     kubectl
-    npm
+    # npm
     nvm
-    poetry
-    pyenv
-    rust
+    # poetry
+    # pyenv
+    # rust
     zoxide
     zsh-autosuggestions
     zsh-syntax-highlighting
