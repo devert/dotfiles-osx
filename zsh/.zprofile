@@ -1,4 +1,7 @@
-# What "brew shellenv" would output
+# Homebrew
+# -------------------------------------------------------------
+
+# Doing this manually to avoid running "brew shellenv" on startup. Improves startup time.
 export HOMEBREW_PREFIX="/opt/homebrew"
 export HOMEBREW_CELLAR="/opt/homebrew/Cellar"
 export HOMEBREW_REPOSITORY="/opt/homebrew"
@@ -11,12 +14,15 @@ export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}"
 # Add brew installed curl to path
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
-# Add poetry to path
-# export PATH="/opt/poetry/bin:$PATH"
+# Pyenv
+# ------------------------------------------------------------
 
-# Add pyenv to path and configure auto initialization
+# Pyenv configuration (manual PATH setup instead of eval "$(pyenv init --path)" for faster startup)
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+
+# Disable virtualenv name in prompt
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # Install pyenv into your shell as a shell function, enable shims and autocompletion
 export PATH="$PYENV_ROOT/shims:$PATH"
