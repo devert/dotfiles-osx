@@ -50,6 +50,7 @@ brew install --cask balenaetcher
 brew install --cask bettertouchtool
 brew install --cask brave-browser
 brew install --cask chromium --no-quarantine
+brew install --cask claude-code
 brew install --cask contexts
 brew install --cask docker
 brew install --cask dropbox
