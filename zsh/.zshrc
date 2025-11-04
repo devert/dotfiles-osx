@@ -1,3 +1,7 @@
+# ============================================================
+# Oh-My-Zsh Configuration
+# ============================================================
+
 # Enable profiling of zsh startup time.
 # Uncomment this line and run `zprof` after starting a new shell to see the results.
 # zmodload zsh/zprof
@@ -17,6 +21,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
+
+# Skip completion security checks (speeds up startup)
+ZSH_DISABLE_COMPFIX=true
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -72,27 +79,30 @@ CORRECT_IGNORE_FILE=".storybook|tests|ci"
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
+# ============================================================
+# Plugins
+# ============================================================
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    alias-finder
-    docker
-    docker-compose
-    gcloud
+    # alias-finder
+    # docker
+    # docker-compose
+    # gcloud
     git
-    git-extras
-    gh
+    # git-extras
+    # gh
     history-substring-search
-    httpie
     kubectl
-    npm
+    # npm
     nvm
-    poetry
-    pyenv
-    rust
+    # poetry
+    # pyenv
+    # rust
     zoxide
     zsh-autosuggestions
     zsh-syntax-highlighting
@@ -102,7 +112,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+# ============================================================
+# Post oh-my-zsh configuration
+# ============================================================
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -138,6 +150,10 @@ VI_MODE_CURSOR_NORMAL=0
 VI_MODE_CURSOR_VISUAL=0
 VI_MODE_CURSOR_INSERT=5
 VI_MODE_CURSOR_OPPEND=0
+
+# ============================================================
+# Powerlevel10k Theme
+# ============================================================
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || {
