@@ -1,3 +1,7 @@
+# ============================================================
+# Oh-My-Zsh Configuration
+# ============================================================
+
 # Enable profiling of zsh startup time.
 # Uncomment this line and run `zprof` after starting a new shell to see the results.
 # zmodload zsh/zprof
@@ -75,6 +79,10 @@ CORRECT_IGNORE_FILE=".storybook|tests|ci"
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
+# ============================================================
+# Plugins
+# ============================================================
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -104,7 +112,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+# ============================================================
+# Post oh-my-zsh configuration
+# ============================================================
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -140,6 +150,10 @@ VI_MODE_CURSOR_NORMAL=0
 VI_MODE_CURSOR_VISUAL=0
 VI_MODE_CURSOR_INSERT=5
 VI_MODE_CURSOR_OPPEND=0
+
+# ============================================================
+# Powerlevel10k Theme
+# ============================================================
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || {
