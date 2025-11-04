@@ -176,5 +176,19 @@
     "key": "ctrl+space",
     "command": "github.copilot.acceptCursorPanelSolution",
     "when": "github.copilot.activated && github.copilot.panelVisible"
+  },
+
+  // Claude Code
+  // ---------------------------------------------------------------------------
+
+  {
+    "key": "cmd+escape",
+    "command": "-claude-vscode.editor.open",
+    "when": "!config.claudeCode.useTerminal"
+  },
+  {
+    "key": "cmd+escape",
+    "command": "-claude-vscode.terminal.open.keyboard",
+    "when": "config.claudeCode.useTerminal"
   }
 ]
