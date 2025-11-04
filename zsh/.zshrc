@@ -21,17 +21,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Skip completion security checks (speeds up startup)
 ZSH_DISABLE_COMPFIX=true
 
-# Lazy completion init with caching
-export ZSH_COMPDUMP="${XDG_CACHE_HOME:-$HOME/.cache}/zcompdump-${ZSH_VERSION}"
-zstyle ':completion:*' rehash false
-autoload -Uz compinit
-_lazy_compinit() {
-  compinit -C -d "$ZSH_COMPDUMP"
-  [[ -f $ZSH_COMPDUMP.zwc ]] || { zcompile "$ZSH_COMPDUMP" &! }
-  bindkey '^I' complete-word
-}
-bindkey '^I' _lazy_compinit
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
