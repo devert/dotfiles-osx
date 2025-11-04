@@ -61,6 +61,7 @@ brew install --cask insomnia # TODO: determine which one is better between this 
 brew install --cask iterm2
 brew install --cask karabiner-elements
 brew install --cask kdiff3 # TODO: consider removing or finding new diff app
+brew install --cask leader-key
 brew install --cask microsoft-edge
 brew install --cask notion
 brew install --cask overkill
