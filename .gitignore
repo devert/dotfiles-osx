@@ -4,4 +4,7 @@ after
 
 # Karabiner configration ignores
 karabiner/config/automatic_backups/*
-!karabiner/config/automatic_backups/.gitkeep 
+!karabiner/config/automatic_backups/.gitkeep
+
+# Claude config
+.claude
