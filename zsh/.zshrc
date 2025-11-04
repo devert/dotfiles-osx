@@ -100,7 +100,6 @@ plugins=(
     # git-extras
     # gh
     history-substring-search
-    # httpie
     kubectl
     # npm
     nvm
