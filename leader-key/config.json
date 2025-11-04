@@ -188,6 +188,12 @@
           "label" : "Search Menu Items",
           "type" : "url",
           "value" : "raycast://extensions/raycast/navigation/search-menu-items"
+        },
+        {
+          "key" : "a",
+          "label" : "View 2FA Codes",
+          "type" : "url",
+          "value" : "raycast://extensions/yuercl/imessage-2fa/index"
         }
       ],
       "key" : "r",
