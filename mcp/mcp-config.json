@@ -1,0 +1,12 @@
+{
+  "mcpServers" : {
+    "Context7" : {
+      "args" : [
+        "-y",
+        "@upstash\/context7-mcp@latest"
+      ],
+      "command" : "npx",
+      "description" : "Context7 MCP pulls up-to-date, version-specific documentation and code examples straight from the source — and places them directly into your prompt."
+    }
+  }
+}

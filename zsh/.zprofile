@@ -14,6 +14,7 @@ export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}"
 # Add brew installed curl to path
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
+
 # Pyenv
 # ------------------------------------------------------------
 
@@ -29,3 +30,12 @@ export PATH="$PYENV_ROOT/shims:$PATH"
 
 # Enable auto-activation of pyenv virtualenvs
 eval "$(pyenv virtualenv-init -)"
+
+
+# MCP
+# ------------------------------------------------------------
+
+export MCP_HOME="$HOME/.mcp"
+export MCP_CONFIG_PATH="$MCP_HOME/mcp-config.json"
+export MCP_LOG_LEVEL="info"
+export MCP_LOG_DIR="$MCP_HOME/logs"
