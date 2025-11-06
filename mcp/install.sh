@@ -10,6 +10,9 @@ sudo ln -sfn ~/.dotfiles/mcp/mcp-config.json ~/.mcp/mcp-config.json
 sudo mkdir -p /Library/Application\ Support/ClaudeCode
 sudo ln -sfn ~/.dotfiles/mcp/mcp-config.json /Library/Application\ Support/ClaudeCode/managed-mcp.json
 
+# Symlink for VSCode
+sudo ln -sfn ~/.dotfiles/mcp/mcp-config.json ~/Library/Application\ Support/Code/User/mcp.json
+
 # Install mcp servers
 # TODO: Add server installation commands here
 # echo "Installing MCP servers..."
