@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Put Zsh configuration in place
 echo "Configuring Zsh Profile"
 
