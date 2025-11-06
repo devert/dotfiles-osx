@@ -4,12 +4,16 @@
       "command" : "npx",
       "args" : [
         "-y",
-        "@upstash\/context7-mcp@latest"
+        "@upstash/context7-mcp@latest"
       ]
     },
     "chrome-devtools": {
       "command": "npx",
       "args": ["chrome-devtools-mcp@latest"]
+    },
+    "figma": {
+      "type": "http",
+      "url": "https://mcp.figma.com/mcp"
     },
     "linear": {
       "command": "npx",
