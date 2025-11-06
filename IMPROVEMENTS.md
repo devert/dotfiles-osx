@@ -4,12 +4,7 @@ This document outlines recommendations for improving the dotfiles repository's m
 
 ## Critical Issues
 
-### 1. Missing Shebangs
-
-- `iterm/install.sh` and `warp/install.sh` lack `#!/usr/bin/env bash` headers
-- This can cause execution issues depending on the user's shell
-
-### 2. Non-Idempotent Symlinks
+### Non-Idempotent Symlinks
 
 Most install scripts use `ln -s` without checking if symlinks already exist. This causes failures on re-runs. Consider:
 
@@ -18,19 +13,19 @@ Most install scripts use `ln -s` without checking if symlinks already exist. Thi
 ln -sfn ~/.dotfiles/component/file ~/.target  # -f forces, -n treats existing symlink-to-dir correctly
 ```
 
-### 3. Deprecated Brew Flag
+### Deprecated Brew Flag
 
 `brew/install.sh:13` uses `brew upgrade --all` (deprecated). Should be just `brew upgrade`
 
 ## Consistency & Maintainability
 
-### 4. Inconsistent Sudo Usage
+### Inconsistent Sudo Usage
 
 - Some scripts unnecessarily use `sudo` for symlinks in user's home directory (git, neovim, tmux, etc.)
 - Symlinks in `~/` don't need sudo; only system locations do
 - This creates permission issues and makes cleanup harder
 
-### 5. No Master Install Script
+### No Master Install Script
 
 Consider creating a root-level `install.sh` that:
 
@@ -39,7 +34,7 @@ Consider creating a root-level `install.sh` that:
 - Provides selective installation options
 - Shows progress and handles errors gracefully
 
-### 6. Inconsistent Error Handling
+### Inconsistent Error Handling
 
 - Only vscode checks if its CLI is available
 - Other scripts should verify dependencies exist before proceeding:
@@ -51,7 +46,7 @@ if ! command -v neovim &> /dev/null; then
 fi
 ```
 
-### 7. No Backup Strategy
+### No Backup Strategy
 
 Only vscode prompts for backups. Other scripts should:
 
@@ -59,7 +54,7 @@ Only vscode prompts for backups. Other scripts should:
 - Offer to backup before symlinking
 - Store backups in a consistent location (e.g., `~/.dotfiles-backup/`)
 
-### 8. Verification Missing
+### Verification Missing
 
 Scripts don't confirm successful symlink creation:
 
@@ -73,7 +68,7 @@ fi
 
 ## Documentation
 
-### 9. Incomplete Component READMEs
+### Incomplete Component READMEs
 
 Only 7/15 components have README files. Missing:
 
@@ -88,7 +83,7 @@ Only 7/15 components have README files. Missing:
 - tmux
 - warp
 
-### 10. TODOs in Production Code
+### TODOs in Production Code
 
 Active TODOs that should be addressed:
 
@@ -98,7 +93,7 @@ Active TODOs that should be addressed:
 
 ## Modern Best Practices
 
-### 11. Missing .envrc or .tool-versions Support
+### Missing .envrc or .tool-versions Support
 
 Consider adding:
 
@@ -106,7 +101,7 @@ Consider adding:
 - `.tool-versions` for asdf compatibility
 - Document Node/Python version management strategy
 
-### 12. No Automated Testing
+### No Automated Testing
 
 Add a `test.sh` script that verifies:
 
@@ -115,7 +110,7 @@ Add a `test.sh` script that verifies:
 - Critical tools are accessible
 - Configuration files are valid
 
-### 13. No Uninstall/Cleanup Script
+### No Uninstall/Cleanup Script
 
 Create `uninstall.sh` to:
 
@@ -123,7 +118,7 @@ Create `uninstall.sh` to:
 - Restore backups
 - Leave system in clean state
 
-### 14. Brewfile Alternative
+### Brewfile Alternative
 
 Instead of shell script with hardcoded packages, consider a `Brewfile`:
 
@@ -151,13 +146,13 @@ Add `.pre-commit-config.yaml` for:
 
 ## Security Considerations
 
-### 16. Unverified Downloads
+### Unverified Downloads
 
 - `node/install.sh:5` - Downloads NVM script without checksum verification
 - `fonts/install.sh:5` - Uses gdrive tool that may not be installed
 - Consider adding SHA verification or documenting trust assumptions
 
-### 17. Directory Creation Without Checks
+### Directory Creation Without Checks
 
 Several scripts create directories without checking permissions:
 
@@ -168,7 +163,7 @@ mkdir -p ~/.config/gh || { echo "Failed to create directory"; exit 1; }
 
 ## Structural Improvements
 
-### 18. Shared Utilities
+### Shared Utilities
 
 Create `lib/utils.sh` with common functions:
 
@@ -179,7 +174,7 @@ backup_file() { ... }
 check_dependency() { ... }
 ```
 
-### 19. Configuration Variables
+### Configuration Variables
 
 Add `config.sh` with centralized settings:
 
@@ -188,7 +183,7 @@ DOTFILES_DIR="${HOME}/.dotfiles"
 BACKUP_DIR="${HOME}/.dotfiles-backup"
 ```
 
-### 20. Install Order Dependencies
+### Install Order Dependencies
 
 `karabiner/install.sh:5-6` creates dir then symlinks entire config dir - this could fail if Karabiner creates files there first. Consider more robust directory handling.
 
