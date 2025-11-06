@@ -13,10 +13,6 @@ Most install scripts use `ln -s` without checking if symlinks already exist. Thi
 ln -sfn ~/.dotfiles/component/file ~/.target  # -f forces, -n treats existing symlink-to-dir correctly
 ```
 
-### Deprecated Brew Flag
-
-`brew/install.sh:13` uses `brew upgrade --all` (deprecated). Should be just `brew upgrade`
-
 ## Consistency & Maintainability
 
 ### Inconsistent Sudo Usage
