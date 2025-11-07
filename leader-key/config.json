@@ -106,11 +106,11 @@
           "value" : "/Applications/Shift.app"
         },
         {
-          "iconPath" : "/Applications/Firefox.app",
+          "iconPath" : "/Applications/Figma.app",
           "key" : "f",
-          "label" : "Firefox",
+          "label" : "Figma",
           "type" : "application",
-          "value" : "/Applications/Firefox.app"
+          "value" : "/Applications/Figma.app"
         },
         {
           "iconPath" : "/Applications/Notion.app",
