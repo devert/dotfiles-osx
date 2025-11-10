@@ -200,6 +200,7 @@
   // Github Copilot
   // ---------------------------------------------------------------------------
 
+  "github.copilot.chat.agent.thinkingTool": true ,
   "github.copilot.nextEditSuggestions.enabled": true,
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.editor.enableCodeActions": false,
@@ -225,6 +226,7 @@
   "gitlens.currentLine.enabled": false,
   "gitlens.statusBar.enabled": false,
   "gitlens.keymap": "none",
+  "gitlens.gitkraken.mcp.autoEnabled": false,
 
   // Open In Browser
   // ---------------------------------------------------------------------------
@@ -246,7 +248,7 @@
   // ---------------------------------------------------------------------------
 
   "[lua]": {
-    "editor.defaultFormatter": "JohnnyMorganz.stylua",
+    "editor.defaultFormatter": "JohnnyMorganz.stylua"
   },
 
   // Playwright Extension
@@ -499,6 +501,5 @@
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.showTabs": "none",
-  "gitlens.gitkraken.mcp.autoEnabled": false
+  "zenMode.showTabs": "none"
 }
