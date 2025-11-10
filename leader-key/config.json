@@ -167,6 +167,13 @@
           "label" : "1Password",
           "type" : "application",
           "value" : "/Applications/1Password.app"
+        },
+        {
+          "iconPath" : "/Applications/Claude.app",
+          "key" : "c",
+          "label" : "Claude",
+          "type" : "application",
+          "value" : "/Applications/Claude.app"
         }
       ],
       "key" : "o",
