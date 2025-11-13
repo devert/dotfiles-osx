@@ -27,3 +27,6 @@ node_modules
 .vscode
 .github
 *.sw*
+
+# Ignore all .claude files from being committed (for now)
+.claude
