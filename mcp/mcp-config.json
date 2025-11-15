@@ -1,15 +1,15 @@
 {
   "mcpServers" : {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["chrome-devtools-mcp@latest"]
+    },
     "context7" : {
       "command" : "npx",
       "args" : [
         "-y",
         "@upstash/context7-mcp@latest"
       ]
-    },
-    "chrome-devtools": {
-      "command": "npx",
-      "args": ["chrome-devtools-mcp@latest"]
     },
     "figma": {
       "type": "http",
@@ -19,22 +19,30 @@
       "command": "npx",
       "args": ["-y", "mcp-remote", "https://mcp.linear.app/mcp"]
     },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://mcp.notion.com/mcp"]
+    },
     "playwright": {
       "command": "npx",
       "args": ["mcp-playwright@latest"]
+    },
+    "shadcn": {
+      "command": "npx",
+      "args": ["shadcn@latest", "mcp"]
     }
   },
   "servers": {
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["chrome-devtools-mcp@latest"]
+    },
     "context7" : {
       "command" : "npx",
       "args" : [
         "-y",
         "@upstash/context7-mcp@latest"
       ]
-    },
-    "chrome-devtools": {
-      "command": "npx",
-      "args": ["chrome-devtools-mcp@latest"]
     },
     "figma": {
       "type": "http",
@@ -44,9 +52,17 @@
       "command": "npx",
       "args": ["-y", "mcp-remote", "https://mcp.linear.app/mcp"]
     },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://mcp.notion.com/mcp"]
+    },
     "playwright": {
       "command": "npx",
       "args": ["mcp-playwright@latest"]
+    },
+    "shadcn": {
+      "command": "npx",
+      "args": ["shadcn@latest", "mcp"]
     }
   }
 }
