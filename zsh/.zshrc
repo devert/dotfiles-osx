@@ -92,7 +92,7 @@ plugins=(
     # alias-finder
     # docker
     # docker-compose
-    # gcloud
+    gcloud
     git
     # git-extras
     # gh
