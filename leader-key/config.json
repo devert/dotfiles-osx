@@ -174,6 +174,48 @@
           "label" : "Claude",
           "type" : "application",
           "value" : "/Applications/Claude.app"
+        },
+        {
+          "actions" : [
+            {
+              "iconPath" : "/Applications/Brave Browser.app",
+              "key" : "b",
+              "label" : "Brave",
+              "type" : "application",
+              "value" : "/Applications/Brave Browser.app"
+            },
+            {
+              "iconPath" : "/Applications/Google Chrome.app",
+              "key" : "c",
+              "label" : "Chrome",
+              "type" : "application",
+              "value" : "/Applications/Google Chrome.app"
+            },
+            {
+              "iconPath" : "/Applications/Microsoft Edge.app",
+              "key" : "e",
+              "label" : "Edge",
+              "type" : "application",
+              "value" : "/Applications/Microsoft Edge.app"
+            },
+            {
+              "iconPath" : "/Applications/Firefox.app",
+              "key" : "f",
+              "label" : "Firefix",
+              "type" : "application",
+              "value" : "/Applications/Firefox.app"
+            },
+            {
+              "iconPath" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app",
+              "key" : "s",
+              "label" : "Safari",
+              "type" : "application",
+              "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+            }
+          ],
+          "key" : "b",
+          "label" : "Browser",
+          "type" : "group"
         }
       ],
       "key" : "o",
