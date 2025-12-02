@@ -6,7 +6,7 @@
 
   // Code Rabbit
   // ---------------------------------------------------------------------------
-  "coderabbit.autoReviewMode": "prompt",
+  "coderabbit.autoReviewMode": "disabled",
 
   // Code Spell Checker
   // ---------------------------------------------------------------------------
