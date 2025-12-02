@@ -1,0 +1,13 @@
+[opener]
+edit = [
+  { run = '''#!/bin/zsh
+    dir=$(git -C "$(dirname "$1")" rev-parse --show-toplevel 2>/dev/null || dirname "$1")
+    code "$dir" "$1"
+  ''', desc = "Edit with VS Code", orphan = true, for = "unix" },
+]
+
+[open]
+rules = [
+  { name = "*/", use = "open" },  # directories handled normally
+  { name = "*", use = "edit" } # all other files opened with editor
+]
