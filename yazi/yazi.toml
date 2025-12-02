@@ -5,9 +5,25 @@ edit = [
     code "$dir" "$1"
   ''', desc = "Edit with VS Code", orphan = true, for = "unix" },
 ]
+preview = [
+  { run = 'open -a Preview "$@"', desc = "Open with Preview", orphan = true, for = "unix" },
+]
+play = [
+  { run = 'open "$@"', desc = "Open with default player", orphan = true, for = "unix" },
+]
 
 [open]
 rules = [
-  { name = "*/", use = "open" },  # directories handled normally
-  { name = "*", use = "edit" } # all other files opened with editor
+  { name = "*/", use = "enter" },  # directories handled normally
+  { name = "*.svg", use = "play" },  # SVG files open with default app (browser)
+  { mime = "image/*", use = "preview" },  # images open with Preview
+  { mime = "video/*", use = "play" },  # videos open with default player
+  { mime = "audio/*", use = "play" },  # audio files open with default player
+  { mime = "application/pdf", use = "preview" },  # PDFs open with Preview
+  { mime = "application/zip", use = "open" },  # archives open with default archive utility
+  { mime = "application/x-tar", use = "open" },
+  { mime = "application/gzip", use = "open" },
+  { mime = "application/json", use = "edit" },  # JSON files in editor
+  { mime = "text/*", use = "edit" },  # text files in editor
+  { name = "*", use = "edit" },  # everything else in editor as fallback
 ]
