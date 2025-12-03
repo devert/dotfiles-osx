@@ -3,18 +3,23 @@
 # Path shortcuts
 alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
+alias doc="cd ~/Documents"
 alias dt="cd ~/Desktop"
 alias df="cd ~/.dotfiles"
 alias p="cd ~/Projects"
 alias pp="cd ~/Projects/Personal"
 
 # Shorten commonly typed commands
+alias b="brew"
 alias c="cargo"
+alias cc="claude"
 alias code="code ."
 alias d="docker"
 alias dsa="docker stop (docker ps -q)"
 alias dka="docker kill (docker ps -q)"
 alias dc="docker compose"
+alias dcb="docker compose build"
+alias dcd="docker compose down"
 alias dce="docker compose exec"
 alias dck="docker compose kill"
 alias dcu="docker compose up"
