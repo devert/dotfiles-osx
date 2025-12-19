@@ -4,8 +4,16 @@
 
   "breadcrumbs.enabled": true,
 
+  // Chat
+  // ---------------------------------------------------------------------------
+
+  "chat.tools.terminal.autoApprove": {
+    "pnpm": true
+  },
+
   // Code Rabbit
   // ---------------------------------------------------------------------------
+
   "coderabbit.autoReviewMode": "disabled",
 
   // Code Spell Checker
