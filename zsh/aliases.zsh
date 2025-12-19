@@ -6,8 +6,7 @@ alias dl="cd ~/Downloads"
 alias doc="cd ~/Documents"
 alias dt="cd ~/Desktop"
 alias df="cd ~/.dotfiles"
-alias p="cd ~/Projects"
-alias pp="cd ~/Projects/Personal"
+alias prj="cd ~/Projects"
 
 # Shorten commonly typed commands
 alias b="brew"
