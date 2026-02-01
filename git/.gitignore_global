@@ -28,5 +28,5 @@ node_modules
 .github
 *.sw*
 
-# Ignore all .claude files from being committed (for now)
-.claude
+# Claude Code local settings (machine-specific permissions)
+.claude/settings.local.json

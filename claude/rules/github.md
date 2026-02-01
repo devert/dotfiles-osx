@@ -8,4 +8,3 @@
 ## Commits
 
 - Do not include "Co-Authored-By" lines in commit messages
-- Only commit when explicitly asked
