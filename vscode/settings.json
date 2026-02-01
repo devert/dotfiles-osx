@@ -152,6 +152,9 @@
   "editor.lightbulb.enabled": "off",
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
+  "[markdown]": {
+    "editor.wordWrap": "off"
+  },
 
   // Formatting
   "editor.formatOnSave": true,
@@ -208,7 +211,7 @@
   // Github Copilot
   // ---------------------------------------------------------------------------
 
-  "github.copilot.chat.agent.thinkingTool": true ,
+  "github.copilot.chat.agent.thinkingTool": true,
   "github.copilot.nextEditSuggestions.enabled": true,
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.editor.enableCodeActions": false,
@@ -219,12 +222,8 @@
     "scminput": false
   },
   "remote.extensionKind": {
-    "GitHub.copilot": [
-      "ui"
-    ],
-    "GitHub.copilot-chat": [
-      "ui"
-    ]
+    "GitHub.copilot": ["ui"],
+    "GitHub.copilot-chat": ["ui"]
   },
 
   // GitLens
