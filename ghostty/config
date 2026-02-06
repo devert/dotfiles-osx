@@ -1,4 +1,3 @@
-
 font-family = Operator Mono Light
 font-family-italic = Operator Mono Light Italic
 font-family-bold = Operator Mono Medium
@@ -8,7 +7,7 @@ font-size = 16
 font-thicken = true
 adjust-cell-height = 2
 
-window-inherit-working-directory=false
+window-inherit-working-directory=true
 window-padding-x = 10
 window-padding-y = 10
 resize-overlay = never
@@ -47,10 +46,10 @@ keybind = opt+k=resize_split:down,10
 keybind = opt+h=resize_split:left,10
 keybind = opt+l=resize_split:right,10
 keybind = opt+space=equalize_splits
-keybind = ctrl+j=jump_to_prompt:1
-keybind = ctrl+k=jump_to_prompt:-1
-keybind = ctrl+shift+k=scroll_page_lines:-1
-keybind = ctrl+shift+j=scroll_page_lines:1
+# keybind = ctrl+j=jump_to_prompt:1
+# keybind = ctrl+k=jump_to_prompt:-1
+# keybind = ctrl+shift+k=scroll_page_lines:-1
+# keybind = ctrl+shift+j=scroll_page_lines:1
 # sends Ctrl+L (clear) instead of full reset
 keybind = cmd+k=unbind
 keybind = cmd+k=text:\x0c

@@ -39,3 +39,12 @@ export MCP_HOME="$HOME/.mcp"
 export MCP_CONFIG_PATH="$MCP_HOME/mcp-config.json"
 export MCP_LOG_LEVEL="info"
 export MCP_LOG_DIR="$MCP_HOME/logs"
+
+
+# Tmux
+# ------------------------------------------------------------
+
+# Automatically start new tmux session on terminal open
+if [ -z "$TMUX" ]; then
+  exec /opt/homebrew/bin/tmux new-session
+fi

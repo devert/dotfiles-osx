@@ -509,5 +509,6 @@
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.showTabs": "none"
+  "zenMode.showTabs": "none",
+  "git.openRepositoryInParentFolders": "never"
 }
