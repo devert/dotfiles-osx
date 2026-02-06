@@ -46,6 +46,7 @@
     "monospace",
     "Neovim",
     "oauth",
+    "oklch",
     "performant",
     "postcss",
     "prepopulate",
@@ -140,7 +141,7 @@
   "editor.quickSuggestions": {
     "comments": false,
     "other": false,
-    "strings": false
+    "strings": "on"
   },
   "editor.quickSuggestionsDelay": 100000,
   "editor.wordBasedSuggestions": "off",
@@ -197,7 +198,7 @@
   },
   "files.associations": {
     ".*": "shellscript",
-    "*.css": "css",
+    "*.css": "tailwindcss",
     "*.json": "json",
     ".babelrc": "json",
     ".prettierrc": "json",
