@@ -153,13 +153,14 @@
   "editor.lightbulb.enabled": "off",
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
-  "[markdown]": {
-    "editor.wordWrap": "off"
-  },
 
   // Formatting
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[markdown]": {
+    "editor.wordWrap": "off"
+  },
+
 
   // Emmet
   // ---------------------------------------------------------------------------
@@ -200,6 +201,7 @@
     ".*": "shellscript",
     "*.css": "tailwindcss",
     "*.json": "json",
+    "*.svg": "html",
     ".babelrc": "json",
     ".prettierrc": "json",
     ".eslintrc.json": "jsonc",
@@ -317,6 +319,12 @@
   },
   "search.useIgnoreFiles": true,
   "search.useGlobalIgnoreFiles": true,
+
+  // Tailwind CSS IntelliSense
+  // ---------------------------------------------------------------------------
+
+  "tailwindCSS.lint.suggestCanonicalClasses": "ignore",
+
 
   // Typescript
   // ---------------------------------------------------------------------------
