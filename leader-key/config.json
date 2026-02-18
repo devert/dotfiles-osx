@@ -99,11 +99,11 @@
           "value" : "/System/Applications/Messages.app"
         },
         {
-          "iconPath" : "/Applications/Slack.app",
+          "iconPath" : "/Applications/Shift.app",
           "key" : "s",
-          "label" : "Slack",
+          "label" : "Shift",
           "type" : "application",
-          "value" : "/Applications/Slack.app"
+          "value" : "/Applications/Shift.app"
         },
         {
           "iconPath" : "/Applications/Figma.app",

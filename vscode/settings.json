@@ -36,6 +36,7 @@
     "Guid",
     "Hacky",
     "Helvetica",
+    "hubspot",
     "keyframes",
     "Keymap",
     "Leadpage",
@@ -157,10 +158,6 @@
   // Formatting
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[markdown]": {
-    "editor.wordWrap": "off"
-  },
-
 
   // Emmet
   // ---------------------------------------------------------------------------
@@ -518,5 +515,6 @@
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.showTabs": "none",
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
+  "application.shellEnvironmentResolutionTimeout": 20
 }
