@@ -18,8 +18,10 @@ if [[ $? -eq 0 ]];then
         code --install-extension alexdima.copy-relative-path
         code --install-extension ambooth.git-rename
         code --install-extension andys8.jest-snippets
+        code --install-extension anthropic.claude-code
         code --install-extension asvetliakov.snapshot-tools
         code --install-extension bpruitt-goddard.mermaid-markdown-syntax-highlighting
+        code --install-extension bradlc.vscode-tailwindcss
         code --install-extension britesnow.vscode-toggle-quotes
         code --install-extension chakrounanas.turbo-console-log
         code --install-extension christian-kohler.npm-intellisense
@@ -38,7 +40,6 @@ if [[ $? -eq 0 ]];then
         code --install-extension editorconfig.editorconfig
         code --install-extension esbenp.prettier-vscode
         code --install-extension frhtylcn.pythonsnippets
-        code --install-extension github.copilot
         code --install-extension github.copilot-chat
         code --install-extension grapecity.gc-excelviewer
         code --install-extension inu1255.easy-snippet
@@ -53,6 +54,7 @@ if [[ $? -eq 0 ]];then
         code --install-extension ms-python.isort
         code --install-extension ms-python.python
         code --install-extension ms-python.vscode-pylance
+        code --install-extension ms-python.vscode-python-envs
         code --install-extension ms-toolsai.jupyter
         code --install-extension ms-toolsai.jupyter-keymap
         code --install-extension ms-toolsai.jupyter-renderers
