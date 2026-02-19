@@ -13,10 +13,10 @@ xcode-select --install
 ## Install [Homebrew](http://brew.sh/), Git, Chrome and 1Password
 
 ```sh
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-/opt/homebrew/bin/brew install git
-/opt/homebrew/bin/brew install --cask google-chrome
-/opt/homebrew/bin/brew install --cask 1password
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install git
+brew install google-chrome
+brew install 1password
 ```
 
 ## Checkout dotfiles project
@@ -26,7 +26,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 Then pull this repo.
 
 ```sh
-cd ~/
+cd ~
 git clone git@github.com:devert/dotfiles-osx .dotfiles
 ```
 
