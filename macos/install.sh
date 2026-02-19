@@ -18,16 +18,14 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 sudo systemsetup -settimezone "America/Chicago" > /dev/null
 
 # Disable the sound effects on boot
-# sudo nvram SystemAudioVolume=" "
-# sudo nvram SystemAudioVolume=%80
 sudo nvram StartupMute=%01
 
 # Always show scrollbars
 defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 # Possible values: `WhenScrolling`, `Automatic` and `Always`
 
-# Disable the “Are you sure you want to open this application?” dialog
-defaults write com.apple.LaunchServices LSQuarantine -bool false
+# Set liquid glass to tinted
+defaults write NSGlobalDomain NSGlassDiffusionSetting -int 1
 
 # Disable automatic termination of inactive apps
 defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
