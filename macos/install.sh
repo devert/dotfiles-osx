@@ -18,9 +18,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
 sudo systemsetup -settimezone "America/Chicago" > /dev/null
 
-# Disable the sound effects on boot
-sudo nvram StartupMute=%01
-
 # Always show scrollbars
 defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 # Possible values: `WhenScrolling`, `Automatic` and `Always`
@@ -119,6 +116,20 @@ defaults write com.apple.screencapture location -string "${HOME}/Desktop/Screens
 # defaults -currentHost write -g AppleFontSmoothing -int 1
 
 
+###############################################################################
+# Sound
+###############################################################################
+
+# Disable the sound effects on boot
+sudo nvram StartupMute=%01
+
+# System Preferences > Sound > Alert volume
+defaults write NSGlobalDomain com.apple.sound.beep.volume -int 0
+
+# System Preferences > Sound > Play user interface sound effects
+defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -int 0 
+
+
 
 ###############################################################################
 #
@@ -131,12 +142,6 @@ defaults write com.apple.screencapture location -string "${HOME}/Desktop/Screens
 ###############################################################################
 # Finder
 ###############################################################################
-
-# Show icons for external hard drives, servers, and removable media on the desktop
-defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
-defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
-defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
-defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 # Finder: show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles -bool true
