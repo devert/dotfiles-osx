@@ -10,6 +10,7 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `./macos/install.sh` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+
 ###############################################################################
 # General UI/UX
 ###############################################################################
@@ -45,6 +46,7 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+
 ###############################################################################
 # Trackpad
 ###############################################################################
@@ -67,6 +69,7 @@ defaults write com.apple.AppleMultitouchTrackpad ForceSuppressed -bool true
 
 # Speed up Trackpad Tracking Speed
 defaults write NSGlobalDomain com.apple.trackpad.scaling -int 2
+
 
 ###############################################################################
 # Mouse
@@ -101,24 +104,29 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 10
 mkdir -p ~/Library/KeyBindings
 sudo ln -s ~/.dotfiles/macos/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
 
-###############################################################################
-# Bluetooth Accessories
-###############################################################################
-
-# Increase sound quality for Bluetooth headphones/headsets
-defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
 ###############################################################################
 # Screen
 ###############################################################################
 
-# Save screenshots to the desktop
-defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+# Save screenshots to a folder on the desktop
+defaults write com.apple.screencapture location -string "${HOME}/Desktop/Screenshots"
 
 # Enable subpixel font rendering on non-Apple LCDs and fix blurry thin type.
 # http://osxdaily.com/2018/09/26/fix-blurry-thin-fonts-text-macos-mojave/
-defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
-defaults -currentHost write -g AppleFontSmoothing -int 1
+# TODO: Still a problem in macOS Tahoe?
+# defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+# defaults -currentHost write -g AppleFontSmoothing -int 1
+
+
+
+###############################################################################
+#
+# TODO: Set and verify all the below settings on MacOS Tahoe
+#
+###############################################################################
+
+
 
 ###############################################################################
 # Finder
@@ -171,6 +179,7 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Disable the warning before emptying the Trash
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
+
 ###############################################################################
 # Dock
 ###############################################################################
@@ -222,6 +231,7 @@ defaults write com.apple.dock wvous-tr-corner -int 0 # Top right
 defaults write com.apple.dock wvous-bl-corner -int 0 # Bottom left
 defaults write com.apple.dock wvous-br-corner -int 0 # Bottom right
 
+
 ###############################################################################
 # Terminal & iTerm 2
 ###############################################################################
@@ -231,6 +241,7 @@ defaults write com.apple.terminal StringEncodings -array 4
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
 
 ###############################################################################
 # Activity Monitor
@@ -249,15 +260,18 @@ defaults write com.apple.ActivityMonitor ShowCategory -int 0
 defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
 
+
 ###############################################################################
 # TextEdit
 ###############################################################################
 
 # Use plain text mode for new TextEdit documents
 defaults write com.apple.TextEdit RichText -int 0
+
 # Open and save files as UTF-8 in TextEdit
 defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
+
 
 ###############################################################################
 # Kill affected applications
