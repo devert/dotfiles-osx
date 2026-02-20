@@ -73,10 +73,10 @@ defaults write NSGlobalDomain com.apple.trackpad.scaling -int 2
 ###############################################################################
 
 # Speed up Mouse Tracking Speed
-defaults write NSGlobalDomain com.apple.mouse.scaling -int 2
+defaults write NSGlobalDomain com.apple.mouse.scaling -float 2
 
 # Set a slightly faster Scrolling Speed
-defaults write NSGlobalDomain com.apple.mouse.scaling -string "0.5"
+defaults write NSGlobalDomain com.apple.scrollwheel.scaling -float 0.5
 
 # Unset Natural Scrolling for Mouse
 defaults write NSGlobalDomain com.apple.swipescrolldirection -int 2
