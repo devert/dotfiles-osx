@@ -49,13 +49,19 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Trackpad
 ###############################################################################
 
-# System Preferences > Trackpad > Tap to click
+# System Preferences > Trackpad > Point & Click > Tap to click
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 
-# System Preferences > Trackpad > Look up & data detectors
+# System Preferences > Trackpad > Point & Click >Look up & data detectors
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -bool false
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerTapGesture -bool false
 
-# System Preferences > Trackpad > Force Click and haptic feedback
+# System Preferences > Trackpad > Point & Click > Secondary click
+defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+
+# System Preferences > Trackpad > Point & Click > Force Click and haptic feedback
 defaults write com.apple.AppleMultitouchTrackpad ActuateDetents -bool false
 defaults write com.apple.AppleMultitouchTrackpad ForceSuppressed -bool true
 
