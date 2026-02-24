@@ -28,56 +28,48 @@ brew install gh
 brew install jacobwgillespie/tap/git-sync
 brew link --overwrite git-sync
 
-brew install httpie
 brew install jq
 brew install neovim
-brew install pyenv
-brew install pyenv-virtualenv
+brew install anomalyco/tap/opencode
 brew install ripgrep
-brew install tree
-brew install yarn
+brew install tmux
 brew install zoxide
 brew install zsh
 
 echo "Install Applications with Homebrew Cask"
 
 brew install --cask 1password
-brew install --cask adobe-acrobat-reader # TODO: consider removing
 brew install --cask appcleaner
-brew install --cask applepi-baker
-brew install --cask audio-hijack
 brew install --cask balenaetcher
 brew install --cask bettertouchtool
 brew install --cask brave-browser
-brew install --cask chromium --no-quarantine
-brew install --cask claude-code
-brew install --cask contexts
+brew install --cask contexts #TODO: Figure out how to configure this in a scripted way
 brew install --cask docker
 brew install --cask dropbox
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask hiddenbar
-brew install --cask httpie # TODO: determine which one is better between this and insomnia
-brew install --cask insomnia # TODO: determine which one is better between this and httpie
-brew install --cask iterm2
+# brew install --cask httpie # TODO: determine which one is better between this and insomnia
+# brew install --cask insomnia # TODO: determine which one is better between this and httpie
+# brew install --cask iterm2
 brew install --cask karabiner-elements
-brew install --cask kdiff3 # TODO: consider removing or finding new diff app
 brew install --cask leader-key
 brew install --cask microsoft-edge
 brew install --cask notion
-brew install --cask overkill
+# brew install --cask overkill #TODO; May not need now that iTunes is discontinued
 brew install --cask pixelsnap
 brew install --cask plex
-brew install --cask raspberry-pi-imager
 brew install --cask raycast
-brew install --cask shift
-brew install --cask slack # TODO: consider removing since used with Shift
+brew install --cask slack
 brew install --cask sourcetree
 brew install --cask spotify
-brew install --cask virtualbox # TODO: consider removing
 brew install --cask visual-studio-code
 brew install --cask vlc
 brew install --cask zoom
+
+# Optional Raspberry Pi Casks
+# brew install --cask applepi-baker
+# brew install --cask raspberry-pi-imager
 
 # Reload shell
 reload
