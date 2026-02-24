@@ -233,47 +233,6 @@ defaults write com.apple.dock wvous-br-corner -int 0 # Bottom right
 
 
 ###############################################################################
-# Terminal & iTerm 2
-###############################################################################
-
-# Only use UTF-8 in Terminal.app
-defaults write com.apple.terminal StringEncodings -array 4
-
-# Don’t display the annoying prompt when quitting iTerm
-defaults write com.googlecode.iterm2 PromptOnQuit -bool false
-
-
-###############################################################################
-# Activity Monitor
-###############################################################################
-
-# Show the main window when launching Activity Monitor
-defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
-
-# Visualize CPU usage in the Activity Monitor Dock icon
-defaults write com.apple.ActivityMonitor IconType -int 5
-
-# Show all processes in Activity Monitor
-defaults write com.apple.ActivityMonitor ShowCategory -int 0
-
-# Sort Activity Monitor results by CPU usage
-defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
-defaults write com.apple.ActivityMonitor SortDirection -int 0
-
-
-###############################################################################
-# TextEdit
-###############################################################################
-
-# Use plain text mode for new TextEdit documents
-defaults write com.apple.TextEdit RichText -int 0
-
-# Open and save files as UTF-8 in TextEdit
-defaults write com.apple.TextEdit PlainTextEncoding -int 4
-defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
-
-
-###############################################################################
 # Kill affected applications
 ###############################################################################
 
