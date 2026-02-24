@@ -53,10 +53,6 @@ keybind = opt+h=resize_split:left,10
 keybind = opt+l=resize_split:right,10
 keybind = opt+space=equalize_splits
 keybind = shift+enter=text:\x1b\r
-# keybind = ctrl+j=jump_to_prompt:1
-# keybind = ctrl+k=jump_to_prompt:-1
-# keybind = ctrl+shift+k=scroll_page_lines:-1
-# keybind = ctrl+shift+j=scroll_page_lines:1
 
 # Send Ctrl+L (clear) instead of full reset
 keybind = cmd+k=unbind
