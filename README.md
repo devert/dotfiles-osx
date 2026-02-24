@@ -8,6 +8,12 @@ Setup, software installation and dotfiles for macOS.
 xcode-select --install
 ```
 
+## Install Rosetta
+
+```sh
+softwareupdate --install-rosetta
+```
+
 [developer.apple.com/downloads](https://developer.apple.com/downloads) or [Xcode](https://itunes.apple.com/us/app/xcode/id497799835)
 
 ## Install [Homebrew](http://brew.sh/), Git, Chrome and 1Password
@@ -43,8 +49,6 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
 ```sh
 ./brew/install.sh
 ```
-
-NOTE: You will likely have to rerun the cask install for Virtualbox
 
 ## Install Node and Python
 
