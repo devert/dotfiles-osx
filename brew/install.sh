@@ -15,10 +15,9 @@ brew upgrade
 # Install command-line tools using Homebrew.
 echo "Installing Homebrew Packages"
 
+brew install bat
 brew install curl
 brew install fzf
-# To install useful key bindings and fuzzy completion:
-# $(brew --prefix)/opt/fzf/install
 
 brew install git
 brew install git-extras
