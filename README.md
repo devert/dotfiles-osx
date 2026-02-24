@@ -53,10 +53,6 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
 ## Install Node and Python
 
 ```sh
-mkdir -p ~/.nvm
-  
-reload
-
 ./node/install.sh
 ./python/install.sh
 ```
@@ -65,7 +61,9 @@ reload
 
 ```sh
 ./zsh/install.sh
+
 reload
+
 ./zsh/configure.sh
 ```
 
@@ -74,7 +72,6 @@ reload
 ```sh
 ./fonts/install.sh
 ./git/install.sh
-./iterm/install.sh
 ./karabiner/install.sh
 ./neovim/install.sh
 ./tmux/install.sh
