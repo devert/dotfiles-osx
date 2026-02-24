@@ -48,3 +48,8 @@ alias reload="omz reload"
 
 # Edit .zshrc
 alias zshconfig="v ~/.zshrc"
+
+# Eza aliases
+alias ls="eza -a -F --icons"
+alias lsa="eza -la -F --icons"
+alias lt="eza -T --icons"
