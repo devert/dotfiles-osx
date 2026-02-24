@@ -49,6 +49,7 @@ brew install --cask dropbox
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask hiddenbar
+brew install --cask homerow
 # brew install --cask httpie # TODO: determine which one is better between this and insomnia
 # brew install --cask insomnia # TODO: determine which one is better between this and httpie
 # brew install --cask iterm2
