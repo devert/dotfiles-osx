@@ -1,3 +1,15 @@
+# Homebrew will not auto-update before running `brew install`,`brew upgrade` or `brew tap`.
+export HOMEBREW_NO_AUTO_UPDATE=1
+
+# FNM (Fast Node Manager) configuration
+export FNM_DIR="/Users/devert/.local/share/fnm"
+export FNM_VERSION_FILE_STRATEGY="local"
+export FNM_LOGLEVEL="info"
+export FNM_NODE_DIST_MIRROR="https://nodejs.org/dist"
+export FNM_COREPACK_ENABLED="true"
+export FNM_RESOLVE_ENGINES="true"
+export FNM_ARCH="arm64"
+
 # FZF Default Options
 export FZF_DEFAULT_OPTS="--prompt='❯ '"
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
@@ -7,10 +19,3 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
   --color=border:#727072,label:#fcfcfa,query:#fcfcfa
   --info=right
   --height=~40%'
-
-# Homebrew will not auto-update before running `brew install`,`brew upgrade` or `brew tap`.
-export HOMEBREW_NO_AUTO_UPDATE=1
-
-# Puppeteer installs will skip Chromium install and use Homebrew installed Chromium
-export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
-export PUPPETEER_EXECUTABLE_PATH="/opt/homebrew/bin/chromium"

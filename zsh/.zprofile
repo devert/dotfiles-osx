@@ -15,30 +15,36 @@ export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}"
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
 
+# FNM (Fast Node Manager)
+# -------------------------------------------------------------
+
+eval "$(fnm env --use-on-cd)"
+
+
 # Pyenv
 # ------------------------------------------------------------
 
 # Pyenv configuration (manual PATH setup instead of eval "$(pyenv init --path)" for faster startup)
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/bin:$PATH"
 
 # Disable virtualenv name in prompt
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+# export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # Install pyenv into your shell as a shell function, enable shims and autocompletion
-export PATH="$PYENV_ROOT/shims:$PATH"
+# export PATH="$PYENV_ROOT/shims:$PATH"
 
 # Enable auto-activation of pyenv virtualenvs
-eval "$(pyenv virtualenv-init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 
 # MCP
 # ------------------------------------------------------------
 
-export MCP_HOME="$HOME/.mcp"
-export MCP_CONFIG_PATH="$MCP_HOME/mcp-config.json"
-export MCP_LOG_LEVEL="info"
-export MCP_LOG_DIR="$MCP_HOME/logs"
+# export MCP_HOME="$HOME/.mcp"
+# export MCP_CONFIG_PATH="$MCP_HOME/mcp-config.json"
+# export MCP_LOG_LEVEL="info"
+# export MCP_LOG_DIR="$MCP_HOME/logs"
 
 
 # Tmux
