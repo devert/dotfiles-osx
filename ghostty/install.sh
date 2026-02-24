@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
 
-# Symlink config
-sudo ln -s ~/.dotfiles/ghostty/config ~/.config/ghostty/config
+# Configure Ghostty
+echo "Configuring Ghostty..."
+
+# Ensure config directory exists
+mkdir -p ~/.config/ghostty
+
+sudo ln -sfn ~/.dotfiles/ghostty/config ~/.config/ghostty/config
+
+echo "Ghostty Configuration Complete"
+echo "Reload Configuration with: cmd+shift+,"
