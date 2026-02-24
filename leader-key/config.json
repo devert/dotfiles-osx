@@ -99,32 +99,11 @@
           "value" : "/System/Applications/Messages.app"
         },
         {
-          "iconPath" : "/Applications/Shift.app",
-          "key" : "s",
-          "label" : "Shift",
-          "type" : "application",
-          "value" : "/Applications/Shift.app"
-        },
-        {
-          "iconPath" : "/Applications/Figma.app",
-          "key" : "f",
-          "label" : "Figma",
-          "type" : "application",
-          "value" : "/Applications/Figma.app"
-        },
-        {
           "iconPath" : "/Applications/Notion.app",
           "key" : "n",
           "label" : "Notion",
           "type" : "application",
           "value" : "/Applications/Notion.app"
-        },
-        {
-          "iconPath" : "/Applications/Linear.app",
-          "key" : "l",
-          "label" : "Linear",
-          "type" : "application",
-          "value" : "/Applications/Linear.app"
         },
         {
           "iconPath" : "/Applications/Docker.app",
@@ -146,13 +125,6 @@
           "label" : "Zoom",
           "type" : "application",
           "value" : "/Applications/zoom.us.app"
-        },
-        {
-          "iconPath" : "/Applications/Insomnia.app",
-          "key" : "i",
-          "label" : "Insomnia",
-          "type" : "application",
-          "value" : "/Applications/Insomnia.app"
         },
         {
           "iconPath" : "/Applications/Ghostty.app",
