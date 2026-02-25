@@ -15,39 +15,23 @@ if [[ $? -eq 0 ]];then
         echo "Installing extensions please wait..."
 
         code --install-extension alefragnani.project-manager
-        code --install-extension alexdima.copy-relative-path
         code --install-extension ambooth.git-rename
-        code --install-extension andys8.jest-snippets
-        code --install-extension anthropic.claude-code
-        code --install-extension asvetliakov.snapshot-tools
         code --install-extension bpruitt-goddard.mermaid-markdown-syntax-highlighting
         code --install-extension bradlc.vscode-tailwindcss
         code --install-extension britesnow.vscode-toggle-quotes
         code --install-extension chakrounanas.turbo-console-log
-        code --install-extension christian-kohler.npm-intellisense
-        code --install-extension christian-kohler.path-intellisense
-        code --install-extension codemooseus.vscode-devtools-for-chrome
-        code --install-extension coderabbit.coderabbit-vscode
-        code --install-extension codesandbox-io.codesandbox-projects
         code --install-extension davidanson.vscode-markdownlint
         code --install-extension dbaeumer.vscode-eslint
-        code --install-extension docker.docker
         code --install-extension donjayamanne.githistory
         code --install-extension dsznajder.es7-react-js-snippets
-        code --install-extension dunstontc.viml
-        code --install-extension eamodio.gitlens
         code --install-extension earshinov.permute-lines
         code --install-extension editorconfig.editorconfig
         code --install-extension esbenp.prettier-vscode
         code --install-extension frhtylcn.pythonsnippets
         code --install-extension github.copilot-chat
-        code --install-extension grapecity.gc-excelviewer
-        code --install-extension inu1255.easy-snippet
         code --install-extension johnnymorganz.stylua
         code --install-extension kevinrose.vsc-python-indent
         code --install-extension monokai.theme-monokai-pro-vscode
-        code --install-extension ms-azuretools.vscode-containers
-        code --install-extension ms-azuretools.vscode-docker
         code --install-extension ms-playwright.playwright
         code --install-extension ms-python.black-formatter
         code --install-extension ms-python.debugpy
@@ -55,20 +39,13 @@ if [[ $? -eq 0 ]];then
         code --install-extension ms-python.python
         code --install-extension ms-python.vscode-pylance
         code --install-extension ms-python.vscode-python-envs
-        code --install-extension ms-toolsai.jupyter
-        code --install-extension ms-toolsai.jupyter-keymap
-        code --install-extension ms-toolsai.jupyter-renderers
-        code --install-extension ms-toolsai.vscode-jupyter-cell-tags
-        code --install-extension ms-toolsai.vscode-jupyter-slideshow
         code --install-extension ms-vscode-remote.remote-ssh
         code --install-extension ms-vscode-remote.remote-ssh-edit
         code --install-extension ms-vscode.atom-keybindings
         code --install-extension ms-vscode.remote-explorer
-        code --install-extension ms-vsliveshare.vsliveshare
         code --install-extension mskelton.playwright-test-snippets
         code --install-extension naumovs.color-highlight
         code --install-extension njpwerner.autodocstring
-        code --install-extension paulmolluzzo.convert-css-in-js
         code --install-extension rog2.luacheck
         code --install-extension rust-lang.rust-analyzer
         code --install-extension sleistner.vscode-fileutils
@@ -77,7 +54,6 @@ if [[ $? -eq 0 ]];then
         code --install-extension tamasfe.even-better-toml
         code --install-extension techer.open-in-browser
         code --install-extension vitest.explorer
-        code --install-extension vscodeshift.material-ui-codemorphs
         code --install-extension vscodevim.vim
         code --install-extension vstirbu.vscode-mermaid-preview
         code --install-extension wmaurer.change-case

@@ -11,11 +11,6 @@
     "pnpm": true
   },
 
-  // Code Rabbit
-  // ---------------------------------------------------------------------------
-
-  "coderabbit.autoReviewMode": "disabled",
-
   // Code Spell Checker
   // ---------------------------------------------------------------------------
 
@@ -24,7 +19,6 @@
     "backend",
     "browserslist",
     "camelcase",
-    "Charteris",
     "clickshield",
     "clsx",
     "customizations",
@@ -123,7 +117,7 @@
   "editor.cursorBlinking": "phase",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "boundary",
-  "editor.fontFamily": "OperatorMono NF, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
   "editor.fontWeight": 400,
   "editor.letterSpacing": 0.3,
@@ -208,6 +202,11 @@
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
 
+  // Git
+  // ---------------------------------------------------------------------------
+
+  "git.openRepositoryInParentFolders": "never",
+
   // Github Copilot
   // ---------------------------------------------------------------------------
 
@@ -225,15 +224,6 @@
     "GitHub.copilot": ["ui"],
     "GitHub.copilot-chat": ["ui"]
   },
-
-  // GitLens
-  // ---------------------------------------------------------------------------
-
-  "gitlens.codeLens.enabled": false,
-  "gitlens.currentLine.enabled": false,
-  "gitlens.statusBar.enabled": false,
-  "gitlens.keymap": "none",
-  "gitlens.gitkraken.mcp.autoEnabled": false,
 
   // Open In Browser
   // ---------------------------------------------------------------------------
@@ -273,21 +263,21 @@
   // ---------------------------------------------------------------------------
 
   // "black-formatter.importStrategy": "useBundled",
-  "isort.importStrategy": "useBundled",
-  "isort.args": ["--profile", "black"],
+  // "isort.importStrategy": "useBundled",
+  // "isort.args": ["--profile", "black"],
 
-  "python.defaultInterpreterPath": "~/.pyenv/versions/3.8.16/bin/python3",
-  "python.terminal.activateEnvironment": false,
-  "python.venvPath": "~/.pyenv",
-  "python.venvFolders": ["~/.pyenv/versions"],
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.rulers": [88],
-    "editor.formatOnType": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
-    }
-  },
+  // "python.defaultInterpreterPath": "~/.pyenv/versions/3.8.16/bin/python3",
+  // "python.terminal.activateEnvironment": false,
+  // "python.venvPath": "~/.pyenv",
+  // "python.venvFolders": ["~/.pyenv/versions"],
+  // "[python]": {
+  //   "editor.defaultFormatter": "ms-python.black-formatter",
+  //   "editor.rulers": [88],
+  //   "editor.formatOnType": true,
+  //   "editor.codeActionsOnSave": {
+  //     "source.organizeImports": "explicit"
+  //   }
+  // },
 
   // Rust
   // ---------------------------------------------------------------------------
@@ -322,7 +312,6 @@
 
   "tailwindCSS.lint.suggestCanonicalClasses": "ignore",
 
-
   // Typescript
   // ---------------------------------------------------------------------------
 
@@ -335,7 +324,7 @@
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 1.2,
-  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.osx": "zsh (Brew)",
   "terminal.integrated.inheritEnv": true,
   "terminal.integrated.shellIntegration.decorationsEnabled": "never",
 
@@ -514,7 +503,5 @@
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.showTabs": "none",
-  "git.openRepositoryInParentFolders": "never",
-  "application.shellEnvironmentResolutionTimeout": 20
+  "zenMode.showTabs": "none"
 }

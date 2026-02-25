@@ -33,11 +33,4 @@
       ""
     ]
   },
-  // Material UI
-  "useStyles": {
-    "scope": "javascript, javascriptreact, typescript, typescriptreact",
-    "prefix": "useStyles",
-    "body": ["const useStyles = makeStyles({}, { classNamePrefix: '$1' })"],
-    "description": "Define Material UI Component Styles using Hook API"
-  }
 }

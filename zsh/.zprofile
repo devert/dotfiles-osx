@@ -50,7 +50,10 @@ eval "$(fnm env --use-on-cd)"
 # Tmux
 # ------------------------------------------------------------
 
-# Automatically start new tmux session on terminal open
-if [ -z "$TMUX" ]; then
-  exec /opt/homebrew/bin/tmux new-session
+# Automatically start new tmux session on terminal open.
+# Only auto-start tmux for interactive login shells attached to a TTY.
+# This prevents non-interactive processes (like VS Code's shell env resolver)
+# from being replaced by tmux, which can cause unexpected exit codes.
+if [ -z "$TMUX" ] && [ -t 1 ] && [[ $- == *i* ]]; then
+  exec tmux new-session
 fi

@@ -2,13 +2,12 @@
 
 ## Use of the install script
 
-First of all, make sure you've installed Visual Studio Code with Homebrew Cask and went through [this process](https://code.visualstudio.com/docs/setup/mac#_command-line) to install `code` shell command.
+First of all, make sure you've installed Visual Studio Code with Homebrew.
 
-Now run these commands:
+Then run this command:
 
 ```sh
-cd ~/.dotfiles/vscode
-./install.sh
+./vscode/install.sh
 ```
 
 The script asks you if you want to install the extensions. Type `y` for yes. Defaults to no.
@@ -30,7 +29,7 @@ You will need to restart your Visual Studio Code for all the above to take effec
 
 ## Updating the list of extensions
 
-From time to time the commands to install extensions in `vscode/install.sh` should be updated. Run the below command to get a new list of the latest extensions you have installed in VSCode.
+From time to time, the commands to install extensions in `vscode/install.sh` should be updated. Run the below command to get a new list of the latest extensions you have installed in VSCode.
 
 ```sh
 code --list-extensions | xargs -L 1 echo code --install-extension

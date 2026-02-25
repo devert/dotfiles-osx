@@ -176,34 +176,5 @@
     "key": "ctrl+space",
     "command": "github.copilot.acceptCursorPanelSolution",
     "when": "github.copilot.activated && github.copilot.panelVisible"
-  },
-
-  // Claude Code
-  // ---------------------------------------------------------------------------
-
-  {
-    "key": "cmd+escape",
-    "command": "-claude-vscode.editor.open",
-    "when": "!config.claudeCode.useTerminal"
-  },
-  {
-    "key": "cmd+escape",
-    "command": "-claude-vscode.terminal.open.keyboard",
-    "when": "config.claudeCode.useTerminal"
-  },
-  {
-    "key": "shift+cmd+escape",
-    "command": "-claude-vscode.editor.open",
-    "when": "!config.claudeCode.useTerminal"
-  },
-  {
-    "key": "cmd+escape",
-    "command": "-claude-vscode.focus",
-    "when": "editorTextFocus && !config.claudeCode.useTerminal"
-  },
-  {
-    "key": "cmd+escape",
-    "command": "-claude-vscode.blur",
-    "when": "!config.claudeCode.useTerminal && !editorTextFocus"
   }
 ]
