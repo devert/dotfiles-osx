@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-# Install Karabiner-Elements 
+# Install Leader Key
 echo "Installing Leader Key..."
 
 brew install leader-key
