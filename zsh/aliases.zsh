@@ -31,7 +31,7 @@ alias p="pnpm"
 alias t="tmux"
 alias vim="nvim"
 alias v="vim"
-alias y="yarn"
+alias y="yazi"
 
 unalias gb
 unalias gbr
