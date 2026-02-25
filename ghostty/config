@@ -5,7 +5,7 @@ font-style-italic = Light Italic
 font-style-bold = Medium
 font-style-bold-italic = Medium Italic
 font-synthetic-style = false
-font-size = 15
+font-size = 16
 font-thicken = true
 adjust-cell-height = 2
 
@@ -57,4 +57,3 @@ keybind = shift+enter=text:\x1b\r
 # Send Ctrl+L (clear) instead of full reset
 keybind = cmd+k=unbind
 keybind = cmd+k=text:\x0c
-
