@@ -15,7 +15,7 @@ defaults write com.superultra.Homerow "auto-switch-input-source-id" -string "com
 defaults write com.superultra.Homerow "enable-hyper-key" -bool false
 
 # Appearance settings
-defaults write com.superultra.Homerow "theme-id" -string "original";
+defaults write com.superultra.Homerow "theme-id" -string "light";
 defaults write com.superultra.Homerow "label-font-size" -integer 12;
 
 
