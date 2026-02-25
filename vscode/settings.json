@@ -105,10 +105,6 @@
   "color-highlight.markerType": "dot-before",
   "color-highlight.markRuler": false,
 
-  // Docker
-  // ---------------------------------------------------------------------------
-  "docker.extension.dockerEngineAvailabilityPrompt": false,
-
   // Editor
   // ---------------------------------------------------------------------------
 
@@ -117,7 +113,7 @@
   "editor.cursorBlinking": "phase",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "boundary",
-  "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Operator Mono, JetBrainsMono Nerd Font",
   "editor.fontSize": 14,
   "editor.fontWeight": 400,
   "editor.letterSpacing": 0.3,
@@ -210,9 +206,7 @@
   // Github Copilot
   // ---------------------------------------------------------------------------
 
-  "github.copilot.chat.agent.thinkingTool": true,
   "github.copilot.nextEditSuggestions.enabled": true,
-  "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.editor.enableCodeActions": false,
   "github.copilot.enable": {
     "*": true,
