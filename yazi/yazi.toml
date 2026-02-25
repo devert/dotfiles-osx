@@ -14,7 +14,6 @@ play = [
 
 [open]
 rules = [
-  { name = "*/", use = "open" },  # directories handled normally
   { name = "*.svg", use = "play" },  # SVG files open with default app (browser)
   { mime = "image/*", use = "preview" },  # images open with Preview
   { mime = "video/*", use = "play" },  # videos open with default player
