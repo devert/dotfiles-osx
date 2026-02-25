@@ -48,6 +48,12 @@
   // Terminal
   // ---------------------------------------------------------------------------
   {
+    "key": "cmd+k",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": { "text": "\u000C" },
+    "when": "terminalFocus"
+  },
+  {
     "key": "ctrl+tab",
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus"
