@@ -43,6 +43,8 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Enable Reduce Motion to minimize the movement of user interface elements
+defaults write com.apple.universalaccess reduceMotion -bool true
 
 ###############################################################################
 # Trackpad
@@ -127,7 +129,7 @@ sudo nvram StartupMute=%01
 defaults write NSGlobalDomain com.apple.sound.beep.volume -int 0
 
 # System Preferences > Sound > Play user interface sound effects
-defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -int 0 
+defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -int 0
 
 
 ###############################################################################
