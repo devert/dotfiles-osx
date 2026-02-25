@@ -113,7 +113,7 @@
   "editor.cursorBlinking": "phase",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "boundary",
-  "editor.fontFamily": "Operator Mono, JetBrainsMono Nerd Font",
+  "editor.fontFamily": "Operator Mono, JetBrainsMonoNL Nerd Font Mono",
   "editor.fontSize": 14,
   "editor.fontWeight": 400,
   "editor.letterSpacing": 0.3,
