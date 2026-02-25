@@ -46,6 +46,7 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Enable Reduce Motion to minimize the movement of user interface elements
 defaults write com.apple.universalaccess reduceMotion -bool true
 
+
 ###############################################################################
 # Trackpad
 ###############################################################################
@@ -156,15 +157,11 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Disable the warning before emptying the Trash
 # defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
+# Disable actions when double-clicking a window’s title
+defaults write NSGlobalDomain AppleActionOnDoubleClick -string "None"
 
-
-###############################################################################
-#
-# TODO: Set and verify all the below settings on MacOS Tahoe
-#
-###############################################################################
-
-
+# Disable the click wallpaper to show the desktop feature
+defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
 
 # Enable snap-to-grid for icons on the desktop and in other icon views
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
@@ -201,7 +198,7 @@ defaults write com.apple.dock magnification -bool true
 defaults write com.apple.dock largesize -int 88
 
 # Change minimize/maximize window effect
-defaults write com.apple.dock mineffect -string "scale"
+defaults write com.apple.dock mineffect -string "genie"
 
 # Minimize windows into their application’s icon
 defaults write com.apple.dock minimize-to-application -bool true
@@ -212,20 +209,11 @@ defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 # Show indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool true
 
-# Don’t automatically rearrange Spaces based on most recent use
-defaults write com.apple.dock mru-spaces -bool false
-
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
 # Don’t show recent applications in Dock
 defaults write com.apple.dock show-recents -bool false
-
-# System Preferences > Dock > Automatically hide and show the Dock (duration)
-defaults write com.apple.dock autohide-time-modifier -float 0.5
-
-# System Preferences > Dock > Automatically hide and show the Dock (delay)
-defaults write com.apple.dock autohide-delay -float 0
 
 # Disable all Hot Corners
 defaults write com.apple.dock wvous-tl-corner -int 0 # Top left
@@ -238,8 +226,7 @@ defaults write com.apple.dock wvous-br-corner -int 0 # Bottom right
 # Kill affected applications
 ###############################################################################
 
-for app in "Activity Monitor" \
-	"cfprefsd" \
+for app in "cfprefsd" \
 	"Dock" \
 	"SystemUIServer" \
 	"Terminal" \
